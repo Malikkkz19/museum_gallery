@@ -3,11 +3,41 @@
 @tailwind utilities;
 
 .wrapper {
+  position: relative;
   height: 1250px;
-  width: 691px;
+  width: 900px;
   background-image: url("../../assets/img/Петр1.png");
   overflow: hidden;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.top {
+  position: absolute;
+  top: 180px;
+  p {
+    color: white;
+    font-size: x-small;
+    padding-left: 6px;
+  }
+  span {
+    font-size: small;
+    color: white;
+    padding-left: 13px;
+  }
+
+  .background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(218, 188, 67, 0.2);
+    height: 300px;
+    width: 261px;
+    border-radius: 30px;
+    border: 2px solid #e7cb2c;
+  }
+}
+
+.content {
 }
