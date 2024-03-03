@@ -200,6 +200,17 @@
       }
     }
     .blockLomonosov {
+      width: 220px;
+      height: 281px;
+      bottom: 3%;
+      right: -6%;
+      position: absolute;
+      border-radius: 15px;
+      cursor: pointer;
+      transition: all 250ms ease-in-out;
+      &:hover {
+        transform: scale(1.03);
+      }
       .imgLomonosov {
         width: 220px;
         height: 281px;
@@ -214,6 +225,31 @@
           transform: scale(1.03);
         }
       }
+      .imgTextLomonosov {
+        cursor: pointer;
+        width: 220px;
+        height: 95px;
+        position: absolute;
+        bottom: 5%;
+        right: -5%;
+        opacity: 0.8;
+        border-radius: 0 0 15px 15px;
+      }
+    }
+    .imgDescMap {
+      width: 420px;
+      height: 261px;
+      overflow: hidden;
+      cursor: pointer;
+      transition: all 250ms ease-in-out;
+      position: absolute;
+      border-radius: 15px;
+      top: 10%;
+      right: -63%;
+      opacity: 0.9;
+      &:hover {
+        transform: scale(1.03);
+      }
     }
   }
 }
@@ -224,6 +260,30 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  position: relative;
+  .description {
+    position: absolute;
+    width: 945px;
+    height: 600px;
+    .descImage {
+      width: 200px;
+      height: 260px;
+      position: absolute;
+      top: 43%;
+      left: 1%;
+      &:hover {
+        transform: scale(1.02);
+      }
+      cursor: pointer;
+      transition: all 250ms ease-in-out;
+    }
+  }
+  .historyElizabeth {
+    position: absolute;
+    width: 945px;
+    height: 650px;
+    bottom: 0%;
+  }
 }
 .imp4 {
   width: 1330px;

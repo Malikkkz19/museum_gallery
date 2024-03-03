@@ -82,11 +82,36 @@ const Content = () => {
                 src="/src/assets/img/Ломоносов.png"
                 alt="Lomonosov"
               />
+              <img
+                className={styles.imgTextLomonosov}
+                src="/src/assets/img/LomonosovText.png"
+                alt="Text"
+              />
             </div>
-            <img src="/src/assets/img/" alt="" />
+            <img
+              className={styles.imgDescMap}
+              src="/src/assets/img/описаниекарты.png"
+              alt="Desc for map"
+            />
           </div>
         </div>
-        <div className={styles.imp3}></div>
+        <div className={styles.imp3}>
+          <div className={styles.description}>
+            <img
+              className={styles.descImage}
+              src="/src/assets/img/ШуваловОПис.png"
+              alt="desc"
+            />
+          </div>
+          <div className={styles.historyElizabeth}>
+            <img src="" alt="" />
+            <img src="" alt="" />
+            <img src="" alt="" />
+            <img src="" alt="" />
+            <img src="" alt="" />
+            <img src="" alt="" />
+          </div>
+        </div>
         <div className={styles.imp4}></div>
         <div className={styles.imp5}></div>
         <div className={styles.imp6}></div>
