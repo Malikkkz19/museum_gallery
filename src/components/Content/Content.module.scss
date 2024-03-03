@@ -237,6 +237,7 @@
       }
     }
     .imgDescMap {
+      z-index: 1;
       width: 420px;
       height: 261px;
       overflow: hidden;
@@ -246,7 +247,7 @@
       border-radius: 15px;
       top: 10%;
       right: -63%;
-      opacity: 0.9;
+      opacity: 0.8;
       &:hover {
         transform: scale(1.03);
       }
@@ -283,6 +284,86 @@
     width: 945px;
     height: 650px;
     bottom: 0%;
+    .imgMordvinov {
+      width: 200px;
+      height: 262px;
+      top: 10%;
+      left: 44%;
+      cursor: pointer;
+      transition: all 250ms ease-in-out;
+      position: absolute;
+      border-radius: 15px;
+      &:hover {
+        transform: scale(1.03);
+      }
+    }
+    .imgKutuzov {
+      width: 200px;
+      height: 281px;
+      bottom: 5%;
+      left: 39%;
+      cursor: pointer;
+      transition: all 250ms ease-in-out;
+      position: absolute;
+      border-radius: 15px;
+      &:hover {
+        transform: scale(1.03);
+      }
+    }
+    .imgMichaelDesc {
+      width: 200px;
+      height: 261px;
+      top: 10%;
+      left: 70%;
+      cursor: pointer;
+      transition: all 250ms ease-in-out;
+      position: absolute;
+      border-radius: 15px;
+      &:hover {
+        transform: scale(1.03);
+      }
+    }
+    .imgShuvalovDesc {
+      width: 200px;
+      height: 281px;
+      bottom: 5%;
+      left: 63%;
+      cursor: pointer;
+      transition: all 250ms ease-in-out;
+      position: absolute;
+      border-radius: 15px;
+      &:hover {
+        transform: scale(1.03);
+      }
+    }
+    .imgVilboa {
+      z-index: 1;
+      width: 200px;
+      height: 281px;
+      bottom: 5%;
+      right: -9%;
+      cursor: pointer;
+      transition: all 250ms ease-in-out;
+      position: absolute;
+      border-radius: 15px;
+      &:hover {
+        transform: scale(1.03);
+      }
+    }
+    .imgSmoking {
+      z-index: 1;
+      width: 200px;
+      height: 261px;
+      top: 10%;
+      right: -17%;
+      cursor: pointer;
+      transition: all 250ms ease-in-out;
+      position: absolute;
+      border-radius: 15px;
+      &:hover {
+        transform: scale(1.03);
+      }
+    }
   }
 }
 .imp4 {

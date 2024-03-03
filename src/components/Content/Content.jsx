@@ -104,12 +104,36 @@ const Content = () => {
             />
           </div>
           <div className={styles.historyElizabeth}>
-            <img src="" alt="" />
-            <img src="" alt="" />
-            <img src="" alt="" />
-            <img src="" alt="" />
-            <img src="" alt="" />
-            <img src="" alt="" />
+            <img
+              className={styles.imgMordvinov}
+              src="/src/assets/img/мордвинов.png"
+              alt="Mordvinov"
+            />
+            <img
+              className={styles.imgKutuzov}
+              src="/src/assets/img/Кутузов.png"
+              alt="Kutuzov"
+            />
+            <img
+              className={styles.imgMichaelDesc}
+              src="/src/assets/img/МихаилИлларионович.png"
+              alt="Desc Michael"
+            />
+            <img
+              className={styles.imgShuvalovDesc}
+              src="/src/assets/img/Шувалов.png"
+              alt="Desc Shuvalov"
+            />
+            <img
+              className={styles.imgVilboa}
+              src="/src/assets/img/Вильбоа.png"
+              alt="Vilboa"
+            />
+            <img
+              className={styles.imgSmoking}
+              src="/src/assets/img/ФормаОдежды.png"
+              alt="Smoking"
+            />
           </div>
         </div>
         <div className={styles.imp4}></div>
