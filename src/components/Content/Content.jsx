@@ -5,7 +5,17 @@ const Content = () => {
   return (
     <div className={styles.content}>
       <div className={styles.imperators}>
-        <div className={styles.imp1}></div>
+        <div className={styles.imp1}>
+          <div className={styles.description}>
+            <img
+              height={300}
+              width={200}
+              src="/src/assets/img/раммка.png"
+              alt="desc"
+            />
+          </div>
+          <div className={styles.history}></div>
+        </div>
         <div className={styles.imp2}></div>
         <div className={styles.imp3}></div>
         <div className={styles.imp4}></div>

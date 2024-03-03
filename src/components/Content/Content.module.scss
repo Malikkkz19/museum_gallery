@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .content {
-  width: 3960px;
+  width: 7920px;
   height: 1250px;
 }
 
@@ -12,12 +12,19 @@
 }
 
 .imp1 {
+  position: relative;
   width: 691px;
   height: 1250px;
   background-image: url("/src/assets/img/Петр1.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 30% 50%;
+  background-position: center center;
+  .description {
+    position: absolute;
+    top: 20%;
+    width: 200px;
+    height: 300px;
+  }
 }
 .imp2 {
   width: 613px;
