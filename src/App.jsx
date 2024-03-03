@@ -1,17 +1,11 @@
-// import Layout from "./components/Layout/Layout";
-// import Content from "./components/Content/Content";
-
-import Home from "./pages/Home";
-import Card from "./components/Card/Card";
+import Content from "./components/Content/Content";
+import Header from "./components/Header/Header";
 
 function App() {
   return (
     <>
-      <Home />
-
-      {/* <Layout> */}
-      {/* <Content /> */}
-      {/* </Layout> */}
+      <Header />
+      <Content />
     </>
   );
 }

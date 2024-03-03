@@ -1,17 +1,18 @@
 import React from "react";
 import styles from "./Card.module.scss";
 
-const Card = () => {
+const Card = (props) => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.top}>
+        
         <div className={styles.background}>
           <div className={styles.text}>
             <span>2467.</span>
             <p>
               Указ сей, начиная с пункта 3, писан Собственноручною Его Царского
               Величества рукою с Генваря 16 по 21 Февраля 1712... Генваря 16.
-              Именный, в пунктах...{" "}
+              Именный, в пунктах...
             </p>
             <span>17.</span>
             <p>Школу Инженерную умножить,</p>

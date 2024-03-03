@@ -2,9 +2,92 @@
 @tailwind components;
 @tailwind utilities;
 
-.top {
+.content {
+  width: 3960px;
+  height: 1250px;
 }
 
-h1 {
-  font-size: 6000px;
+.imperators {
+  display: flex;
+}
+
+.imp1 {
+  width: 691px;
+  height: 1250px;
+  background-image: url("/src/assets/img/Петр1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 30% 50%;
+}
+.imp2 {
+  width: 613px;
+  height: 1250px;
+  background-image: url("/src/assets/img/имп2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.imp3 {
+  width: 945px;
+  height: 1250px;
+  background-image: url("/src/assets/img/имп3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.imp4 {
+  width: 1330px;
+  height: 1250px;
+  background-image: url("/src/assets/img/имп4.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.imp5 {
+  width: 380px;
+  height: 1250px;
+  background-image: url("/src/assets/img/имп5.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.imp6 {
+  width: 846px;
+  height: 1250px;
+  background-image: url("/src/assets/img/Император_ImgID1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.imp7 {
+  width: 1015px;
+  height: 1250px;
+  background-image: url("/src/assets/img/Император_ImgID2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.imp8 {
+  width: 880px;
+  height: 1250px;
+  background-image: url("/src/assets/img/Император_ImgID3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.imp9 {
+  width: 440px;
+  height: 1250px;
+  background-image: url("/src/assets/img/Император_ImgID4.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.imp10 {
+  width: 778px;
+  height: 1250px;
+  background-image: url("/src/assets/img/Император_ImgID5.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
