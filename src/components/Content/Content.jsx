@@ -76,7 +76,13 @@ const Content = () => {
               src="/src/assets/img/Текст.png"
               alt="Text about Ekaterina I"
             />
-            <img src="/src/assets/img/" alt="" />
+            <div className={styles.blockLomonosov}>
+              <img
+                className={styles.imgLomonosov}
+                src="/src/assets/img/Ломоносов.png"
+                alt="Lomonosov"
+              />
+            </div>
             <img src="/src/assets/img/" alt="" />
           </div>
         </div>

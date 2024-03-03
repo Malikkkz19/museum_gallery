@@ -186,17 +186,33 @@
       }
     }
     .imgText {
-      width: 220px;
-      height: 281px;
+      width: 235px;
+      height: 280px;
       overflow: hidden;
       cursor: pointer;
       transition: all 250ms ease-in-out;
       position: absolute;
       border-radius: 15px;
       bottom: 5%;
-      left: 20%;
+      left: 23%;
       &:hover {
         transform: scale(1.03);
+      }
+    }
+    .blockLomonosov {
+      .imgLomonosov {
+        width: 220px;
+        height: 281px;
+        overflow: hidden;
+        cursor: pointer;
+        transition: all 250ms ease-in-out;
+        position: absolute;
+        border-radius: 15px;
+        bottom: 5%;
+        right: -5%;
+        &:hover {
+          transform: scale(1.03);
+        }
       }
     }
   }
