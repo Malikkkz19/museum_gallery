@@ -20,10 +20,71 @@
   background-size: cover;
   background-position: center center;
   .description {
+    .descImage {
+      cursor: pointer;
+      position: absolute;
+      top: 40%;
+      left: 1%;
+      width: 200px;
+      height: 282px;
+    }
+    transition: all 250ms ease-in-out;
+    &:hover {
+      transform: scale(1.02);
+    }
     position: absolute;
-    top: 20%;
-    width: 200px;
-    height: 300px;
+    width: 691px;
+    height: 600px;
+  }
+  .history {
+    position: absolute;
+    width: 691px;
+    height: 650px;
+    bottom: 0%;
+    .imgDecree {
+      top: 10%;
+      cursor: pointer;
+      position: absolute;
+      left: 3%;
+      transition: all 250ms ease-in-out;
+      &:hover {
+        transform: scale(1.03);
+        transition: transform 250ms ease-in-out;
+      }
+    }
+    .imgBruce {
+      top: 10%;
+      left: 33%;
+      position: absolute;
+      cursor: pointer;
+      transition: all 250ms ease-in-out;
+      &:hover {
+        transform: scale(1.03);
+      }
+    }
+    .imgGun {
+      top: 10%;
+      cursor: pointer;
+      position: absolute;
+      right: 11%;
+      transition: all 250ms ease-in-out;
+      overflow: hidden;
+      width: 230px;
+      height: 254px;
+      &:hover {
+        transform: scale(1.03);
+      }
+    }
+    .imgTown {
+      cursor: pointer;
+      position: absolute;
+      bottom: 5%;
+      left: 3%;
+      transition: all 250ms ease-in-out;
+      &:hover {
+        transform: scale(1.03);
+      }
+    }
   }
 }
 .imp2 {
