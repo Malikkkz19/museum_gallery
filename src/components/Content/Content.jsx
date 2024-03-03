@@ -9,13 +9,11 @@ const Content = () => {
           <div className={styles.description}>
             <img
               className={styles.descImage}
-              height={300}
-              width={200}
               src="/src/assets/img/museum2.png"
               alt="desc"
             />
           </div>
-          <div className={styles.history}>
+          <div className={styles.historyPetr}>
             <img
               className={styles.imgDecree}
               height={150}
@@ -38,13 +36,50 @@ const Content = () => {
             <img
               className={styles.imgTown}
               height={400}
-              width={400}
+              width={395}
               src="/src/assets/img/СухареваБашня.png"
               alt="Сухарева Башня на карте"
             />
+            <img
+              className={styles.imgIng}
+              src="/src/assets/img/УказОбУчреждении.png"
+              alt="Указ об учреждении инженерной роты"
+            />
+            <img
+              className={styles.imgMinih}
+              src="/src/assets/img/Миних.png"
+              alt="Миних"
+            />
+            <img
+              className={styles.imgSveyskiy}
+              src="/src/assets/img/свейский.png"
+              alt="Свейский"
+            />
           </div>
         </div>
-        <div className={styles.imp2}></div>
+        <div className={styles.imp2}>
+          <div className={styles.description}>
+            <img
+              className={styles.descImage}
+              src="/src/assets/img/Сенатский Указ.png"
+              alt="Description about Ekaterina I"
+            />
+          </div>
+          <div className={styles.historyEkaterinaI}>
+            <img
+              className={styles.imgMap}
+              src="/src/assets/img/Карта.png"
+              alt="Карта"
+            />
+            <img
+              className={styles.imgText}
+              src="/src/assets/img/Текст.png"
+              alt="Text about Ekaterina I"
+            />
+            <img src="/src/assets/img/" alt="" />
+            <img src="/src/assets/img/" alt="" />
+          </div>
+        </div>
         <div className={styles.imp3}></div>
         <div className={styles.imp4}></div>
         <div className={styles.imp5}></div>

@@ -26,22 +26,25 @@
       top: 40%;
       left: 1%;
       width: 200px;
+      &:hover {
+        transform: scale(1.02);
+      }
       height: 282px;
+      transition: all 250ms ease-in-out;
     }
-    transition: all 250ms ease-in-out;
-    &:hover {
-      transform: scale(1.02);
-    }
+
     position: absolute;
     width: 691px;
     height: 600px;
   }
-  .history {
+  .historyPetr {
     position: absolute;
     width: 691px;
     height: 650px;
     bottom: 0%;
     .imgDecree {
+      overflow: hidden;
+      border-radius: 15px;
       top: 10%;
       cursor: pointer;
       position: absolute;
@@ -53,6 +56,8 @@
       }
     }
     .imgBruce {
+      overflow: hidden;
+      border-radius: 15px;
       top: 10%;
       left: 33%;
       position: absolute;
@@ -63,6 +68,8 @@
       }
     }
     .imgGun {
+      overflow: hidden;
+      border-radius: 15px;
       top: 10%;
       cursor: pointer;
       position: absolute;
@@ -76,6 +83,8 @@
       }
     }
     .imgTown {
+      overflow: hidden;
+      border-radius: 15px;
       cursor: pointer;
       position: absolute;
       bottom: 5%;
@@ -85,15 +94,112 @@
         transform: scale(1.03);
       }
     }
+    .imgIng {
+      width: 170px;
+      height: 280px;
+      position: absolute;
+      overflow: hidden;
+      border-radius: 15px;
+      cursor: pointer;
+      bottom: 5%;
+      right: 11%;
+      transition: all 250ms ease-in-out;
+      &:hover {
+        transform: scale(1.03);
+      }
+    }
+    .imgMinih {
+      z-index: 1;
+      width: 140px;
+      height: 261px;
+      position: absolute;
+      overflow: hidden;
+      border-radius: 15px;
+      cursor: pointer;
+      top: 10%;
+      right: -93px;
+      transition: all 250ms ease-in-out;
+      &:hover {
+        transform: scale(1.03);
+      }
+    }
+    .imgSveyskiy {
+      z-index: 1;
+      width: 140px;
+      height: 280px;
+      position: absolute;
+      overflow: hidden;
+      border-radius: 15px;
+      cursor: pointer;
+      bottom: 5%;
+      right: -93px;
+      transition: all 250ms ease-in-out;
+      &:hover {
+        transform: scale(1.03);
+      }
+    }
   }
 }
 .imp2 {
+  position: relative;
   width: 613px;
   height: 1250px;
   background-image: url("/src/assets/img/имп2.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  .description {
+    position: absolute;
+    height: 600px;
+    width: 613px;
+    .descImage {
+      cursor: pointer;
+      position: absolute;
+      top: 58%;
+      left: 1%;
+
+      width: 230px;
+      &:hover {
+        transform: scale(1.02);
+      }
+      height: 170px;
+      transition: all 250ms ease-in-out;
+    }
+  }
+  .historyEkaterinaI {
+    position: absolute;
+    width: 613px;
+    height: 650px;
+    bottom: 0%;
+    .imgMap {
+      width: 420px;
+      height: 261px;
+      overflow: hidden;
+      cursor: pointer;
+      transition: all 250ms ease-in-out;
+      position: absolute;
+      border-radius: 15px;
+      top: 10%;
+      left: 20%;
+      &:hover {
+        transform: scale(1.03);
+      }
+    }
+    .imgText {
+      width: 220px;
+      height: 281px;
+      overflow: hidden;
+      cursor: pointer;
+      transition: all 250ms ease-in-out;
+      position: absolute;
+      border-radius: 15px;
+      bottom: 5%;
+      left: 20%;
+      &:hover {
+        transform: scale(1.03);
+      }
+    }
+  }
 }
 .imp3 {
   width: 945px;
