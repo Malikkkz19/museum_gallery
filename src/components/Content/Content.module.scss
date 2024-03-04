@@ -270,6 +270,7 @@
       width: 200px;
       height: 260px;
       position: absolute;
+      border-radius: 15px;
       top: 43%;
       left: 1%;
       &:hover {
@@ -367,12 +368,53 @@
   }
 }
 .imp4 {
+  position: relative;
   width: 1330px;
   height: 1250px;
   background-image: url("/src/assets/img/имп4.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  .description {
+    width: 1330px;
+    height: 600px;
+    position: absolute;
+    .descImage1 {
+      width: 200px;
+      height: 260px;
+      position: absolute;
+      top: 45%;
+      border-radius: 15px;
+      left: 1%;
+      cursor: pointer;
+      transition: all 250ms ease-in-out;
+      &:hover {
+        transform: scale(1.03);
+      }
+    }
+    .descImage2 {
+      width: 150px;
+      height: 150px;
+    }
+    .descImage3 {
+      width: 150px;
+      height: 150px;
+    }
+  }
+  .historyEkaterinaII {
+    width: 1330px;
+    height: 650px;
+    bottom: 0%;
+    position: absolute;
+    .imgMelissino {
+      width: 150px;
+      height: 150px;
+    }
+    .imgDescMelissino {
+      width: 150px;
+      height: 150px;
+    }
+  }
 }
 .imp5 {
   width: 380px;

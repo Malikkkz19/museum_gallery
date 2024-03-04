@@ -136,7 +136,44 @@ const Content = () => {
             />
           </div>
         </div>
-        <div className={styles.imp4}></div>
+        <div className={styles.imp4}>
+          <div className={styles.description}>
+            <img
+              className={styles.descImage1}
+              src="/src/assets/img/Orlov.png"
+              alt="Description Orlov"
+            />
+            <img
+              className={styles.descImage2}
+              src="/src/assets/img/Potemkin.png"
+              alt="Description Orlov"
+            />
+            <img
+              className={styles.descImage3}
+              src="/src/assets/img/Zubov.png"
+              alt="Description Orlov"
+            />
+          </div>
+          <div className={styles.historyEkaterinaII}>
+            <img
+              className={styles.imgMelissino}
+              src="/src/assets/img/Melissino.png"
+              alt="Melissino"
+            />
+            <img
+              className={styles.imgDescMelissino}
+              src="/src/assets/img/MelissinoDesc.png"
+              alt="Desc Melissino"
+            />
+            {/* <img className={styles.} src="" alt="" />  */}
+            {/* <img className={styles.} src="" alt="" />  */}
+            {/* <img className={styles.} src="" alt="" />  */}
+            {/* <img className={styles.} src="" alt="" />  */}
+            {/* <img className={styles.} src="" alt="" />  */}
+            {/* <img className={styles.} src="" alt="" />  */}
+            {/* <img className={styles.} src="" alt="" />  */}
+          </div>
+        </div>
         <div className={styles.imp5}></div>
         <div className={styles.imp6}></div>
         <div className={styles.imp7}></div>
