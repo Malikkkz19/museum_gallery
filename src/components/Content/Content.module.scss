@@ -267,7 +267,7 @@
     width: 945px;
     height: 600px;
     .descImage {
-      width: 200px;
+      width: 190px;
       height: 260px;
       position: absolute;
       border-radius: 15px;
@@ -406,6 +406,7 @@
       }
     }
     .descImage3 {
+      z-index: 1;
       width: 185px;
       height: 260px;
       position: absolute;
@@ -613,6 +614,7 @@
       }
     }
     .imgDesc2 {
+      z-index: 1;
       width: 185px;
       height: 260px;
       position: absolute;
@@ -673,6 +675,7 @@
       }
     }
     .imgExcercirgaus {
+      z-index: 1;
       width: 190px;
       height: 261px;
       cursor: pointer;
@@ -713,6 +716,7 @@
       }
     }
     .imgSmokingAlexI {
+      z-index: 1;
       width: 190px;
       height: 281px;
       cursor: pointer;
