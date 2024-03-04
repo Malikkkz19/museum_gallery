@@ -165,17 +165,108 @@ const Content = () => {
               src="/src/assets/img/MelissinoDesc.png"
               alt="Desc Melissino"
             />
-            {/* <img className={styles.} src="" alt="" />  */}
-            {/* <img className={styles.} src="" alt="" />  */}
-            {/* <img className={styles.} src="" alt="" />  */}
-            {/* <img className={styles.} src="" alt="" />  */}
-            {/* <img className={styles.} src="" alt="" />  */}
-            {/* <img className={styles.} src="" alt="" />  */}
-            {/* <img className={styles.} src="" alt="" />  */}
+            <img
+              className={styles.imgArakcheev}
+              src="/src/assets/img/Arakcheev.png"
+              alt="Arakcheev"
+            />
+            <img
+              className={styles.imgDescArakcheev}
+              src="/src/assets/img/ArakcheevDesc.png"
+              alt="Desc Arakcheev"
+            />
+            <img
+              className={styles.imgSmoking}
+              src="/src/assets/img/SmokingPavelI.png"
+              alt="Smoking PavelI"
+            />
+            <img
+              className={styles.imgCadets}
+              src="/src/assets/img/Cadets.png"
+              alt="Cadets"
+            />
+            <img
+              className={styles.imgGreece}
+              src="/src/assets/img/Greece.png"
+              alt="Greece"
+            />
+            <img
+              className={styles.imgZnamya}
+              src="/src/assets/img/Znamya.png"
+              alt="Znamya"
+            />
+            <img
+              className={styles.imgPlan}
+              src="/src/assets/img/GeneralPlan.png"
+              alt="General Plan"
+            />
           </div>
         </div>
-        <div className={styles.imp5}></div>
-        <div className={styles.imp6}></div>
+        <div className={styles.imp5}>
+          <div className={styles.historyPavelI}>
+            <img
+              className={styles.imgPlanTown}
+              src="/src/assets/img/plantown.png"
+              alt="Plan Town"
+            />
+            <img
+              className={styles.imgEkaterinaDesc}
+              src="/src/assets/img/EkaterinaDesc.png"
+              alt="Description Ekaterina"
+            />
+          </div>
+        </div>
+        <div className={styles.imp6}>
+          <div className={styles.description}>
+            <img
+              className={styles.imgDesc1}
+              src="/src/assets/img/Konovnicin.png"
+              alt="Konovnicin"
+            />
+            <img
+              className={styles.imgDesc2}
+              src="/src/assets/img/Golenischev.png"
+              alt="Golenischev"
+            />
+          </div>
+          <div className={styles.historyAlexanderI}>
+            <img
+              className={styles.imgZubov}
+              src="/src/assets/img/Zubov.png"
+              alt="Zubov"
+            />
+            <img
+              className={styles.imgKorpus}
+              src="/src/assets/img/KorpusPavel.png"
+              alt="KorpusPavel"
+            />
+            <img
+              className={styles.imgVolont}
+              src="/src/assets/img/VolontKorpus.png"
+              alt="VolontKorpus"
+            />
+            <img
+              className={styles.imgExcercirgaus}
+              src="/src/assets/img/Excercirgaus.png"
+              alt="Excercirgaus"
+            />
+            <img
+              className={styles.imgProjectStone}
+              src="/src/assets/img/ProjectStone.png"
+              alt="ProjectStone"
+            />
+            <img
+              className={styles.imgProjectEkaterinaII}
+              src="/src/assets/img/ProjectEkatII.png"
+              alt="ProjectEkaterinaII"
+            />
+            <img
+              className={styles.imgSmokingAlexI}
+              src="/src/assets/img/SmokingAlexI.png"
+              alt="SmokingAlexI"
+            />
+          </div>
+        </div>
         <div className={styles.imp7}></div>
         <div className={styles.imp8}></div>
         <div className={styles.imp9}></div>
