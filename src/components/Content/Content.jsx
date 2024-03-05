@@ -267,8 +267,80 @@ const Content = () => {
             />
           </div>
         </div>
-        <div className={styles.imp7}></div>
-        <div className={styles.imp8}></div>
+        <div className={styles.imp7}>
+          <div className={styles.description}>
+            <img
+              className={styles.descImage}
+              src="/src/assets/img/Znamya1862.png"
+              alt="Знамя 1862 года"
+            />
+          </div>
+          <div className={styles.historyNikolayI}>
+            <img
+              className={styles.imgSmokingNikolayI}
+              src="/src/assets/img/SmokingNikolayI.png"
+              alt="Форма одежды при Николае I"
+            />
+            <img
+              className={styles.imgCadetKorpus}
+              src="/src/assets/img/Desc2Cadet.png"
+              alt="Description 2 Cadet "
+            />
+            <img
+              className={styles.imgMendeleev}
+              src="/src/assets/img/Mendeleev.png"
+              alt="Mendeleev"
+            />
+            <img
+              className={styles.imgDobrolyubov}
+              src="/src/assets/img/Dobrolyubov.png"
+              alt="Dobrolyubov"
+            />
+            <img
+              className={styles.imgChernishevskiy}
+              src="/src/assets/img/Chernishevskiy.png"
+              alt="Chernishevskiy"
+            />
+            <img
+              className={styles.imgGeneralPlan2}
+              src="/src/assets/img/GeneralPlan2.png"
+              alt="GeneralPlan2"
+            />
+            <img
+              className={styles.imgZnamya1844}
+              src="/src/assets/img/Znamya1844.png"
+              alt="Znamya1844"
+            />
+            <img
+              className={styles.imgGeneralPlan1858}
+              src="/src/assets/img/GeneralPlan1858.png"
+              alt="GeneralPlan1858"
+            />
+          </div>
+        </div>
+        <div className={styles.imp8}>
+          <div className={styles.historyAlexanderII}>
+            <img
+              className={styles.imgAttestat}
+              src="/src/assets/img/Attestat.png"
+              alt="Attestat"
+            />
+            <img
+              className={styles.imgSmokingAlexII}
+              src="/src/assets/img/SmokingAlexanderII.png"
+              alt="SmokingAlexanderII"
+            />
+            <img
+              className={styles.img1863}
+              src="/src/assets/img/Desc2.png"
+              alt="Decs1863"
+            />
+            {/* <img className={styles.} src="/src/assets/img/" alt="" /> */}
+            {/* <img className={styles.} src="/src/assets/img/" alt="" /> */}
+            {/* <img className={styles.} src="/src/assets/img/" alt="" /> */}
+            {/* <img className={styles.} src="/src/assets/img/" alt="" /> */}
+          </div>
+        </div>
         <div className={styles.imp9}></div>
         <div className={styles.imp10}></div>
       </div>
