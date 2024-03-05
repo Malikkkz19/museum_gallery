@@ -114,6 +114,7 @@ const Content = () => {
               src="/src/assets/img/Кутузов.png"
               alt="Kutuzov"
             />
+
             <img
               className={styles.imgMichaelDesc}
               src="/src/assets/img/МихаилИлларионович.png"
@@ -335,14 +336,66 @@ const Content = () => {
               src="/src/assets/img/Desc2.png"
               alt="Decs1863"
             />
-            {/* <img className={styles.} src="/src/assets/img/" alt="" /> */}
-            {/* <img className={styles.} src="/src/assets/img/" alt="" /> */}
-            {/* <img className={styles.} src="/src/assets/img/" alt="" /> */}
-            {/* <img className={styles.} src="/src/assets/img/" alt="" /> */}
+            <img
+              className={styles.imgCadets1887}
+              src="/src/assets/img/Cadets1887.png"
+              alt="Cadets1887"
+            />
+            <img
+              className={styles.imgDesctoPlan}
+              src="/src/assets/img/DesctoPlan.png"
+              alt="DesctoPlan"
+            />
+            <img
+              className={styles.imgChurchNevskiy}
+              src="/src/assets/img/ChurchNevskiy.png"
+              alt="ChurchNevskiy"
+            />
+            <img
+              className={styles.imgSoyuzov}
+              src="/src/assets/img/Soyuzov.png"
+              alt="Soyuzov"
+            />
           </div>
         </div>
-        <div className={styles.imp9}></div>
-        <div className={styles.imp10}></div>
+        <div className={styles.imp9}>
+          <div className={styles.historyAlexanderIII}>
+            <img
+              className={styles.imgMordovin}
+              src="/src/assets/img/Mordovin.png"
+              alt="Mordovin"
+            />
+            <img
+              className={styles.imgAltarNevskiy}
+              src="/src/assets/img/AltarNevskiy.png"
+              alt="AltarNevskiy"
+            />
+          </div>
+        </div>
+        <div className={styles.imp10}>
+          <div className={styles.historyNikolayII}>
+            <img
+              className={styles.imgMoleben}
+              src="/src/assets/img/Moleben.png"
+              alt="Moleben"
+            />
+            <img
+              className={styles.imgNikolayII}
+              src="/src/assets/img/NikolayII.png"
+              alt="NikolayII"
+            />
+            <img
+              className={styles.imgBirthdayCadet}
+              src="/src/assets/img/BirthdayCadet.png"
+              alt="BirthdayCadet"
+            />
+            <img
+              className={styles.imgGramota}
+              src="/src/assets/img/Gramota.png"
+              alt="Gramota"
+            />
+          </div>
+        </div>
       </div>
     </div>
   );

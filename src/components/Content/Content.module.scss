@@ -216,6 +216,7 @@
         transform: scale(1.03);
       }
       .imgLomonosov {
+        z-index: 1;
         width: 220px;
         height: 281px;
         overflow: hidden;
@@ -230,6 +231,7 @@
         }
       }
       .imgTextLomonosov {
+        z-index: 1;
         cursor: pointer;
         width: 220px;
         height: 95px;
@@ -318,6 +320,7 @@
         transform: scale(1.03);
       }
     }
+
     .imgMichaelDesc {
       width: 200px;
       height: 261px;
@@ -882,7 +885,7 @@
       cursor: pointer;
       position: absolute;
       bottom: 5%;
-      right: -11%;
+      right: -10%;
       border-radius: 15px;
       transition: all 250ms ease-in-out;
       &:hover {
@@ -934,9 +937,78 @@
         transform: scale(1.03);
       }
     }
+    .img1863 {
+      width: 190px;
+      height: 261px;
+      cursor: pointer;
+      position: absolute;
+      top: 10%;
+      right: 11%;
+      border-radius: 15px;
+      transition: all 250ms ease-in-out;
+      &:hover {
+        transform: scale(1.03);
+      }
+    }
+    .imgCadets1887 {
+      border: 1px solid #948e8e;
+      z-index: 1;
+      width: 190px;
+      height: 261px;
+      cursor: pointer;
+      position: absolute;
+      top: 10%;
+      right: -14%;
+      border-radius: 15px;
+      transition: all 250ms ease-in-out;
+      &:hover {
+        transform: scale(1.03);
+      }
+    }
+    .imgDesctoPlan {
+      width: 190px;
+      height: 281px;
+      cursor: pointer;
+      position: absolute;
+      bottom: 5%;
+      left: 14%;
+      border-radius: 15px;
+      transition: all 250ms ease-in-out;
+      &:hover {
+        transform: scale(1.03);
+      }
+    }
+    .imgChurchNevskiy {
+      width: 410px;
+      height: 281px;
+      cursor: pointer;
+      position: absolute;
+      bottom: 5%;
+      left: 38%;
+      border-radius: 15px;
+      transition: all 250ms ease-in-out;
+      &:hover {
+        transform: scale(1.03);
+      }
+    }
+    .imgSoyuzov {
+      z-index: 1;
+      width: 200px;
+      height: 281px;
+      cursor: pointer;
+      position: absolute;
+      bottom: 5%;
+      right: -11%;
+      border-radius: 15px;
+      transition: all 250ms ease-in-out;
+      &:hover {
+        transform: scale(1.03);
+      }
+    }
   }
 }
 .imp9 {
+  position: relative;
   border-top: 2px solid #e4c03e;
   border-right: 2px solid #e4c03e;
   border-bottom: 2px solid #e4c03e;
@@ -946,8 +1018,43 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  .historyAlexanderIII {
+    width: 440px;
+    height: 650px;
+    bottom: 0%;
+    position: absolute;
+    .imgMordovin {
+      z-index: 1;
+      width: 420px;
+      height: 261px;
+      cursor: pointer;
+      position: absolute;
+      top: 10%;
+      left: 35%;
+      border-radius: 15px;
+      transition: all 250ms ease-in-out;
+      &:hover {
+        transform: scale(1.03);
+      }
+    }
+    .imgAltarNevskiy {
+      z-index: 1;
+      width: 420px;
+      height: 281px;
+      cursor: pointer;
+      position: absolute;
+      bottom: 5%;
+      left: 29%;
+      border-radius: 15px;
+      transition: all 250ms ease-in-out;
+      &:hover {
+        transform: scale(1.03);
+      }
+    }
+  }
 }
 .imp10 {
+  position: relative;
   border-top: 2px solid #e4c03e;
   border-right: 2px solid #e4c03e;
   border-bottom: 2px solid #e4c03e;
@@ -957,4 +1064,62 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  .historyNikolayII {
+    position: absolute;
+    width: 778px;
+    height: 650px;
+    bottom: 0%;
+    .imgMoleben {
+      width: 310px;
+      height: 221px;
+      cursor: pointer;
+      position: absolute;
+      top: 16.4%;
+      left: 19%;
+      border-radius: 15px;
+      transition: all 250ms ease-in-out;
+      &:hover {
+        transform: scale(1.03);
+      }
+    }
+    .imgNikolayII {
+      width: 300px;
+      height: 221px;
+      cursor: pointer;
+      position: absolute;
+      top: 16.4%;
+      left: 60%;
+      border-radius: 15px;
+      transition: all 250ms ease-in-out;
+      &:hover {
+        transform: scale(1.03);
+      }
+    }
+    .imgBirthdayCadet {
+      width: 400px;
+      height: 281px;
+      cursor: pointer;
+      position: absolute;
+      bottom: 5%;
+      left: 17%;
+      border-radius: 15px;
+      transition: all 250ms ease-in-out;
+      &:hover {
+        transform: scale(1.03);
+      }
+    }
+    .imgGramota {
+      width: 210px;
+      height: 281px;
+      cursor: pointer;
+      position: absolute;
+      bottom: 5%;
+      right: 2%;
+      border-radius: 15px;
+      transition: all 250ms ease-in-out;
+      &:hover {
+        transform: scale(1.03);
+      }
+    }
+  }
 }
