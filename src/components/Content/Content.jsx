@@ -1,17 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./Content.module.scss";
+import Modal from "../Modal/Modal";
 
 const Content = () => {
+  const [modalActive, setModalActive] = useState(false);
+  const [position, setPosition] = useState();
   return (
     <div className={styles.content}>
       <div className={styles.imperators}>
         <div className={styles.imp1}>
           <div className={styles.description}>
             <img
+              onClick={() => setModalActive(true)}
               className={styles.descImage}
               src="/src/assets/img/museum2.png"
               alt="desc"
             />
+            <Modal active={modalActive} setActive={setModalActive}>
+              <div className={styles.modal}>
+                <img
+                  className={styles.imgModal}
+                  src="/src/assets/img/Ramka.png"
+                  alt="modal ramka"
+                />
+                <div className={styles.textModal}></div>
+              </div>
+            </Modal>
           </div>
           <div className={styles.historyPetr}>
             <img
