@@ -4,14 +4,26 @@ import Modal from "../Modal/Modal";
 
 const Content = () => {
   const [modalActive, setModalActive] = useState(false);
-  const [position, setPosition] = useState();
+  const [selected, setSelected] = useState(null);
+
+  const handleItemClick = (item) => {
+    setSelected(item);
+    setModalActive(true);
+  };
+
   return (
     <div className={styles.content}>
       <div className={styles.imperators}>
         <div className={styles.imp1}>
           <div className={styles.description}>
             <img
-              onClick={() => setModalActive(true)}
+              id="Petr1"
+              onClick={() =>
+                handleItemClick({
+                  name: "Петр I",
+                  image: "/src/assets/img/museum2.png",
+                })
+              }
               className={styles.descImage}
               src="/src/assets/img/museum2.png"
               alt="desc"
@@ -20,15 +32,20 @@ const Content = () => {
               <div className={styles.modal}>
                 <img
                   className={styles.imgModal}
-                  src="/src/assets/img/Ramka.png"
-                  alt="modal ramka"
+                  src={selected.image}
+                  alt={selected.name}
                 />
-                <div className={styles.textModal}></div>
               </div>
             </Modal>
           </div>
           <div className={styles.historyPetr}>
             <img
+              onClick={() =>
+                handleItemClick({
+                  name: "",
+                  image: "/src/assets/img/УказПетра1.png",
+                })
+              }
               className={styles.imgDecree}
               height={150}
               width={180}
@@ -36,6 +53,12 @@ const Content = () => {
               alt="decree"
             />
             <img
+              onClick={() =>
+                handleItemClick({
+                  name: "",
+                  image: "/src/assets/img/Брюс.png",
+                })
+              }
               height={150}
               width={126}
               className={styles.imgBruce}
@@ -43,11 +66,23 @@ const Content = () => {
               alt="Bruce"
             />
             <img
+              onClick={() =>
+                handleItemClick({
+                  name: "",
+                  image: "/src/assets/img/Пушечно-линейныйДвор.png",
+                })
+              }
               className={styles.imgGun}
               src="/src/assets/img/Пушечно-линейныйДвор.png"
               alt="Пушечно-линейный двор"
             />
             <img
+              onClick={() =>
+                handleItemClick({
+                  name: "",
+                  image: "/src/assets/img/СухареваБашня.png",
+                })
+              }
               className={styles.imgTown}
               height={400}
               width={395}
@@ -55,16 +90,34 @@ const Content = () => {
               alt="Сухарева Башня на карте"
             />
             <img
+              onClick={() =>
+                handleItemClick({
+                  name: "",
+                  image: "/src/assets/img/УказОбУчреждении.png",
+                })
+              }
               className={styles.imgIng}
               src="/src/assets/img/УказОбУчреждении.png"
               alt="Указ об учреждении инженерной роты"
             />
             <img
+              onClick={() =>
+                handleItemClick({
+                  name: "",
+                  image: "/src/assets/img/Миних.png",
+                })
+              }
               className={styles.imgMinih}
               src="/src/assets/img/Миних.png"
               alt="Миних"
             />
             <img
+              onClick={() =>
+                handleItemClick({
+                  name: "",
+                  image: "/src/assets/img/свейский.png",
+                })
+              }
               className={styles.imgSveyskiy}
               src="/src/assets/img/свейский.png"
               alt="Свейский"
