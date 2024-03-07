@@ -5,12 +5,14 @@ import Modal from "../Modal/Modal";
 const Content = () => {
   const [modalActive, setModalActive] = useState(false);
   const [selected, setSelected] = useState(null);
-  const [x, setX] = useState(0);
-  const [y, setY] = useState(0);
+  // const [x, setX] = useState(0);
+  // const [y, setY] = useState(0);
 
   const handleItemClick = (item) => {
     setSelected(item);
     setModalActive(true);
+    // setX(e.clientX);
+    // setY(e.clientY);
   };
 
   return (
@@ -34,9 +36,11 @@ const Content = () => {
               <div className={styles.modal}>
                 {selected && (
                   <img
-                    className={styles.imgModal}
-                    src={selected.image}
-                    alt={selected.name}
+                    className={`${styles.imgModal} ${
+                      selected ? styles.imgModalActive : ""
+                    }`}
+                    src={selected?.image}
+                    alt={selected?.name}
                   />
                 )}
               </div>
