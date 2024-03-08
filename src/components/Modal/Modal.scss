@@ -23,10 +23,11 @@
   z-index: 2;
   padding: 40px 30px;
   border-radius: 12px;
-  background-color: #e8e5e5;
+  border: 3px solid #e8b769;
+  background-color: #eeecda;
   opacity: 0;
   transition: all 250ms ease-in-out;
-  transform: translate(-23%, -7%);
+
   .button_close {
     cursor: pointer;
     width: 27px;

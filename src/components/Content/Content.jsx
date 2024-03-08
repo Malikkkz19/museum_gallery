@@ -5,14 +5,13 @@ import Modal from "../Modal/Modal";
 const Content = () => {
   const [modalActive, setModalActive] = useState(false);
   const [selected, setSelected] = useState(null);
-  // const [x, setX] = useState(0);
-  // const [y, setY] = useState(0);
+  const [width, setWidth] = useState(0);
+  const [height, setHeight] = useState(0);
 
-  const handleItemClick = (item) => {
+  const handleItemClick = (item, width) => {
     setSelected(item);
+    setWidth(width);
     setModalActive(true);
-    // setX(e.clientX);
-    // setY(e.clientY);
   };
 
   return (
@@ -23,10 +22,13 @@ const Content = () => {
             <img
               id="Petr1"
               onClick={() =>
-                handleItemClick({
-                  name: "Петр I",
-                  image: "/src/assets/img/museum2.png",
-                })
+                handleItemClick(
+                  {
+                    name: "Петр I",
+                    image: "/src/assets/img/museum2.png",
+                  },
+                  380
+                )
               }
               className={styles.descImage}
               src="/src/assets/img/museum2.png"
@@ -41,9 +43,11 @@ const Content = () => {
                     }`}
                     src={selected?.image}
                     alt={selected?.name}
+                    style={{ width: width }}
                   />
                 )}
               </div>
+              {console.log(width)}
             </Modal>
           </div>
           <div className={styles.historyPetr}>
