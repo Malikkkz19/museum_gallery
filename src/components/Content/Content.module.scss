@@ -34,16 +34,15 @@
       transition: all 250ms ease-in-out;
     }
     .modal {
-      position: relative;
       width: 1000px;
       height: 900px;
+      display: flex;
+      justify-content: center;
+      align-items: start;
+
       .imgModal {
         border: 2px solid #ffffff;
-        position: absolute;
-        top: 3%;
-        left: 12%;
         border-radius: 12px;
-
         transition: transform 250ms ease-in-out;
         &:hover {
           transform: scale(1.02);
