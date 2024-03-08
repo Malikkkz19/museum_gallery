@@ -6,7 +6,6 @@ const Content = () => {
   const [modalActive, setModalActive] = useState(false);
   const [selected, setSelected] = useState(null);
   const [width, setWidth] = useState(0);
-  const [height, setHeight] = useState(0);
 
   const handleItemClick = (item, width) => {
     setSelected(item);
@@ -250,10 +249,13 @@ const Content = () => {
           <div className={styles.description}>
             <img
               onClick={() =>
-                handleItemClick({
-                  name: "",
-                  image: "/src/assets/img/ШуваловОПис.png",
-                })
+                handleItemClick(
+                  {
+                    name: "",
+                    image: "/src/assets/img/ШуваловОПис.png",
+                  },
+                  500
+                )
               }
               className={styles.descImage}
               src="/src/assets/img/ШуваловОПис.png"
@@ -263,10 +265,13 @@ const Content = () => {
           <div className={styles.historyElizabeth}>
             <img
               onClick={() =>
-                handleItemClick({
-                  name: "",
-                  image: "/src/assets/img/мордвинов.png",
-                })
+                handleItemClick(
+                  {
+                    name: "",
+                    image: "/src/assets/img/мордвинов.png",
+                  },
+                  300
+                )
               }
               className={styles.imgMordvinov}
               src="/src/assets/img/мордвинов.png"
@@ -274,10 +279,13 @@ const Content = () => {
             />
             <img
               onClick={() =>
-                handleItemClick({
-                  name: "",
-                  image: "/src/assets/img/Кутузов.png",
-                })
+                handleItemClick(
+                  {
+                    name: "",
+                    image: "/src/assets/img/Кутузов.png",
+                  },
+                  450
+                )
               }
               className={styles.imgKutuzov}
               src="/src/assets/img/Кутузов.png"
@@ -286,10 +294,13 @@ const Content = () => {
 
             <img
               onClick={() =>
-                handleItemClick({
-                  name: "",
-                  image: "/src/assets/img/МихаилИлларионович.png",
-                })
+                handleItemClick(
+                  {
+                    name: "",
+                    image: "/src/assets/img/МихаилИлларионович.png",
+                  },
+                  500
+                )
               }
               className={styles.imgMichaelDesc}
               src="/src/assets/img/МихаилИлларионович.png"
@@ -297,10 +308,13 @@ const Content = () => {
             />
             <img
               onClick={() =>
-                handleItemClick({
-                  name: "",
-                  image: "/src/assets/img/Шувалов.png",
-                })
+                handleItemClick(
+                  {
+                    name: "",
+                    image: "/src/assets/img/Шувалов.png",
+                  },
+                  450
+                )
               }
               className={styles.imgShuvalovDesc}
               src="/src/assets/img/Шувалов.png"
@@ -308,10 +322,13 @@ const Content = () => {
             />
             <img
               onClick={() =>
-                handleItemClick({
-                  name: "",
-                  image: "/src/assets/img/Вильбоа.png",
-                })
+                handleItemClick(
+                  {
+                    name: "",
+                    image: "/src/assets/img/Вильбоа.png",
+                  },
+                  400
+                )
               }
               className={styles.imgVilboa}
               src="/src/assets/img/Вильбоа.png"
@@ -319,10 +336,13 @@ const Content = () => {
             />
             <img
               onClick={() =>
-                handleItemClick({
-                  name: "",
-                  image: "/src/assets/img/ФормаОдежды.png",
-                })
+                handleItemClick(
+                  {
+                    name: "",
+                    image: "/src/assets/img/ФормаОдежды.png",
+                  },
+                  450
+                )
               }
               className={styles.imgSmoking}
               src="/src/assets/img/ФормаОдежды.png"
@@ -334,10 +354,13 @@ const Content = () => {
           <div className={styles.description}>
             <img
               onClick={() =>
-                handleItemClick({
-                  name: "",
-                  image: "/src/assets/img/Orlov.png",
-                })
+                handleItemClick(
+                  {
+                    name: "",
+                    image: "/src/assets/img/Orlov.png",
+                  },
+                  400
+                )
               }
               className={styles.descImage1}
               src="/src/assets/img/Orlov.png"
@@ -345,10 +368,13 @@ const Content = () => {
             />
             <img
               onClick={() =>
-                handleItemClick({
-                  name: "",
-                  image: "/src/assets/img/Potemkin.png",
-                })
+                handleItemClick(
+                  {
+                    name: "",
+                    image: "/src/assets/img/Potemkin.png",
+                  },
+                  400
+                )
               }
               className={styles.descImage2}
               src="/src/assets/img/Potemkin.png"
@@ -356,10 +382,13 @@ const Content = () => {
             />
             <img
               onClick={() =>
-                handleItemClick({
-                  name: "",
-                  image: "/src/assets/img/Zubov.png",
-                })
+                handleItemClick(
+                  {
+                    name: "",
+                    image: "/src/assets/img/Zubov.png",
+                  },
+                  400
+                )
               }
               className={styles.descImage3}
               src="/src/assets/img/Zubov.png"
@@ -369,10 +398,13 @@ const Content = () => {
           <div className={styles.historyEkaterinaII}>
             <img
               onClick={() =>
-                handleItemClick({
-                  name: "",
-                  image: "/src/assets/img/Melissino.png",
-                })
+                handleItemClick(
+                  {
+                    name: "",
+                    image: "/src/assets/img/Melissino.png",
+                  },
+                  400
+                )
               }
               className={styles.imgMelissino}
               src="/src/assets/img/Melissino.png"
@@ -380,10 +412,13 @@ const Content = () => {
             />
             <img
               onClick={() =>
-                handleItemClick({
-                  name: "",
-                  image: "/src/assets/img/MelissinoDesc.png",
-                })
+                handleItemClick(
+                  {
+                    name: "",
+                    image: "/src/assets/img/MelissinoDesc.png",
+                  },
+                  400
+                )
               }
               className={styles.imgDescMelissino}
               src="/src/assets/img/MelissinoDesc.png"
@@ -391,10 +426,13 @@ const Content = () => {
             />
             <img
               onClick={() =>
-                handleItemClick({
-                  name: "",
-                  image: "/src/assets/img/Arakcheev.png",
-                })
+                handleItemClick(
+                  {
+                    name: "",
+                    image: "/src/assets/img/Arakcheev.png",
+                  },
+                  400
+                )
               }
               className={styles.imgArakcheev}
               src="/src/assets/img/Arakcheev.png"
@@ -402,10 +440,13 @@ const Content = () => {
             />
             <img
               onClick={() =>
-                handleItemClick({
-                  name: "",
-                  image: "/src/assets/img/ArakcheevDesc.png",
-                })
+                handleItemClick(
+                  {
+                    name: "",
+                    image: "/src/assets/img/ArakcheevDesc.png",
+                  },
+                  400
+                )
               }
               className={styles.imgDescArakcheev}
               src="/src/assets/img/ArakcheevDesc.png"
@@ -413,10 +454,13 @@ const Content = () => {
             />
             <img
               onClick={() =>
-                handleItemClick({
-                  name: "",
-                  image: "/src/assets/img/SmokingPavelI.png",
-                })
+                handleItemClick(
+                  {
+                    name: "",
+                    image: "/src/assets/img/SmokingPavelI.png",
+                  },
+                  500
+                )
               }
               className={styles.imgSmoking}
               src="/src/assets/img/SmokingPavelI.png"
@@ -424,10 +468,13 @@ const Content = () => {
             />
             <img
               onClick={() =>
-                handleItemClick({
-                  name: "",
-                  image: "/src/assets/img/Cadets.png",
-                })
+                handleItemClick(
+                  {
+                    name: "",
+                    image: "/src/assets/img/Cadets.png",
+                  },
+                  400
+                )
               }
               className={styles.imgCadets}
               src="/src/assets/img/Cadets.png"
@@ -435,10 +482,13 @@ const Content = () => {
             />
             <img
               onClick={() =>
-                handleItemClick({
-                  name: "",
-                  image: "/src/assets/img/Greece.png",
-                })
+                handleItemClick(
+                  {
+                    name: "",
+                    image: "/src/assets/img/Greece.png",
+                  },
+                  600
+                )
               }
               className={styles.imgGreece}
               src="/src/assets/img/Greece.png"
@@ -446,10 +496,13 @@ const Content = () => {
             />
             <img
               onClick={() =>
-                handleItemClick({
-                  name: "",
-                  image: "/src/assets/img/Znamya.png",
-                })
+                handleItemClick(
+                  {
+                    name: "",
+                    image: "/src/assets/img/Znamya.png",
+                  },
+                  400
+                )
               }
               className={styles.imgZnamya}
               src="/src/assets/img/Znamya.png"
@@ -457,10 +510,13 @@ const Content = () => {
             />
             <img
               onClick={() =>
-                handleItemClick({
-                  name: "",
-                  image: "/src/assets/img/GeneralPlan.png",
-                })
+                handleItemClick(
+                  {
+                    name: "",
+                    image: "/src/assets/img/GeneralPlan.png",
+                  },
+                  800
+                )
               }
               className={styles.imgPlan}
               src="/src/assets/img/GeneralPlan.png"
@@ -472,10 +528,13 @@ const Content = () => {
           <div className={styles.historyPavelI}>
             <img
               onClick={() =>
-                handleItemClick({
-                  name: "",
-                  image: "/src/assets/img/plantown.png",
-                })
+                handleItemClick(
+                  {
+                    name: "",
+                    image: "/src/assets/img/plantown.png",
+                  },
+                  700
+                )
               }
               className={styles.imgPlanTown}
               src="/src/assets/img/plantown.png"
@@ -483,10 +542,13 @@ const Content = () => {
             />
             <img
               onClick={() =>
-                handleItemClick({
-                  name: "",
-                  image: "/src/assets/img/EkaterinaDesc.png",
-                })
+                handleItemClick(
+                  {
+                    name: "",
+                    image: "/src/assets/img/EkaterinaDesc.png",
+                  },
+                  400
+                )
               }
               className={styles.imgEkaterinaDesc}
               src="/src/assets/img/EkaterinaDesc.png"
@@ -498,10 +560,13 @@ const Content = () => {
           <div className={styles.description}>
             <img
               onClick={() =>
-                handleItemClick({
-                  name: "",
-                  image: "/src/assets/img/Konovnicin.png",
-                })
+                handleItemClick(
+                  {
+                    name: "",
+                    image: "/src/assets/img/Konovnicin.png",
+                  },
+                  400
+                )
               }
               className={styles.imgDesc1}
               src="/src/assets/img/Konovnicin.png"
@@ -509,10 +574,13 @@ const Content = () => {
             />
             <img
               onClick={() =>
-                handleItemClick({
-                  name: "",
-                  image: "/src/assets/img/Golenischev.png",
-                })
+                handleItemClick(
+                  {
+                    name: "",
+                    image: "/src/assets/img/Golenischev.png",
+                  },
+                  400
+                )
               }
               className={styles.imgDesc2}
               src="/src/assets/img/Golenischev.png"
@@ -522,10 +590,13 @@ const Content = () => {
           <div className={styles.historyAlexanderI}>
             <img
               onClick={() =>
-                handleItemClick({
-                  name: "",
-                  image: "/src/assets/img/Zubov.png",
-                })
+                handleItemClick(
+                  {
+                    name: "",
+                    image: "/src/assets/img/Zubov.png",
+                  },
+                  400
+                )
               }
               className={styles.imgZubov}
               src="/src/assets/img/Zubov.png"
@@ -533,10 +604,13 @@ const Content = () => {
             />
             <img
               onClick={() =>
-                handleItemClick({
-                  name: "",
-                  image: "/src/assets/img/KorpusPavel.png",
-                })
+                handleItemClick(
+                  {
+                    name: "",
+                    image: "/src/assets/img/KorpusPavel.png",
+                  },
+                  400
+                )
               }
               className={styles.imgKorpus}
               src="/src/assets/img/KorpusPavel.png"
@@ -544,10 +618,13 @@ const Content = () => {
             />
             <img
               onClick={() =>
-                handleItemClick({
-                  name: "",
-                  image: "/src/assets/img/VolontKorpus.png",
-                })
+                handleItemClick(
+                  {
+                    name: "",
+                    image: "/src/assets/img/VolontKorpus.png",
+                  },
+                  400
+                )
               }
               className={styles.imgVolont}
               src="/src/assets/img/VolontKorpus.png"
@@ -555,10 +632,13 @@ const Content = () => {
             />
             <img
               onClick={() =>
-                handleItemClick({
-                  name: "",
-                  image: "/src/assets/img/Excercirgaus.png",
-                })
+                handleItemClick(
+                  {
+                    name: "",
+                    image: "/src/assets/img/Excercirgaus.png",
+                  },
+                  400
+                )
               }
               className={styles.imgExcercirgaus}
               src="/src/assets/img/Excercirgaus.png"
@@ -566,10 +646,13 @@ const Content = () => {
             />
             <img
               onClick={() =>
-                handleItemClick({
-                  name: "",
-                  image: "/src/assets/img/ProjectStone.png",
-                })
+                handleItemClick(
+                  {
+                    name: "",
+                    image: "/src/assets/img/ProjectStone.png",
+                  },
+                  800
+                )
               }
               className={styles.imgProjectStone}
               src="/src/assets/img/ProjectStone.png"
@@ -577,10 +660,13 @@ const Content = () => {
             />
             <img
               onClick={() =>
-                handleItemClick({
-                  name: "",
-                  image: "/src/assets/img/ProjectEkatII.png",
-                })
+                handleItemClick(
+                  {
+                    name: "",
+                    image: "/src/assets/img/ProjectEkatII.png",
+                  },
+                  400
+                )
               }
               className={styles.imgProjectEkaterinaII}
               src="/src/assets/img/ProjectEkatII.png"
@@ -588,10 +674,13 @@ const Content = () => {
             />
             <img
               onClick={() =>
-                handleItemClick({
-                  name: "",
-                  image: "/src/assets/img/SmokingAlexI.png",
-                })
+                handleItemClick(
+                  {
+                    name: "",
+                    image: "/src/assets/img/SmokingAlexI.png",
+                  },
+                  400
+                )
               }
               className={styles.imgSmokingAlexI}
               src="/src/assets/img/SmokingAlexI.png"
@@ -603,10 +692,13 @@ const Content = () => {
           <div className={styles.description}>
             <img
               onClick={() =>
-                handleItemClick({
-                  name: "",
-                  image: "/src/assets/img/Znamya1862.png",
-                })
+                handleItemClick(
+                  {
+                    name: "",
+                    image: "/src/assets/img/Znamya1862.png",
+                  },
+                  400
+                )
               }
               className={styles.descImage}
               src="/src/assets/img/Znamya1862.png"
@@ -616,10 +708,13 @@ const Content = () => {
           <div className={styles.historyNikolayI}>
             <img
               onClick={() =>
-                handleItemClick({
-                  name: "",
-                  image: "/src/assets/img/SmokingNikolayI.png",
-                })
+                handleItemClick(
+                  {
+                    name: "",
+                    image: "/src/assets/img/SmokingNikolayI.png",
+                  },
+                  400
+                )
               }
               className={styles.imgSmokingNikolayI}
               src="/src/assets/img/SmokingNikolayI.png"
@@ -627,10 +722,13 @@ const Content = () => {
             />
             <img
               onClick={() =>
-                handleItemClick({
-                  name: "",
-                  image: "/src/assets/img/Desc2Cadet.png",
-                })
+                handleItemClick(
+                  {
+                    name: "",
+                    image: "/src/assets/img/Desc2Cadet.png",
+                  },
+                  400
+                )
               }
               className={styles.imgCadetKorpus}
               src="/src/assets/img/Desc2Cadet.png"
@@ -638,10 +736,13 @@ const Content = () => {
             />
             <img
               onClick={() =>
-                handleItemClick({
-                  name: "",
-                  image: "/src/assets/img/Mendeleev.png",
-                })
+                handleItemClick(
+                  {
+                    name: "",
+                    image: "/src/assets/img/Mendeleev.png",
+                  },
+                  400
+                )
               }
               className={styles.imgMendeleev}
               src="/src/assets/img/Mendeleev.png"
@@ -649,10 +750,13 @@ const Content = () => {
             />
             <img
               onClick={() =>
-                handleItemClick({
-                  name: "",
-                  image: "/src/assets/img/Dobrolyubov.png",
-                })
+                handleItemClick(
+                  {
+                    name: "",
+                    image: "/src/assets/img/Dobrolyubov.png",
+                  },
+                  400
+                )
               }
               className={styles.imgDobrolyubov}
               src="/src/assets/img/Dobrolyubov.png"
@@ -660,10 +764,13 @@ const Content = () => {
             />
             <img
               onClick={() =>
-                handleItemClick({
-                  name: "",
-                  image: "/src/assets/img/Chernishevskiy.png",
-                })
+                handleItemClick(
+                  {
+                    name: "",
+                    image: "/src/assets/img/Chernishevskiy.png",
+                  },
+                  400
+                )
               }
               className={styles.imgChernishevskiy}
               src="/src/assets/img/Chernishevskiy.png"
@@ -671,10 +778,13 @@ const Content = () => {
             />
             <img
               onClick={() =>
-                handleItemClick({
-                  name: "",
-                  image: "/src/assets/img/GeneralPlan2.png",
-                })
+                handleItemClick(
+                  {
+                    name: "",
+                    image: "/src/assets/img/GeneralPlan2.png",
+                  },
+                  800
+                )
               }
               className={styles.imgGeneralPlan2}
               src="/src/assets/img/GeneralPlan2.png"
@@ -682,10 +792,13 @@ const Content = () => {
             />
             <img
               onClick={() =>
-                handleItemClick({
-                  name: "",
-                  image: "/src/assets/img/Znamya1844.png",
-                })
+                handleItemClick(
+                  {
+                    name: "",
+                    image: "/src/assets/img/Znamya1844.png",
+                  },
+                  400
+                )
               }
               className={styles.imgZnamya1844}
               src="/src/assets/img/Znamya1844.png"
@@ -693,10 +806,13 @@ const Content = () => {
             />
             <img
               onClick={() =>
-                handleItemClick({
-                  name: "",
-                  image: "/src/assets/img/GeneralPlan1858.png",
-                })
+                handleItemClick(
+                  {
+                    name: "",
+                    image: "/src/assets/img/GeneralPlan1858.png",
+                  },
+                  800
+                )
               }
               className={styles.imgGeneralPlan1858}
               src="/src/assets/img/GeneralPlan1858.png"
@@ -708,10 +824,13 @@ const Content = () => {
           <div className={styles.historyAlexanderII}>
             <img
               onClick={() =>
-                handleItemClick({
-                  name: "",
-                  image: "/src/assets/img/Attestat.png",
-                })
+                handleItemClick(
+                  {
+                    name: "",
+                    image: "/src/assets/img/Attestat.png",
+                  },
+                  400
+                )
               }
               className={styles.imgAttestat}
               src="/src/assets/img/Attestat.png"
@@ -719,10 +838,13 @@ const Content = () => {
             />
             <img
               onClick={() =>
-                handleItemClick({
-                  name: "",
-                  image: "/src/assets/img/SmokingAlexanderII.png",
-                })
+                handleItemClick(
+                  {
+                    name: "",
+                    image: "/src/assets/img/SmokingAlexanderII.png",
+                  },
+                  400
+                )
               }
               className={styles.imgSmokingAlexII}
               src="/src/assets/img/SmokingAlexanderII.png"
@@ -730,10 +852,13 @@ const Content = () => {
             />
             <img
               onClick={() =>
-                handleItemClick({
-                  name: "",
-                  image: "/src/assets/img/Desc2.png",
-                })
+                handleItemClick(
+                  {
+                    name: "",
+                    image: "/src/assets/img/Desc2.png",
+                  },
+                  400
+                )
               }
               className={styles.img1863}
               src="/src/assets/img/Desc2.png"
@@ -741,10 +866,13 @@ const Content = () => {
             />
             <img
               onClick={() =>
-                handleItemClick({
-                  name: "",
-                  image: "/src/assets/img/Cadets1887.png",
-                })
+                handleItemClick(
+                  {
+                    name: "",
+                    image: "/src/assets/img/Cadets1887.png",
+                  },
+                  400
+                )
               }
               className={styles.imgCadets1887}
               src="/src/assets/img/Cadets1887.png"
@@ -752,10 +880,13 @@ const Content = () => {
             />
             <img
               onClick={() =>
-                handleItemClick({
-                  name: "",
-                  image: "/src/assets/img/DesctoPlan.png",
-                })
+                handleItemClick(
+                  {
+                    name: "",
+                    image: "/src/assets/img/DesctoPlan.png",
+                  },
+                  400
+                )
               }
               className={styles.imgDesctoPlan}
               src="/src/assets/img/DesctoPlan.png"
@@ -763,10 +894,13 @@ const Content = () => {
             />
             <img
               onClick={() =>
-                handleItemClick({
-                  name: "",
-                  image: "/src/assets/img/ChurchNevskiy.png",
-                })
+                handleItemClick(
+                  {
+                    name: "",
+                    image: "/src/assets/img/ChurchNevskiy.png",
+                  },
+                  800
+                )
               }
               className={styles.imgChurchNevskiy}
               src="/src/assets/img/ChurchNevskiy.png"
@@ -774,10 +908,13 @@ const Content = () => {
             />
             <img
               onClick={() =>
-                handleItemClick({
-                  name: "",
-                  image: "/src/assets/img/Soyuzov.png",
-                })
+                handleItemClick(
+                  {
+                    name: "",
+                    image: "/src/assets/img/Soyuzov.png",
+                  },
+                  400
+                )
               }
               className={styles.imgSoyuzov}
               src="/src/assets/img/Soyuzov.png"
@@ -789,10 +926,13 @@ const Content = () => {
           <div className={styles.historyAlexanderIII}>
             <img
               onClick={() =>
-                handleItemClick({
-                  name: "",
-                  image: "/src/assets/img/Mordovin.png",
-                })
+                handleItemClick(
+                  {
+                    name: "",
+                    image: "/src/assets/img/Mordovin.png",
+                  },
+                  800
+                )
               }
               className={styles.imgMordovin}
               src="/src/assets/img/Mordovin.png"
@@ -800,10 +940,13 @@ const Content = () => {
             />
             <img
               onClick={() =>
-                handleItemClick({
-                  name: "",
-                  image: "/src/assets/img/AltarNevskiy.png",
-                })
+                handleItemClick(
+                  {
+                    name: "",
+                    image: "/src/assets/img/AltarNevskiy.png",
+                  },
+                  800
+                )
               }
               className={styles.imgAltarNevskiy}
               src="/src/assets/img/AltarNevskiy.png"
@@ -815,10 +958,13 @@ const Content = () => {
           <div className={styles.historyNikolayII}>
             <img
               onClick={() =>
-                handleItemClick({
-                  name: "",
-                  image: "/src/assets/img/Moleben.png",
-                })
+                handleItemClick(
+                  {
+                    name: "",
+                    image: "/src/assets/img/Moleben.png",
+                  },
+                  600
+                )
               }
               className={styles.imgMoleben}
               src="/src/assets/img/Moleben.png"
@@ -826,10 +972,13 @@ const Content = () => {
             />
             <img
               onClick={() =>
-                handleItemClick({
-                  name: "",
-                  image: "/src/assets/img/NikolayII.png",
-                })
+                handleItemClick(
+                  {
+                    name: "",
+                    image: "/src/assets/img/NikolayII.png",
+                  },
+                  600
+                )
               }
               className={styles.imgNikolayII}
               src="/src/assets/img/NikolayII.png"
@@ -837,10 +986,13 @@ const Content = () => {
             />
             <img
               onClick={() =>
-                handleItemClick({
-                  name: "",
-                  image: "/src/assets/img/BirthdayCadet.png",
-                })
+                handleItemClick(
+                  {
+                    name: "",
+                    image: "/src/assets/img/BirthdayCadet.png",
+                  },
+                  750
+                )
               }
               className={styles.imgBirthdayCadet}
               src="/src/assets/img/BirthdayCadet.png"
@@ -848,10 +1000,13 @@ const Content = () => {
             />
             <img
               onClick={() =>
-                handleItemClick({
-                  name: "",
-                  image: "/src/assets/img/Gramota.png",
-                })
+                handleItemClick(
+                  {
+                    name: "",
+                    image: "/src/assets/img/Gramota.png",
+                  },
+                  500
+                )
               }
               className={styles.imgGramota}
               src="/src/assets/img/Gramota.png"
