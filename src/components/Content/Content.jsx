@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./Content.module.scss";
 import Modal from "../Modal/Modal";
 
@@ -6,12 +6,15 @@ const Content = () => {
   const [modalActive, setModalActive] = useState(false);
   const [selected, setSelected] = useState(null);
   const [width, setWidth] = useState(0);
+  const [position, setPosition] = useState({ left: 0 });
 
-  const handleItemClick = (item, width) => {
+  const handleItemClick = (item, width, left) => {
+    setPosition(left);
     setSelected(item);
     setWidth(width);
     setModalActive(true);
   };
+  console.log(position);
 
   return (
     <div className={styles.content}>
@@ -26,14 +29,19 @@ const Content = () => {
                     name: "Петр I",
                     image: "/src/assets/img/museum2.png",
                   },
-                  380
+                  380,
+                  100
                 )
               }
               className={styles.descImage}
               src="/src/assets/img/museum2.png"
               alt="desc"
             />
-            <Modal active={modalActive} setActive={setModalActive}>
+            <Modal
+              active={modalActive}
+              setActive={setModalActive}
+              position={position}
+            >
               <div className={styles.modal}>
                 {selected && (
                   <img
@@ -42,7 +50,9 @@ const Content = () => {
                     }`}
                     src={selected?.image}
                     alt={selected?.name}
-                    style={{ width: width }}
+                    style={{
+                      width: width,
+                    }}
                   />
                 )}
               </div>
@@ -57,7 +67,8 @@ const Content = () => {
                     name: "",
                     image: "/src/assets/img/УказПетра1.png",
                   },
-                  450
+                  450,
+                  100
                 )
               }
               className={styles.imgDecree}
@@ -431,7 +442,8 @@ const Content = () => {
                     name: "",
                     image: "/src/assets/img/Arakcheev.png",
                   },
-                  400
+                  400,
+                  2000
                 )
               }
               className={styles.imgArakcheev}
@@ -445,7 +457,8 @@ const Content = () => {
                     name: "",
                     image: "/src/assets/img/ArakcheevDesc.png",
                   },
-                  400
+                  400,
+                  2100
                 )
               }
               className={styles.imgDescArakcheev}
@@ -459,7 +472,8 @@ const Content = () => {
                     name: "",
                     image: "/src/assets/img/SmokingPavelI.png",
                   },
-                  500
+                  500,
+                  2100
                 )
               }
               className={styles.imgSmoking}
