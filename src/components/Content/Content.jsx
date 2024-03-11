@@ -130,7 +130,8 @@ const Content = () => {
                     name: "",
                     image: "/src/assets/img/УказОбУчреждении.png",
                   },
-                  400
+                  400,
+                  -250
                 )
               }
               className={styles.imgIng}
@@ -144,7 +145,8 @@ const Content = () => {
                     name: "",
                     image: "/src/assets/img/Миних.png",
                   },
-                  400
+                  400,
+                  -150
                 )
               }
               className={styles.imgMinih}
@@ -158,7 +160,8 @@ const Content = () => {
                     name: "",
                     image: "/src/assets/img/свейский.png",
                   },
-                  400
+                  400,
+                  -150
                 )
               }
               className={styles.imgSveyskiy}
@@ -176,7 +179,8 @@ const Content = () => {
                     name: "",
                     image: "/src/assets/img/Сенатский Указ.png",
                   },
-                  700
+                  700,
+                  50
                 )
               }
               className={styles.descImage}
@@ -192,7 +196,8 @@ const Content = () => {
                     name: "",
                     image: "/src/assets/img/Карта.png",
                   },
-                  900
+                  900,
+                  150
                 )
               }
               className={styles.imgMap}
@@ -206,7 +211,8 @@ const Content = () => {
                     name: "",
                     image: "/src/assets/img/Текст.png",
                   },
-                  500
+                  500,
+                  100
                 )
               }
               className={styles.imgText}
@@ -221,7 +227,8 @@ const Content = () => {
                       name: "",
                       image: "/src/assets/img/Ломоносов.png",
                     },
-                    500
+                    500,
+                    400
                   )
                 }
                 className={styles.imgLomonosov}
@@ -230,10 +237,14 @@ const Content = () => {
               />
               <img
                 onClick={() =>
-                  handleItemClick({
-                    name: "",
-                    image: "/src/assets/img/LomonosovText.png",
-                  })
+                  handleItemClick(
+                    {
+                      name: "",
+                      image: "/src/assets/img/LomonosovText.png",
+                    },
+                    500,
+                    500
+                  )
                 }
                 className={styles.imgTextLomonosov}
                 src="/src/assets/img/LomonosovText.png"
@@ -247,7 +258,8 @@ const Content = () => {
                     name: "",
                     image: "/src/assets/img/описаниекарты.png",
                   },
-                  880
+                  880,
+                  650
                 )
               }
               className={styles.imgDescMap}
@@ -265,7 +277,8 @@ const Content = () => {
                     name: "",
                     image: "/src/assets/img/ШуваловОПис.png",
                   },
-                  500
+                  500,
+                  600
                 )
               }
               className={styles.descImage}
@@ -281,7 +294,8 @@ const Content = () => {
                     name: "",
                     image: "/src/assets/img/мордвинов.png",
                   },
-                  300
+                  300,
+                  950
                 )
               }
               className={styles.imgMordvinov}
@@ -295,7 +309,8 @@ const Content = () => {
                     name: "",
                     image: "/src/assets/img/Кутузов.png",
                   },
-                  450
+                  450,
+                  950
                 )
               }
               className={styles.imgKutuzov}
@@ -310,7 +325,8 @@ const Content = () => {
                     name: "",
                     image: "/src/assets/img/МихаилИлларионович.png",
                   },
-                  500
+                  500,
+                  1200
                 )
               }
               className={styles.imgMichaelDesc}
@@ -324,7 +340,8 @@ const Content = () => {
                     name: "",
                     image: "/src/assets/img/Шувалов.png",
                   },
-                  450
+                  450,
+                  1200
                 )
               }
               className={styles.imgShuvalovDesc}
@@ -338,7 +355,8 @@ const Content = () => {
                     name: "",
                     image: "/src/assets/img/Вильбоа.png",
                   },
-                  400
+                  400,
+                  1450
                 )
               }
               className={styles.imgVilboa}
@@ -352,7 +370,8 @@ const Content = () => {
                     name: "",
                     image: "/src/assets/img/ФормаОдежды.png",
                   },
-                  450
+                  450,
+                  1500
                 )
               }
               className={styles.imgSmoking}
@@ -370,7 +389,8 @@ const Content = () => {
                     name: "",
                     image: "/src/assets/img/Orlov.png",
                   },
-                  400
+                  400,
+                  1500
                 )
               }
               className={styles.descImage1}
@@ -384,7 +404,8 @@ const Content = () => {
                     name: "",
                     image: "/src/assets/img/Potemkin.png",
                   },
-                  400
+                  400,
+                  2500
                 )
               }
               className={styles.descImage2}
@@ -398,7 +419,8 @@ const Content = () => {
                     name: "",
                     image: "/src/assets/img/Zubov.png",
                   },
-                  400
+                  400,
+                  2700
                 )
               }
               className={styles.descImage3}
@@ -414,7 +436,8 @@ const Content = () => {
                     name: "",
                     image: "/src/assets/img/Melissino.png",
                   },
-                  400
+                  400,
+                  1700
                 )
               }
               className={styles.imgMelissino}
@@ -428,7 +451,8 @@ const Content = () => {
                     name: "",
                     image: "/src/assets/img/MelissinoDesc.png",
                   },
-                  400
+                  400,
+                  2000
                 )
               }
               className={styles.imgDescMelissino}
@@ -443,7 +467,7 @@ const Content = () => {
                     image: "/src/assets/img/Arakcheev.png",
                   },
                   400,
-                  2000
+                  2200
                 )
               }
               className={styles.imgArakcheev}
@@ -458,7 +482,7 @@ const Content = () => {
                     image: "/src/assets/img/ArakcheevDesc.png",
                   },
                   400,
-                  2100
+                  2400
                 )
               }
               className={styles.imgDescArakcheev}
@@ -473,7 +497,7 @@ const Content = () => {
                     image: "/src/assets/img/SmokingPavelI.png",
                   },
                   500,
-                  2100
+                  2650
                 )
               }
               className={styles.imgSmoking}
@@ -487,7 +511,8 @@ const Content = () => {
                     name: "",
                     image: "/src/assets/img/Cadets.png",
                   },
-                  400
+                  400,
+                  1650
                 )
               }
               className={styles.imgCadets}
@@ -501,7 +526,8 @@ const Content = () => {
                     name: "",
                     image: "/src/assets/img/Greece.png",
                   },
-                  600
+                  600,
+                  2000
                 )
               }
               className={styles.imgGreece}
@@ -515,7 +541,8 @@ const Content = () => {
                     name: "",
                     image: "/src/assets/img/Znamya.png",
                   },
-                  400
+                  400,
+                  2250
                 )
               }
               className={styles.imgZnamya}
@@ -529,7 +556,8 @@ const Content = () => {
                     name: "",
                     image: "/src/assets/img/GeneralPlan.png",
                   },
-                  800
+                  800,
+                  2600
                 )
               }
               className={styles.imgPlan}
@@ -547,7 +575,8 @@ const Content = () => {
                     name: "",
                     image: "/src/assets/img/plantown.png",
                   },
-                  700
+                  700,
+                  2950
                 )
               }
               className={styles.imgPlanTown}
@@ -561,7 +590,8 @@ const Content = () => {
                     name: "",
                     image: "/src/assets/img/EkaterinaDesc.png",
                   },
-                  400
+                  400,
+                  3000
                 )
               }
               className={styles.imgEkaterinaDesc}
@@ -579,7 +609,8 @@ const Content = () => {
                     name: "",
                     image: "/src/assets/img/Konovnicin.png",
                   },
-                  400
+                  400,
+                  3300
                 )
               }
               className={styles.imgDesc1}
@@ -593,7 +624,8 @@ const Content = () => {
                     name: "",
                     image: "/src/assets/img/Golenischev.png",
                   },
-                  400
+                  400,
+                  4000
                 )
               }
               className={styles.imgDesc2}
@@ -609,7 +641,8 @@ const Content = () => {
                     name: "",
                     image: "/src/assets/img/Zubov.png",
                   },
-                  400
+                  400,
+                  3300
                 )
               }
               className={styles.imgZubov}
@@ -623,7 +656,8 @@ const Content = () => {
                     name: "",
                     image: "/src/assets/img/KorpusPavel.png",
                   },
-                  400
+                  400,
+                  3500
                 )
               }
               className={styles.imgKorpus}
@@ -637,7 +671,8 @@ const Content = () => {
                     name: "",
                     image: "/src/assets/img/VolontKorpus.png",
                   },
-                  400
+                  400,
+                  3700
                 )
               }
               className={styles.imgVolont}
@@ -651,7 +686,8 @@ const Content = () => {
                     name: "",
                     image: "/src/assets/img/Excercirgaus.png",
                   },
-                  400
+                  400,
+                  3900
                 )
               }
               className={styles.imgExcercirgaus}
@@ -665,7 +701,8 @@ const Content = () => {
                     name: "",
                     image: "/src/assets/img/ProjectStone.png",
                   },
-                  800
+                  800,
+                  3400
                 )
               }
               className={styles.imgProjectStone}
@@ -679,7 +716,8 @@ const Content = () => {
                     name: "",
                     image: "/src/assets/img/ProjectEkatII.png",
                   },
-                  400
+                  400,
+                  3700
                 )
               }
               className={styles.imgProjectEkaterinaII}
@@ -693,7 +731,8 @@ const Content = () => {
                     name: "",
                     image: "/src/assets/img/SmokingAlexI.png",
                   },
-                  400
+                  400,
+                  3900
                 )
               }
               className={styles.imgSmokingAlexI}
@@ -711,7 +750,8 @@ const Content = () => {
                     name: "",
                     image: "/src/assets/img/Znamya1862.png",
                   },
-                  400
+                  400,
+                  5000
                 )
               }
               className={styles.descImage}
@@ -727,7 +767,8 @@ const Content = () => {
                     name: "",
                     image: "/src/assets/img/SmokingNikolayI.png",
                   },
-                  400
+                  400,
+                  4100
                 )
               }
               className={styles.imgSmokingNikolayI}
@@ -741,7 +782,8 @@ const Content = () => {
                     name: "",
                     image: "/src/assets/img/Desc2Cadet.png",
                   },
-                  400
+                  400,
+                  4300
                 )
               }
               className={styles.imgCadetKorpus}
@@ -755,7 +797,8 @@ const Content = () => {
                     name: "",
                     image: "/src/assets/img/Mendeleev.png",
                   },
-                  400
+                  400,
+                  4600
                 )
               }
               className={styles.imgMendeleev}
@@ -769,7 +812,8 @@ const Content = () => {
                     name: "",
                     image: "/src/assets/img/Dobrolyubov.png",
                   },
-                  400
+                  400,
+                  4800
                 )
               }
               className={styles.imgDobrolyubov}
@@ -783,7 +827,8 @@ const Content = () => {
                     name: "",
                     image: "/src/assets/img/Chernishevskiy.png",
                   },
-                  400
+                  400,
+                  5000
                 )
               }
               className={styles.imgChernishevskiy}
@@ -797,7 +842,8 @@ const Content = () => {
                     name: "",
                     image: "/src/assets/img/GeneralPlan2.png",
                   },
-                  800
+                  800,
+                  4300
                 )
               }
               className={styles.imgGeneralPlan2}
@@ -811,7 +857,8 @@ const Content = () => {
                     name: "",
                     image: "/src/assets/img/Znamya1844.png",
                   },
-                  400
+                  400,
+                  4500
                 )
               }
               className={styles.imgZnamya1844}
@@ -825,7 +872,8 @@ const Content = () => {
                     name: "",
                     image: "/src/assets/img/GeneralPlan1858.png",
                   },
-                  800
+                  800,
+                  4900
                 )
               }
               className={styles.imgGeneralPlan1858}
@@ -843,7 +891,8 @@ const Content = () => {
                     name: "",
                     image: "/src/assets/img/Attestat.png",
                   },
-                  400
+                  400,
+                  5600
                 )
               }
               className={styles.imgAttestat}
@@ -857,7 +906,8 @@ const Content = () => {
                     name: "",
                     image: "/src/assets/img/SmokingAlexanderII.png",
                   },
-                  400
+                  400,
+                  5500
                 )
               }
               className={styles.imgSmokingAlexII}
@@ -871,7 +921,8 @@ const Content = () => {
                     name: "",
                     image: "/src/assets/img/Desc2.png",
                   },
-                  400
+                  400,
+                  5800
                 )
               }
               className={styles.img1863}
@@ -885,7 +936,8 @@ const Content = () => {
                     name: "",
                     image: "/src/assets/img/Cadets1887.png",
                   },
-                  400
+                  400,
+                  5900
                 )
               }
               className={styles.imgCadets1887}
@@ -899,7 +951,8 @@ const Content = () => {
                     name: "",
                     image: "/src/assets/img/DesctoPlan.png",
                   },
-                  400
+                  400,
+                  5300
                 )
               }
               className={styles.imgDesctoPlan}
@@ -913,7 +966,8 @@ const Content = () => {
                     name: "",
                     image: "/src/assets/img/ChurchNevskiy.png",
                   },
-                  800
+                  800,
+                  5500
                 )
               }
               className={styles.imgChurchNevskiy}
@@ -927,7 +981,8 @@ const Content = () => {
                     name: "",
                     image: "/src/assets/img/Soyuzov.png",
                   },
-                  400
+                  400,
+                  5900
                 )
               }
               className={styles.imgSoyuzov}
@@ -945,7 +1000,8 @@ const Content = () => {
                     name: "",
                     image: "/src/assets/img/Mordovin.png",
                   },
-                  800
+                  800,
+                  6000
                 )
               }
               className={styles.imgMordovin}
@@ -959,7 +1015,8 @@ const Content = () => {
                     name: "",
                     image: "/src/assets/img/AltarNevskiy.png",
                   },
-                  800
+                  800,
+                  6000
                 )
               }
               className={styles.imgAltarNevskiy}
@@ -977,7 +1034,8 @@ const Content = () => {
                     name: "",
                     image: "/src/assets/img/Moleben.png",
                   },
-                  600
+                  600,
+                  6200
                 )
               }
               className={styles.imgMoleben}
@@ -991,7 +1049,8 @@ const Content = () => {
                     name: "",
                     image: "/src/assets/img/NikolayII.png",
                   },
-                  600
+                  600,
+                  6200
                 )
               }
               className={styles.imgNikolayII}
@@ -1005,7 +1064,8 @@ const Content = () => {
                     name: "",
                     image: "/src/assets/img/BirthdayCadet.png",
                   },
-                  750
+                  750,
+                  6200
                 )
               }
               className={styles.imgBirthdayCadet}
@@ -1019,7 +1079,8 @@ const Content = () => {
                     name: "",
                     image: "/src/assets/img/Gramota.png",
                   },
-                  500
+                  500,
+                  6200
                 )
               }
               className={styles.imgGramota}
