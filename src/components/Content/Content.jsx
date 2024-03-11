@@ -30,7 +30,7 @@ const Content = () => {
                     image: "/src/assets/img/museum2.png",
                   },
                   380,
-                  100
+                  -100
                 )
               }
               className={styles.descImage}
@@ -68,7 +68,7 @@ const Content = () => {
                     image: "/src/assets/img/УказПетра1.png",
                   },
                   450,
-                  100
+                  -100
                 )
               }
               className={styles.imgDecree}
@@ -84,7 +84,8 @@ const Content = () => {
                     name: "",
                     image: "/src/assets/img/Брюс.png",
                   },
-                  300
+                  300,
+                  -100
                 )
               }
               height={150}
@@ -100,7 +101,8 @@ const Content = () => {
                     name: "",
                     image: "/src/assets/img/Пушечно-линейныйДвор.png",
                   },
-                  800
+                  800,
+                  -100
                 )
               }
               className={styles.imgGun}
@@ -114,7 +116,8 @@ const Content = () => {
                     name: "",
                     image: "/src/assets/img/СухареваБашня.png",
                   },
-                  800
+                  800,
+                  -100
                 )
               }
               className={styles.imgTown}
