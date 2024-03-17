@@ -7,14 +7,16 @@ const Content = () => {
   const [selected, setSelected] = useState(null);
   const [width, setWidth] = useState(0);
   const [position, setPosition] = useState({ left: 0 });
+  const [sizeModal, setSizeModal] = useState(0);
 
-  const handleItemClick = (item, width, left) => {
+  const handleItemClick = (item, width, left, sizeModal) => {
     setPosition(left);
     setSelected(item);
     setWidth(width);
     setModalActive(true);
+    setSizeModal(sizeModal);
   };
-
+  console.log(sizeModal);
   return (
     <div className={styles.content}>
       <div className={styles.imperators}>
@@ -45,7 +47,7 @@ const Content = () => {
                 setActive={setModalActive}
                 position={position}
               >
-                <div className={styles.modal}>
+                <div className={styles.modal} style={{ width: sizeModal }}>
                   {selected.map((imageData) => (
                     <img
                       className={`${styles.imgModal} ${
@@ -212,7 +214,7 @@ const Content = () => {
           </div>
           <div className={styles.historyEkaterinaI}>
             <img
-              onClick={() =>
+              onClick={() => {
                 handleItemClick(
                   [
                     {
@@ -235,9 +237,10 @@ const Content = () => {
                     },
                   ],
                   900,
-                  150
-                )
-              }
+                  1300,
+                  3700
+                );
+              }}
               className={styles.imgMap}
               src="/src/assets/img/Карта.png"
               alt="Карта"
