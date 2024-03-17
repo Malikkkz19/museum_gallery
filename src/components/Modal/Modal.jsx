@@ -9,7 +9,9 @@ const Modal = ({ active, setActive, children, position }) => {
     <div
       className={active ? "modal active" : "modal"}
       onClick={() => setActive(false)}
-      style={{ left: position + "px" }}
+      style={{
+        left: position + "px",
+      }}
     >
       <div
         className={active ? "content active" : "content"}

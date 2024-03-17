@@ -14,7 +14,6 @@ const Content = () => {
     setWidth(width);
     setModalActive(true);
   };
-  console.log(position);
 
   return (
     <div className={styles.content}>
@@ -25,10 +24,12 @@ const Content = () => {
               id="Petr1"
               onClick={() =>
                 handleItemClick(
-                  {
-                    name: "Петр I",
-                    image: "/src/assets/img/museum2.png",
-                  },
+                  [
+                    {
+                      name: "Петр I",
+                      image: "/src/assets/img/museum2.png",
+                    },
+                  ],
                   380,
                   -100
                 )
@@ -37,36 +38,40 @@ const Content = () => {
               src="/src/assets/img/museum2.png"
               alt="desc"
             />
-            <Modal
-              active={modalActive}
-              setActive={setModalActive}
-              position={position}
-            >
-              <div className={styles.modal}>
-                {selected && (
-                  <img
-                    className={`${styles.imgModal} ${
-                      selected ? styles.imgModalActive : ""
-                    }`}
-                    src={selected?.image}
-                    alt={selected?.name}
-                    style={{
-                      width: width,
-                    }}
-                  />
-                )}
-              </div>
-              {console.log(width)}
-            </Modal>
+
+            {selected && (
+              <Modal
+                active={modalActive}
+                setActive={setModalActive}
+                position={position}
+              >
+                <div className={styles.modal}>
+                  {selected.map((imageData) => (
+                    <img
+                      className={`${styles.imgModal} ${
+                        imageData ? styles.imgModalActive : ""
+                      }`}
+                      src={imageData.image}
+                      alt="x"
+                      style={{
+                        width: width,
+                      }}
+                    />
+                  ))}
+                </div>
+              </Modal>
+            )}
           </div>
           <div className={styles.historyPetr}>
             <img
               onClick={() =>
                 handleItemClick(
-                  {
-                    name: "",
-                    image: "/src/assets/img/УказПетра1.png",
-                  },
+                  [
+                    {
+                      name: "",
+                      image: "/src/assets/img/УказПетра1.png",
+                    },
+                  ],
                   450,
                   -100
                 )
@@ -80,10 +85,12 @@ const Content = () => {
             <img
               onClick={() =>
                 handleItemClick(
-                  {
-                    name: "",
-                    image: "/src/assets/img/Брюс.png",
-                  },
+                  [
+                    {
+                      name: "",
+                      image: "/src/assets/img/Брюс.png",
+                    },
+                  ],
                   300,
                   -100
                 )
@@ -97,10 +104,12 @@ const Content = () => {
             <img
               onClick={() =>
                 handleItemClick(
-                  {
-                    name: "",
-                    image: "/src/assets/img/Пушечно-линейныйДвор.png",
-                  },
+                  [
+                    {
+                      name: "",
+                      image: "/src/assets/img/Пушечно-линейныйДвор.png",
+                    },
+                  ],
                   800,
                   -100
                 )
@@ -112,10 +121,12 @@ const Content = () => {
             <img
               onClick={() =>
                 handleItemClick(
-                  {
-                    name: "",
-                    image: "/src/assets/img/СухареваБашня.png",
-                  },
+                  [
+                    {
+                      name: "",
+                      image: "/src/assets/img/СухареваБашня.png",
+                    },
+                  ],
                   800,
                   -100
                 )
@@ -129,10 +140,12 @@ const Content = () => {
             <img
               onClick={() =>
                 handleItemClick(
-                  {
-                    name: "",
-                    image: "/src/assets/img/УказОбУчреждении.png",
-                  },
+                  [
+                    {
+                      name: "",
+                      image: "/src/assets/img/УказОбУчреждении.png",
+                    },
+                  ],
                   400,
                   -250
                 )
@@ -144,10 +157,12 @@ const Content = () => {
             <img
               onClick={() =>
                 handleItemClick(
-                  {
-                    name: "",
-                    image: "/src/assets/img/Миних.png",
-                  },
+                  [
+                    {
+                      name: "",
+                      image: "/src/assets/img/Миних.png",
+                    },
+                  ],
                   400,
                   -150
                 )
@@ -159,10 +174,12 @@ const Content = () => {
             <img
               onClick={() =>
                 handleItemClick(
-                  {
-                    name: "",
-                    image: "/src/assets/img/свейский.png",
-                  },
+                  [
+                    {
+                      name: "",
+                      image: "/src/assets/img/свейский.png",
+                    },
+                  ],
                   400,
                   -150
                 )
@@ -178,10 +195,12 @@ const Content = () => {
             <img
               onClick={() =>
                 handleItemClick(
-                  {
-                    name: "",
-                    image: "/src/assets/img/Сенатский Указ.png",
-                  },
+                  [
+                    {
+                      name: "",
+                      image: "/src/assets/img/Сенатский Указ.png",
+                    },
+                  ],
                   700,
                   50
                 )
@@ -195,10 +214,26 @@ const Content = () => {
             <img
               onClick={() =>
                 handleItemClick(
-                  {
-                    name: "",
-                    image: "/src/assets/img/Карта.png",
-                  },
+                  [
+                    {
+                      id: 1,
+                      image: "/src/assets/img/SPb_1756.jpg",
+                    },
+
+                    {
+                      id: 2,
+                      image: "/src/assets/img/SPb_1777.jpg",
+                    },
+
+                    {
+                      id: 3,
+                      image: "/src/assets/img/spb_1868.jpg",
+                    },
+                    {
+                      id: 4,
+                      image: "/src/assets/img/Карта.png",
+                    },
+                  ],
                   900,
                   150
                 )
@@ -207,13 +242,16 @@ const Content = () => {
               src="/src/assets/img/Карта.png"
               alt="Карта"
             />
+
             <img
               onClick={() =>
                 handleItemClick(
-                  {
-                    name: "",
-                    image: "/src/assets/img/Текст.png",
-                  },
+                  [
+                    {
+                      name: "",
+                      image: "/src/assets/img/Текст.png",
+                    },
+                  ],
                   500,
                   100
                 )
@@ -226,10 +264,12 @@ const Content = () => {
               <img
                 onClick={() =>
                   handleItemClick(
-                    {
-                      name: "",
-                      image: "/src/assets/img/Ломоносов.png",
-                    },
+                    [
+                      {
+                        name: "",
+                        image: "/src/assets/img/Ломоносов.png",
+                      },
+                    ],
                     500,
                     400
                   )
@@ -241,10 +281,12 @@ const Content = () => {
               <img
                 onClick={() =>
                   handleItemClick(
-                    {
-                      name: "",
-                      image: "/src/assets/img/LomonosovText.png",
-                    },
+                    [
+                      {
+                        name: "",
+                        image: "/src/assets/img/LomonosovText.png",
+                      },
+                    ],
                     500,
                     500
                   )
@@ -257,10 +299,12 @@ const Content = () => {
             <img
               onClick={() =>
                 handleItemClick(
-                  {
-                    name: "",
-                    image: "/src/assets/img/описаниекарты.png",
-                  },
+                  [
+                    {
+                      name: "",
+                      image: "/src/assets/img/описаниекарты.png",
+                    },
+                  ],
                   880,
                   650
                 )
@@ -276,10 +320,12 @@ const Content = () => {
             <img
               onClick={() =>
                 handleItemClick(
-                  {
-                    name: "",
-                    image: "/src/assets/img/ШуваловОПис.png",
-                  },
+                  [
+                    {
+                      name: "",
+                      image: "/src/assets/img/ШуваловОПис.png",
+                    },
+                  ],
                   500,
                   600
                 )
@@ -293,10 +339,12 @@ const Content = () => {
             <img
               onClick={() =>
                 handleItemClick(
-                  {
-                    name: "",
-                    image: "/src/assets/img/мордвинов.png",
-                  },
+                  [
+                    {
+                      name: "",
+                      image: "/src/assets/img/мордвинов.png",
+                    },
+                  ],
                   300,
                   950
                 )
@@ -308,10 +356,12 @@ const Content = () => {
             <img
               onClick={() =>
                 handleItemClick(
-                  {
-                    name: "",
-                    image: "/src/assets/img/Кутузов.png",
-                  },
+                  [
+                    {
+                      name: "",
+                      image: "/src/assets/img/Кутузов.png",
+                    },
+                  ],
                   450,
                   950
                 )
@@ -324,10 +374,12 @@ const Content = () => {
             <img
               onClick={() =>
                 handleItemClick(
-                  {
-                    name: "",
-                    image: "/src/assets/img/МихаилИлларионович.png",
-                  },
+                  [
+                    {
+                      name: "",
+                      image: "/src/assets/img/МихаилИлларионович.png",
+                    },
+                  ],
                   500,
                   1200
                 )
@@ -339,10 +391,12 @@ const Content = () => {
             <img
               onClick={() =>
                 handleItemClick(
-                  {
-                    name: "",
-                    image: "/src/assets/img/Шувалов.png",
-                  },
+                  [
+                    {
+                      name: "",
+                      image: "/src/assets/img/Шувалов.png",
+                    },
+                  ],
                   450,
                   1200
                 )
@@ -354,10 +408,12 @@ const Content = () => {
             <img
               onClick={() =>
                 handleItemClick(
-                  {
-                    name: "",
-                    image: "/src/assets/img/Вильбоа.png",
-                  },
+                  [
+                    {
+                      name: "",
+                      image: "/src/assets/img/Вильбоа.png",
+                    },
+                  ],
                   400,
                   1450
                 )
@@ -369,10 +425,12 @@ const Content = () => {
             <img
               onClick={() =>
                 handleItemClick(
-                  {
-                    name: "",
-                    image: "/src/assets/img/ФормаОдежды.png",
-                  },
+                  [
+                    {
+                      name: "",
+                      image: "/src/assets/img/ФормаОдежды.png",
+                    },
+                  ],
                   450,
                   1500
                 )
@@ -388,10 +446,12 @@ const Content = () => {
             <img
               onClick={() =>
                 handleItemClick(
-                  {
-                    name: "",
-                    image: "/src/assets/img/Orlov.png",
-                  },
+                  [
+                    {
+                      name: "",
+                      image: "/src/assets/img/Orlov.png",
+                    },
+                  ],
                   400,
                   1500
                 )
@@ -403,10 +463,12 @@ const Content = () => {
             <img
               onClick={() =>
                 handleItemClick(
-                  {
-                    name: "",
-                    image: "/src/assets/img/Potemkin.png",
-                  },
+                  [
+                    {
+                      name: "",
+                      image: "/src/assets/img/Potemkin.png",
+                    },
+                  ],
                   400,
                   2500
                 )
@@ -418,10 +480,12 @@ const Content = () => {
             <img
               onClick={() =>
                 handleItemClick(
-                  {
-                    name: "",
-                    image: "/src/assets/img/Zubov.png",
-                  },
+                  [
+                    {
+                      name: "",
+                      image: "/src/assets/img/Zubov.png",
+                    },
+                  ],
                   400,
                   2700
                 )
@@ -435,10 +499,12 @@ const Content = () => {
             <img
               onClick={() =>
                 handleItemClick(
-                  {
-                    name: "",
-                    image: "/src/assets/img/Melissino.png",
-                  },
+                  [
+                    {
+                      name: "",
+                      image: "/src/assets/img/Melissino.png",
+                    },
+                  ],
                   400,
                   1700
                 )
@@ -450,10 +516,12 @@ const Content = () => {
             <img
               onClick={() =>
                 handleItemClick(
-                  {
-                    name: "",
-                    image: "/src/assets/img/MelissinoDesc.png",
-                  },
+                  [
+                    {
+                      name: "",
+                      image: "/src/assets/img/MelissinoDesc.png",
+                    },
+                  ],
                   400,
                   2000
                 )
@@ -465,10 +533,12 @@ const Content = () => {
             <img
               onClick={() =>
                 handleItemClick(
-                  {
-                    name: "",
-                    image: "/src/assets/img/Arakcheev.png",
-                  },
+                  [
+                    {
+                      name: "",
+                      image: "/src/assets/img/Arakcheev.png",
+                    },
+                  ],
                   400,
                   2200
                 )
@@ -480,10 +550,12 @@ const Content = () => {
             <img
               onClick={() =>
                 handleItemClick(
-                  {
-                    name: "",
-                    image: "/src/assets/img/ArakcheevDesc.png",
-                  },
+                  [
+                    {
+                      name: "",
+                      image: "/src/assets/img/ArakcheevDesc.png",
+                    },
+                  ],
                   400,
                   2400
                 )
@@ -495,10 +567,12 @@ const Content = () => {
             <img
               onClick={() =>
                 handleItemClick(
-                  {
-                    name: "",
-                    image: "/src/assets/img/SmokingPavelI.png",
-                  },
+                  [
+                    {
+                      name: "",
+                      image: "/src/assets/img/SmokingPavelI.png",
+                    },
+                  ],
                   500,
                   2650
                 )
@@ -510,10 +584,12 @@ const Content = () => {
             <img
               onClick={() =>
                 handleItemClick(
-                  {
-                    name: "",
-                    image: "/src/assets/img/Cadets.png",
-                  },
+                  [
+                    {
+                      name: "",
+                      image: "/src/assets/img/Cadets.png",
+                    },
+                  ],
                   400,
                   1650
                 )
@@ -525,10 +601,12 @@ const Content = () => {
             <img
               onClick={() =>
                 handleItemClick(
-                  {
-                    name: "",
-                    image: "/src/assets/img/Greece.png",
-                  },
+                  [
+                    {
+                      name: "",
+                      image: "/src/assets/img/Greece.png",
+                    },
+                  ],
                   600,
                   2000
                 )
@@ -540,10 +618,12 @@ const Content = () => {
             <img
               onClick={() =>
                 handleItemClick(
-                  {
-                    name: "",
-                    image: "/src/assets/img/Znamya.png",
-                  },
+                  [
+                    {
+                      name: "",
+                      image: "/src/assets/img/Znamya.png",
+                    },
+                  ],
                   400,
                   2250
                 )
@@ -555,10 +635,12 @@ const Content = () => {
             <img
               onClick={() =>
                 handleItemClick(
-                  {
-                    name: "",
-                    image: "/src/assets/img/GeneralPlan.png",
-                  },
+                  [
+                    {
+                      name: "",
+                      image: "/src/assets/img/GeneralPlan.png",
+                    },
+                  ],
                   800,
                   2600
                 )
@@ -574,10 +656,12 @@ const Content = () => {
             <img
               onClick={() =>
                 handleItemClick(
-                  {
-                    name: "",
-                    image: "/src/assets/img/plantown.png",
-                  },
+                  [
+                    {
+                      name: "",
+                      image: "/src/assets/img/plantown.png",
+                    },
+                  ],
                   700,
                   2950
                 )
@@ -589,10 +673,12 @@ const Content = () => {
             <img
               onClick={() =>
                 handleItemClick(
-                  {
-                    name: "",
-                    image: "/src/assets/img/EkaterinaDesc.png",
-                  },
+                  [
+                    {
+                      name: "",
+                      image: "/src/assets/img/EkaterinaDesc.png",
+                    },
+                  ],
                   400,
                   3000
                 )
@@ -608,10 +694,12 @@ const Content = () => {
             <img
               onClick={() =>
                 handleItemClick(
-                  {
-                    name: "",
-                    image: "/src/assets/img/Konovnicin.png",
-                  },
+                  [
+                    {
+                      name: "",
+                      image: "/src/assets/img/Konovnicin.png",
+                    },
+                  ],
                   400,
                   3300
                 )
@@ -623,10 +711,12 @@ const Content = () => {
             <img
               onClick={() =>
                 handleItemClick(
-                  {
-                    name: "",
-                    image: "/src/assets/img/Golenischev.png",
-                  },
+                  [
+                    {
+                      name: "",
+                      image: "/src/assets/img/Golenischev.png",
+                    },
+                  ],
                   400,
                   4000
                 )
@@ -640,10 +730,12 @@ const Content = () => {
             <img
               onClick={() =>
                 handleItemClick(
-                  {
-                    name: "",
-                    image: "/src/assets/img/Zubov.png",
-                  },
+                  [
+                    {
+                      name: "",
+                      image: "/src/assets/img/Zubov.png",
+                    },
+                  ],
                   400,
                   3300
                 )
@@ -655,10 +747,12 @@ const Content = () => {
             <img
               onClick={() =>
                 handleItemClick(
-                  {
-                    name: "",
-                    image: "/src/assets/img/KorpusPavel.png",
-                  },
+                  [
+                    {
+                      name: "",
+                      image: "/src/assets/img/KorpusPavel.png",
+                    },
+                  ],
                   400,
                   3500
                 )
@@ -670,10 +764,12 @@ const Content = () => {
             <img
               onClick={() =>
                 handleItemClick(
-                  {
-                    name: "",
-                    image: "/src/assets/img/VolontKorpus.png",
-                  },
+                  [
+                    {
+                      name: "",
+                      image: "/src/assets/img/VolontKorpus.png",
+                    },
+                  ],
                   400,
                   3700
                 )
@@ -685,10 +781,12 @@ const Content = () => {
             <img
               onClick={() =>
                 handleItemClick(
-                  {
-                    name: "",
-                    image: "/src/assets/img/Excercirgaus.png",
-                  },
+                  [
+                    {
+                      name: "",
+                      image: "/src/assets/img/Excercirgaus.png",
+                    },
+                  ],
                   400,
                   3900
                 )
@@ -700,10 +798,12 @@ const Content = () => {
             <img
               onClick={() =>
                 handleItemClick(
-                  {
-                    name: "",
-                    image: "/src/assets/img/ProjectStone.png",
-                  },
+                  [
+                    {
+                      name: "",
+                      image: "/src/assets/img/ProjectStone.png",
+                    },
+                  ],
                   800,
                   3400
                 )
@@ -715,10 +815,12 @@ const Content = () => {
             <img
               onClick={() =>
                 handleItemClick(
-                  {
-                    name: "",
-                    image: "/src/assets/img/ProjectEkatII.png",
-                  },
+                  [
+                    {
+                      name: "",
+                      image: "/src/assets/img/ProjectEkatII.png",
+                    },
+                  ],
                   400,
                   3700
                 )
@@ -730,10 +832,12 @@ const Content = () => {
             <img
               onClick={() =>
                 handleItemClick(
-                  {
-                    name: "",
-                    image: "/src/assets/img/SmokingAlexI.png",
-                  },
+                  [
+                    {
+                      name: "",
+                      image: "/src/assets/img/SmokingAlexI.png",
+                    },
+                  ],
                   400,
                   3900
                 )
@@ -749,10 +853,12 @@ const Content = () => {
             <img
               onClick={() =>
                 handleItemClick(
-                  {
-                    name: "",
-                    image: "/src/assets/img/Znamya1862.png",
-                  },
+                  [
+                    {
+                      name: "",
+                      image: "/src/assets/img/Znamya1862.png",
+                    },
+                  ],
                   400,
                   5000
                 )
@@ -766,10 +872,12 @@ const Content = () => {
             <img
               onClick={() =>
                 handleItemClick(
-                  {
-                    name: "",
-                    image: "/src/assets/img/SmokingNikolayI.png",
-                  },
+                  [
+                    {
+                      name: "",
+                      image: "/src/assets/img/SmokingNikolayI.png",
+                    },
+                  ],
                   400,
                   4100
                 )
@@ -781,10 +889,12 @@ const Content = () => {
             <img
               onClick={() =>
                 handleItemClick(
-                  {
-                    name: "",
-                    image: "/src/assets/img/Desc2Cadet.png",
-                  },
+                  [
+                    {
+                      name: "",
+                      image: "/src/assets/img/Desc2Cadet.png",
+                    },
+                  ],
                   400,
                   4300
                 )
@@ -796,10 +906,12 @@ const Content = () => {
             <img
               onClick={() =>
                 handleItemClick(
-                  {
-                    name: "",
-                    image: "/src/assets/img/Mendeleev.png",
-                  },
+                  [
+                    {
+                      name: "",
+                      image: "/src/assets/img/Mendeleev.png",
+                    },
+                  ],
                   400,
                   4600
                 )
@@ -811,10 +923,12 @@ const Content = () => {
             <img
               onClick={() =>
                 handleItemClick(
-                  {
-                    name: "",
-                    image: "/src/assets/img/Dobrolyubov.png",
-                  },
+                  [
+                    {
+                      name: "",
+                      image: "/src/assets/img/Dobrolyubov.png",
+                    },
+                  ],
                   400,
                   4800
                 )
@@ -826,10 +940,12 @@ const Content = () => {
             <img
               onClick={() =>
                 handleItemClick(
-                  {
-                    name: "",
-                    image: "/src/assets/img/Chernishevskiy.png",
-                  },
+                  [
+                    {
+                      name: "",
+                      image: "/src/assets/img/Chernishevskiy.png",
+                    },
+                  ],
                   400,
                   5000
                 )
@@ -841,10 +957,12 @@ const Content = () => {
             <img
               onClick={() =>
                 handleItemClick(
-                  {
-                    name: "",
-                    image: "/src/assets/img/GeneralPlan2.png",
-                  },
+                  [
+                    {
+                      name: "",
+                      image: "/src/assets/img/GeneralPlan2.png",
+                    },
+                  ],
                   800,
                   4300
                 )
@@ -856,10 +974,12 @@ const Content = () => {
             <img
               onClick={() =>
                 handleItemClick(
-                  {
-                    name: "",
-                    image: "/src/assets/img/Znamya1844.png",
-                  },
+                  [
+                    {
+                      name: "",
+                      image: "/src/assets/img/Znamya1844.png",
+                    },
+                  ],
                   400,
                   4500
                 )
@@ -871,10 +991,12 @@ const Content = () => {
             <img
               onClick={() =>
                 handleItemClick(
-                  {
-                    name: "",
-                    image: "/src/assets/img/GeneralPlan1858.png",
-                  },
+                  [
+                    {
+                      name: "",
+                      image: "/src/assets/img/GeneralPlan1858.png",
+                    },
+                  ],
                   800,
                   4900
                 )
@@ -890,10 +1012,12 @@ const Content = () => {
             <img
               onClick={() =>
                 handleItemClick(
-                  {
-                    name: "",
-                    image: "/src/assets/img/Attestat.png",
-                  },
+                  [
+                    {
+                      name: "",
+                      image: "/src/assets/img/Attestat.png",
+                    },
+                  ],
                   400,
                   5600
                 )
@@ -905,10 +1029,12 @@ const Content = () => {
             <img
               onClick={() =>
                 handleItemClick(
-                  {
-                    name: "",
-                    image: "/src/assets/img/SmokingAlexanderII.png",
-                  },
+                  [
+                    {
+                      name: "",
+                      image: "/src/assets/img/SmokingAlexanderII.png",
+                    },
+                  ],
                   400,
                   5500
                 )
@@ -920,10 +1046,12 @@ const Content = () => {
             <img
               onClick={() =>
                 handleItemClick(
-                  {
-                    name: "",
-                    image: "/src/assets/img/Desc2.png",
-                  },
+                  [
+                    {
+                      name: "",
+                      image: "/src/assets/img/Desc2.png",
+                    },
+                  ],
                   400,
                   5800
                 )
@@ -935,10 +1063,12 @@ const Content = () => {
             <img
               onClick={() =>
                 handleItemClick(
-                  {
-                    name: "",
-                    image: "/src/assets/img/Cadets1887.png",
-                  },
+                  [
+                    {
+                      name: "",
+                      image: "/src/assets/img/Cadets1887.png",
+                    },
+                  ],
                   400,
                   5900
                 )
@@ -950,10 +1080,12 @@ const Content = () => {
             <img
               onClick={() =>
                 handleItemClick(
-                  {
-                    name: "",
-                    image: "/src/assets/img/DesctoPlan.png",
-                  },
+                  [
+                    {
+                      name: "",
+                      image: "/src/assets/img/DesctoPlan.png",
+                    },
+                  ],
                   400,
                   5300
                 )
@@ -965,10 +1097,12 @@ const Content = () => {
             <img
               onClick={() =>
                 handleItemClick(
-                  {
-                    name: "",
-                    image: "/src/assets/img/ChurchNevskiy.png",
-                  },
+                  [
+                    {
+                      name: "",
+                      image: "/src/assets/img/ChurchNevskiy.png",
+                    },
+                  ],
                   800,
                   5500
                 )
@@ -980,10 +1114,12 @@ const Content = () => {
             <img
               onClick={() =>
                 handleItemClick(
-                  {
-                    name: "",
-                    image: "/src/assets/img/Soyuzov.png",
-                  },
+                  [
+                    {
+                      name: "",
+                      image: "/src/assets/img/Soyuzov.png",
+                    },
+                  ],
                   400,
                   5900
                 )
@@ -999,10 +1135,12 @@ const Content = () => {
             <img
               onClick={() =>
                 handleItemClick(
-                  {
-                    name: "",
-                    image: "/src/assets/img/Mordovin.png",
-                  },
+                  [
+                    {
+                      name: "",
+                      image: "/src/assets/img/Mordovin.png",
+                    },
+                  ],
                   800,
                   6000
                 )
@@ -1014,10 +1152,12 @@ const Content = () => {
             <img
               onClick={() =>
                 handleItemClick(
-                  {
-                    name: "",
-                    image: "/src/assets/img/AltarNevskiy.png",
-                  },
+                  [
+                    {
+                      name: "",
+                      image: "/src/assets/img/AltarNevskiy.png",
+                    },
+                  ],
                   800,
                   6000
                 )
@@ -1033,10 +1173,12 @@ const Content = () => {
             <img
               onClick={() =>
                 handleItemClick(
-                  {
-                    name: "",
-                    image: "/src/assets/img/Moleben.png",
-                  },
+                  [
+                    {
+                      name: "",
+                      image: "/src/assets/img/Moleben.png",
+                    },
+                  ],
                   600,
                   6200
                 )
@@ -1048,10 +1190,12 @@ const Content = () => {
             <img
               onClick={() =>
                 handleItemClick(
-                  {
-                    name: "",
-                    image: "/src/assets/img/NikolayII.png",
-                  },
+                  [
+                    {
+                      name: "",
+                      image: "/src/assets/img/NikolayII.png",
+                    },
+                  ],
                   600,
                   6200
                 )
@@ -1063,10 +1207,12 @@ const Content = () => {
             <img
               onClick={() =>
                 handleItemClick(
-                  {
-                    name: "",
-                    image: "/src/assets/img/BirthdayCadet.png",
-                  },
+                  [
+                    {
+                      name: "",
+                      image: "/src/assets/img/BirthdayCadet.png",
+                    },
+                  ],
                   750,
                   6200
                 )
@@ -1078,10 +1224,12 @@ const Content = () => {
             <img
               onClick={() =>
                 handleItemClick(
-                  {
-                    name: "",
-                    image: "/src/assets/img/Gramota.png",
-                  },
+                  [
+                    {
+                      name: "",
+                      image: "/src/assets/img/Gramota.png",
+                    },
+                  ],
                   500,
                   6200
                 )
