@@ -16,7 +16,7 @@ const Content = () => {
     setModalActive(true);
     setSizeModal(sizeModal);
   };
-  console.log(sizeModal);
+
   return (
     <div className={styles.content}>
       <div className={styles.imperators}>
@@ -226,19 +226,23 @@ const Content = () => {
                       id: 2,
                       image: "/src/assets/img/SPb_1777.jpg",
                     },
-
                     {
                       id: 3,
+                      image: "/src/assets/img/1840-spb-plan.jpg",
+                    },
+
+                    {
+                      id: 4,
                       image: "/src/assets/img/spb_1868.jpg",
                     },
                     {
-                      id: 4,
+                      id: 5,
                       image: "/src/assets/img/Карта.png",
                     },
                   ],
                   900,
-                  1300,
-                  3700
+                  1800,
+                  4500
                 );
               }}
               className={styles.imgMap}
@@ -641,7 +645,7 @@ const Content = () => {
                   [
                     {
                       name: "",
-                      image: "/src/assets/img/GeneralPlan.png",
+                      image: "/src/assets/img/Схема1.png",
                     },
                   ],
                   800,
@@ -649,7 +653,7 @@ const Content = () => {
                 )
               }
               className={styles.imgPlan}
-              src="/src/assets/img/GeneralPlan.png"
+              src="/src/assets/img/Схема1.png"
               alt="General Plan"
             />
           </div>
@@ -963,7 +967,7 @@ const Content = () => {
                   [
                     {
                       name: "",
-                      image: "/src/assets/img/GeneralPlan2.png",
+                      image: "/src/assets/img/Схемa2.png",
                     },
                   ],
                   800,
@@ -971,7 +975,7 @@ const Content = () => {
                 )
               }
               className={styles.imgGeneralPlan2}
-              src="/src/assets/img/GeneralPlan2.png"
+              src="/src/assets/img/Схемa2.png"
               alt="GeneralPlan2"
             />
             <img
