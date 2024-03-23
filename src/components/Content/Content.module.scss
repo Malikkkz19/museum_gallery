@@ -39,6 +39,10 @@
       display: flex;
       justify-content: center;
       align-items: start;
+      .imageArray {
+        width: 900px;
+        height: 100%;
+      }
 
       .imgModal {
         border: 2px solid #ffffff;

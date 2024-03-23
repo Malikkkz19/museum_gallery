@@ -47,20 +47,48 @@ const Content = () => {
                 setActive={setModalActive}
                 position={position}
               >
-                <div className={styles.modal} style={{ width: sizeModal }}>
-                  {selected.map((imageData) => (
-                    <img
-                      className={`${styles.imgModal} ${
-                        imageData ? styles.imgModalActive : ""
-                      }`}
-                      src={imageData.image}
-                      alt="x"
-                      style={{
-                        width: width,
-                      }}
-                    />
-                  ))}
-                </div>
+                {selected.length < 2 && (
+                  <div className={styles.modal} style={{ width: sizeModal }}>
+                    {selected.map((imageData) => (
+                      <img
+                        className={`${styles.imgModal} ${
+                          imageData ? styles.imgModalActive : ""
+                        }`}
+                        src={imageData.image}
+                        alt="x"
+                        style={{
+                          width: width,
+                        }}
+                      />
+                    ))}
+                  </div>
+                )}
+                {selected.length > 1 && (
+                  <div
+                    className={styles.modal}
+                    style={{
+                      width: sizeModal,
+                      flexDirection: "column",
+                      overflowY: "auto",
+                      height: "1100px",
+                    }}
+                  >
+                    <div className={styles.imageArray}>
+                      {selected.map((imageData) => (
+                        <img
+                          className={`${styles.imgModal} ${
+                            imageData ? styles.imgModalActive : ""
+                          }`}
+                          src={imageData.image}
+                          alt="x"
+                          style={{
+                            width: width,
+                          }}
+                        />
+                      ))}
+                    </div>
+                  </div>
+                )}
               </Modal>
             )}
           </div>
@@ -228,7 +256,7 @@ const Content = () => {
                     },
                     {
                       id: 3,
-                      image: "/src/assets/img/1840-spb-plan.jpg",
+                      image: "/src/assets/img/SPb_1840.jpg",
                     },
 
                     {
@@ -242,7 +270,7 @@ const Content = () => {
                   ],
                   900,
                   1800,
-                  4500
+                  1900
                 );
               }}
               className={styles.imgMap}
