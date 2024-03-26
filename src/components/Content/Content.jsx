@@ -1302,7 +1302,7 @@ const Content = () => {
                 )
               }
               className={styles.imgSmoking}
-              src="/src/assets/img/SmokingPavelI.png"
+              src="/SmokingPavelI.png"
               alt="Smoking PavelI"
             />
             <img
