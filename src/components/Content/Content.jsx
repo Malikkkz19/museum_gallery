@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import styles from "./Content.module.scss";
 import Modal from "../Modal/Modal";
 // import DescImage from "../DescImage/DescImage";
+import ReactImageMagnify from "react-image-magnify";
 
 const Content = () => {
   const [modalActive, setModalActive] = useState(false);
@@ -962,7 +963,7 @@ const Content = () => {
                 );
               }}
               className={styles.imgMap}
-              src="/src/assets/img/Карта.png"
+              src="/Карта.png"
               alt="Карта"
             />
 
