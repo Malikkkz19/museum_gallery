@@ -260,8 +260,10 @@
       border-radius: 15px;
       cursor: pointer;
       transition: all 250ms ease-in-out;
+      z-index: 1;
       &:hover {
         transform: scale(1.03);
+        z-index: 1;
       }
       .imgLomonosov {
         z-index: 1;
@@ -360,6 +362,20 @@
       height: 281px;
       bottom: 5%;
       left: 39%;
+      cursor: pointer;
+      transition: all 250ms ease-in-out;
+      position: absolute;
+      border-radius: 15px;
+      &:hover {
+        transform: scale(1.03);
+      }
+    }
+
+    .imgIllarion {
+      width: 200px;
+      height: 281px;
+      bottom: 5%;
+      left: 12%;
       cursor: pointer;
       transition: all 250ms ease-in-out;
       position: absolute;
@@ -682,12 +698,12 @@
     }
     .imgDesc2 {
       z-index: 1;
-      width: 185px;
+      width: 205px;
       height: 260px;
       position: absolute;
       top: 45%;
       border-radius: 15px;
-      right: -11%;
+      right: 3%;
       cursor: pointer;
       transition: all 250ms ease-in-out;
       &:hover {

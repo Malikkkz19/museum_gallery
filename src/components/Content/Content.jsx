@@ -16,6 +16,7 @@ const Content = () => {
     setPosition(left);
     setSelected(item);
     setWidth(width);
+
     setModalActive(true);
     setSizeModal(sizeModal);
     // setContent(content);
@@ -1083,6 +1084,23 @@ const Content = () => {
                   [
                     {
                       name: "",
+                      image: "/МихаилИлларионович.png",
+                    },
+                  ],
+                  300,
+                  950
+                )
+              }
+              className={styles.imgIllarion}
+              src="/МихаилИлларионович.png"
+              alt="Mordvinov"
+            />
+            <img
+              onClick={() =>
+                handleItemClick(
+                  [
+                    {
+                      name: "",
                       image: "/Кутузов.png",
                     },
                   ],
@@ -1101,7 +1119,7 @@ const Content = () => {
                   [
                     {
                       name: "",
-                      image: "/МихаилИлларионович.png",
+                      image: "/Meller.png",
                     },
                   ],
                   500,
@@ -1109,7 +1127,7 @@ const Content = () => {
                 )
               }
               className={styles.imgMichaelDesc}
-              src="/МихаилИлларионович.png"
+              src="/Meller.png"
               alt="Desc Michael"
             />
             <img
@@ -1207,7 +1225,7 @@ const Content = () => {
                   [
                     {
                       name: "",
-                      image: "/Zubov.png",
+                      image: "/Платон.png",
                     },
                   ],
                   400,
@@ -1215,7 +1233,7 @@ const Content = () => {
                 )
               }
               className={styles.descImage3}
-              src="/Zubov.png"
+              src="/Платон.png"
               alt="Description Orlov"
             />
           </div>
@@ -1421,7 +1439,7 @@ const Content = () => {
                   [
                     {
                       name: "",
-                      image: "/Konovnicin.png",
+                      image: "/ВеликийКнязь.png",
                     },
                   ],
                   400,
@@ -1429,7 +1447,7 @@ const Content = () => {
                 )
               }
               className={styles.imgDesc1}
-              src="/Konovnicin.png"
+              src="/ВеликийКнязь.png"
               alt="Konovnicin"
             />
             <img
@@ -1438,15 +1456,15 @@ const Content = () => {
                   [
                     {
                       name: "",
-                      image: "/Golenischev.png",
+                      image: "/МихаилНиколаевич.png",
                     },
                   ],
                   400,
-                  4000
+                  3900
                 )
               }
               className={styles.imgDesc2}
-              src="/Golenischev.png"
+              src="/МихаилНиколаевич.png"
               alt="Golenischev"
             />
           </div>
@@ -1457,7 +1475,7 @@ const Content = () => {
                   [
                     {
                       name: "",
-                      image: "/Zubov.png",
+                      image: "/Konovnicin.png",
                     },
                   ],
                   400,
@@ -1465,7 +1483,7 @@ const Content = () => {
                 )
               }
               className={styles.imgZubov}
-              src="/Zubov.png"
+              src="/Konovnicin.png"
               alt="Zubov"
             />
             <img
