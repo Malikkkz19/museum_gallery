@@ -10,16 +10,28 @@ const Content = () => {
   const [width, setWidth] = useState(0);
   const [position, setPosition] = useState({ left: 0 });
   const [sizeModal, setSizeModal] = useState(0);
+  const [heightModal, setHeightModal] = useState(0);
+  const [positionImg, setPositionImg] = useState({ align: "", justify: "" });
+  const [id, setId] = useState(0);
   // const [content, setContent] = useState("");
 
-  const handleItemClick = (item, width, left, sizeModal, content) => {
+  const handleItemClick = (
+    item,
+    width,
+    left,
+    sizeModal,
+    heightModal,
+    positionImg,
+    id
+  ) => {
     setPosition(left);
     setSelected(item);
     setWidth(width);
-
     setModalActive(true);
     setSizeModal(sizeModal);
-    // setContent(content);
+    setHeightModal(heightModal);
+    setPositionImg(positionImg);
+    setId(id);
   };
 
   return (
@@ -37,8 +49,12 @@ const Content = () => {
                       image: "/museum2.png",
                     },
                   ],
-                  380,
-                  -100
+                  600,
+                  -100,
+                  1000,
+                  2000,
+                  { align: "flex-start", justify: "center" },
+                  "main"
                 )
               }
               className={styles.descImage}
@@ -53,7 +69,15 @@ const Content = () => {
                 position={position}
               >
                 {selected.length < 2 && (
-                  <div className={styles.modal} style={{ width: sizeModal }}>
+                  <div
+                    className={styles.modal}
+                    style={{
+                      width: sizeModal,
+
+                      alignItems: positionImg.align,
+                      justifyContent: positionImg.justify,
+                    }}
+                  >
                     {selected.map((imageData) => (
                       <img
                         className={`${styles.imgModal} ${
@@ -791,8 +815,12 @@ const Content = () => {
                       image: "/УказПетра1.png",
                     },
                   ],
-                  450,
-                  -100
+                  500,
+                  -100,
+                  1200,
+                  1000,
+                  { align: "center", justify: "flex-start" },
+                  "person"
                 )
               }
               className={styles.imgDecree}
@@ -807,11 +835,15 @@ const Content = () => {
                   [
                     {
                       name: "",
-                      image: "/Брюс.png",
+                      image: "/Yakov.jpeg",
                     },
                   ],
-                  300,
-                  -100
+                  400,
+                  -100,
+                  1200,
+                  1000,
+                  { align: "center", justify: "flex-start" },
+                  "person"
                 )
               }
               height={150}
@@ -830,7 +862,11 @@ const Content = () => {
                     },
                   ],
                   800,
-                  -100
+                  -100,
+                  1000,
+                  1000,
+                  { align: "flex-start", justify: "center" },
+                  "main"
                 )
               }
               className={styles.imgGun}
@@ -847,7 +883,11 @@ const Content = () => {
                     },
                   ],
                   800,
-                  -100
+                  -100,
+                  1000,
+                  1000,
+                  { align: "flex-start", justify: "center" },
+                  "main"
                 )
               }
               className={styles.imgTown}
@@ -866,7 +906,11 @@ const Content = () => {
                     },
                   ],
                   400,
-                  -250
+                  -250,
+                  1000,
+                  1000,
+                  { align: "flex-start", justify: "center" },
+                  "main"
                 )
               }
               className={styles.imgIng}
@@ -1097,15 +1141,21 @@ const Content = () => {
             />
             <img
               onClick={() =>
-                handleItemClick(
+                handleItemClickDesc(
                   [
                     {
                       name: "",
-                      image: "/Кутузов.png",
+                      image: "/kutuzov(1).jpg",
                     },
                   ],
                   450,
-                  950
+                  950,
+                  1300,
+                  800,
+                  {
+                    align: "center",
+                    justify: "start",
+                  }
                 )
               }
               className={styles.imgKutuzov}
@@ -1244,7 +1294,7 @@ const Content = () => {
                   [
                     {
                       name: "",
-                      image: "/Melissino.png",
+                      image: "/Melissino1.png",
                     },
                   ],
                   400,
@@ -1278,7 +1328,7 @@ const Content = () => {
                   [
                     {
                       name: "",
-                      image: "/Arakcheev.png",
+                      image: "/Arakcheev1.png",
                     },
                   ],
                   400,
@@ -1475,7 +1525,7 @@ const Content = () => {
                   [
                     {
                       name: "",
-                      image: "/Konovnicin.png",
+                      image: "/Konovnicin1.jpg",
                     },
                   ],
                   400,

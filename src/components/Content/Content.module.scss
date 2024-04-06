@@ -17,7 +17,6 @@
   width: 691px;
   height: 1250px;
   background-image: url("/Petr1.png");
-
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -63,7 +62,7 @@
 
       .imgModal {
         border: 2px solid #ffffff;
-        border-radius: 12px;
+        border-radius: 15px;
         transition: transform 250ms ease-in-out;
         &:hover {
           transform: scale(1.03);
