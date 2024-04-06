@@ -52,7 +52,7 @@ const Content = () => {
                   600,
                   -100,
                   1000,
-                  2000,
+                  900,
                   { align: "flex-start", justify: "center" },
                   "main"
                 )
@@ -73,7 +73,7 @@ const Content = () => {
                     className={styles.modal}
                     style={{
                       width: sizeModal,
-
+                      height: heightModal,
                       alignItems: positionImg.align,
                       justifyContent: positionImg.justify,
                     }}
@@ -818,8 +818,8 @@ const Content = () => {
                   500,
                   -100,
                   1200,
-                  1000,
-                  { align: "center", justify: "flex-start" },
+                  800,
+                  { align: "flex-end", justify: "flex-start" },
                   "person"
                 )
               }
@@ -841,8 +841,8 @@ const Content = () => {
                   400,
                   -100,
                   1200,
-                  1000,
-                  { align: "center", justify: "flex-start" },
+                  800,
+                  { align: "flex-end", justify: "flex-start" },
                   "person"
                 )
               }
@@ -864,7 +864,7 @@ const Content = () => {
                   800,
                   -100,
                   1000,
-                  1000,
+                  800,
                   { align: "flex-start", justify: "center" },
                   "main"
                 )
@@ -885,7 +885,7 @@ const Content = () => {
                   800,
                   -100,
                   1000,
-                  1000,
+                  800,
                   { align: "flex-start", justify: "center" },
                   "main"
                 )
@@ -907,7 +907,7 @@ const Content = () => {
                   ],
                   400,
                   -250,
-                  1000,
+                  700,
                   1000,
                   { align: "flex-start", justify: "center" },
                   "main"
@@ -923,11 +923,15 @@ const Content = () => {
                   [
                     {
                       name: "",
-                      image: "/Миних.png",
+                      image: "/Minikh.jpg",
                     },
                   ],
                   400,
-                  -150
+                  -150,
+                  1200,
+                  800,
+                  { align: "flex-end", justify: "flex-start" },
+                  "person"
                 )
               }
               className={styles.imgMinih}
@@ -943,8 +947,12 @@ const Content = () => {
                       image: "/свейский.png",
                     },
                   ],
-                  400,
-                  -150
+                  360,
+                  -150,
+                  1200,
+                  800,
+                  { align: "flex-end", justify: "flex-start" },
+                  "person"
                 )
               }
               className={styles.imgSveyskiy}
@@ -965,7 +973,11 @@ const Content = () => {
                     },
                   ],
                   700,
-                  50
+                  50,
+                  1000,
+                  800,
+                  { align: "flex-start", justify: "center" },
+                  "main"
                 )
               }
               className={styles.descImage}
@@ -1003,8 +1015,7 @@ const Content = () => {
                   ],
                   900,
                   1000,
-                  1500,
-                  "ЧАСТИ ГОРОДА.I. Первая Адмиралтейская.II. Вторая Адмиралтейская.III. Третья Адмиралтейская.IV. Четвертая Адмиралтейская.V. Нарвская.VI МосковскаяVII. Каретная.VIII. Рожественская.IX. Литейная.X. Васильевская.XI. Петербургская.XII. Выборгская.XIII. Охтенская."
+                  1500
                 );
               }}
               className={styles.imgMap}
@@ -1029,42 +1040,29 @@ const Content = () => {
               src="/Текст.png"
               alt="Text about Ekaterina I"
             />
-            <div className={styles.blockLomonosov}>
-              <img
-                onClick={() =>
-                  handleItemClick(
-                    [
-                      {
-                        name: "",
-                        image: "/Ломоносов.png",
-                      },
-                    ],
-                    500,
-                    400
-                  )
-                }
-                className={styles.imgLomonosov}
-                src="/Ломоносов.png"
-                alt="Lomonosov"
-              />
-              <img
-                onClick={() =>
-                  handleItemClick(
-                    [
-                      {
-                        name: "",
-                        image: "/LomonosovText.png",
-                      },
-                    ],
-                    500,
-                    500
-                  )
-                }
-                className={styles.imgTextLomonosov}
-                src="/LomonosovText.png"
-                alt="Text"
-              />
-            </div>
+
+            <img
+              onClick={() =>
+                handleItemClick(
+                  [
+                    {
+                      name: "",
+                      image: "/Lomonosov1.jpg",
+                    },
+                  ],
+                  500,
+                  400,
+                  1200,
+                  900,
+                  { align: "flex-end", justify: "flex-start" },
+                  "person"
+                )
+              }
+              className={styles.imgLomonosov}
+              src="/Ломоносов1.png"
+              alt="Lomonosov"
+            />
+
             <img
               onClick={() =>
                 handleItemClick(
@@ -1075,7 +1073,11 @@ const Content = () => {
                     },
                   ],
                   880,
-                  650
+                  650,
+                  1000,
+                  900,
+                  { align: "flex-start", justify: "center" },
+                  "main"
                 )
               }
               className={styles.imgDescMap}
@@ -1092,15 +1094,19 @@ const Content = () => {
                   [
                     {
                       name: "",
-                      image: "/ШуваловОПис.png",
+                      image: "/Shuvalov.jpg",
                     },
                   ],
                   500,
-                  600
+                  600,
+                  1200,
+                  900,
+                  { align: "flex-end", justify: "flex-start" },
+                  "person"
                 )
               }
               className={styles.descImage}
-              src="/ШуваловОПис.png"
+              src="/Shuvalov1.png"
               alt="desc"
             />
           </div>
@@ -1111,11 +1117,15 @@ const Content = () => {
                   [
                     {
                       name: "",
-                      image: "/мордвинов.png",
+                      image: "/Mordvinov1.png",
                     },
                   ],
-                  300,
-                  950
+                  500,
+                  950,
+                  1300,
+                  900,
+                  { align: "flex-end", justify: "flex-start" },
+                  "person"
                 )
               }
               className={styles.imgMordvinov}
@@ -1131,8 +1141,12 @@ const Content = () => {
                       image: "/МихаилИлларионович.png",
                     },
                   ],
-                  300,
-                  950
+                  600,
+                  950,
+                  1000,
+                  900,
+                  { align: "flex-start", justify: "center" },
+                  "person"
                 )
               }
               className={styles.imgIllarion}
@@ -1141,7 +1155,7 @@ const Content = () => {
             />
             <img
               onClick={() =>
-                handleItemClickDesc(
+                handleItemClick(
                   [
                     {
                       name: "",
@@ -1150,12 +1164,13 @@ const Content = () => {
                   ],
                   450,
                   950,
-                  1300,
+                  1200,
                   800,
                   {
-                    align: "center",
-                    justify: "start",
-                  }
+                    align: "flex-end",
+                    justify: "flex-start",
+                  },
+                  "person"
                 )
               }
               className={styles.imgKutuzov}
@@ -1169,11 +1184,15 @@ const Content = () => {
                   [
                     {
                       name: "",
-                      image: "/Meller.png",
+                      image: "/Meller1.jpg",
                     },
                   ],
                   500,
-                  1200
+                  1200,
+                  1200,
+                  800,
+                  { align: "flex-end", justify: "flex-start" },
+                  "person"
                 )
               }
               className={styles.imgMichaelDesc}
@@ -1189,8 +1208,12 @@ const Content = () => {
                       image: "/Шувалов.png",
                     },
                   ],
-                  450,
-                  1200
+                  500,
+                  1200,
+                  1000,
+                  900,
+                  { align: "flex-start", justify: "center" },
+                  "main"
                 )
               }
               className={styles.imgShuvalovDesc}
@@ -1206,8 +1229,12 @@ const Content = () => {
                       image: "/Вильбоа.png",
                     },
                   ],
-                  400,
-                  1450
+                  600,
+                  1450,
+                  1000,
+                  900,
+                  { align: "flex-start", justify: "center" },
+                  "main"
                 )
               }
               className={styles.imgVilboa}
@@ -1224,7 +1251,11 @@ const Content = () => {
                     },
                   ],
                   450,
-                  1500
+                  1500,
+                  1200,
+                  900,
+                  { align: "flex-end", justify: "flex-start" },
+                  "person"
                 )
               }
               className={styles.imgSmoking}
@@ -1244,8 +1275,12 @@ const Content = () => {
                       image: "/Orlov.png",
                     },
                   ],
-                  400,
-                  1500
+                  500,
+                  1500,
+                  1200,
+                  800,
+                  { align: "flex-end", justify: "flex-start" },
+                  "person"
                 )
               }
               className={styles.descImage1}
@@ -1261,8 +1296,12 @@ const Content = () => {
                       image: "/Potemkin.png",
                     },
                   ],
-                  400,
-                  2500
+                  500,
+                  2500,
+                  1200,
+                  800,
+                  { align: "flex-end", justify: "flex-start" },
+                  "person"
                 )
               }
               className={styles.descImage2}
@@ -1278,8 +1317,12 @@ const Content = () => {
                       image: "/Платон.png",
                     },
                   ],
-                  400,
-                  2700
+                  500,
+                  2700,
+                  1200,
+                  800,
+                  { align: "flex-end", justify: "flex-start" },
+                  "person"
                 )
               }
               className={styles.descImage3}
@@ -1297,8 +1340,12 @@ const Content = () => {
                       image: "/Melissino1.png",
                     },
                   ],
-                  400,
-                  1700
+                  500,
+                  1700,
+                  1200,
+                  800,
+                  { align: "flex-end", justify: "flex-start" },
+                  "person"
                 )
               }
               className={styles.imgMelissino}
@@ -1314,8 +1361,12 @@ const Content = () => {
                       image: "/MelissinoDesc.png",
                     },
                   ],
-                  400,
-                  2000
+                  600,
+                  2000,
+                  1000,
+                  900,
+                  { align: "flex-start", justify: "center" },
+                  "main"
                 )
               }
               className={styles.imgDescMelissino}
@@ -1331,8 +1382,12 @@ const Content = () => {
                       image: "/Arakcheev1.png",
                     },
                   ],
-                  400,
-                  2200
+                  590,
+                  2200,
+                  1200,
+                  800,
+                  { align: "flex-end", justify: "flex-start" },
+                  "person"
                 )
               }
               className={styles.imgArakcheev}
@@ -1348,8 +1403,12 @@ const Content = () => {
                       image: "/ArakcheevDesc.png",
                     },
                   ],
-                  400,
-                  2400
+                  600,
+                  2400,
+                  1000,
+                  900,
+                  { align: "flex-start", justify: "center" },
+                  "main"
                 )
               }
               className={styles.imgDescArakcheev}
@@ -1366,7 +1425,11 @@ const Content = () => {
                     },
                   ],
                   500,
-                  2650
+                  2650,
+                  1200,
+                  800,
+                  { align: "flex-end", justify: "flex-start" },
+                  "person"
                 )
               }
               className={styles.imgSmoking}
@@ -1382,8 +1445,12 @@ const Content = () => {
                       image: "/Cadets.png",
                     },
                   ],
-                  400,
-                  1650
+                  600,
+                  1650,
+                  1000,
+                  900,
+                  { align: "flex-start", justify: "center" },
+                  "main"
                 )
               }
               className={styles.imgCadets}
@@ -1399,8 +1466,12 @@ const Content = () => {
                       image: "/Greece.png",
                     },
                   ],
-                  600,
-                  2000
+                  800,
+                  2000,
+                  1000,
+                  900,
+                  { align: "flex-start", justify: "center" },
+                  "main"
                 )
               }
               className={styles.imgGreece}
@@ -1416,8 +1487,12 @@ const Content = () => {
                       image: "/Znamya.png",
                     },
                   ],
-                  400,
-                  2250
+                  600,
+                  2250,
+                  1000,
+                  900,
+                  { align: "flex-start", justify: "center" },
+                  "main"
                 )
               }
               className={styles.imgZnamya}
@@ -1433,8 +1508,12 @@ const Content = () => {
                       image: "/Схема1.png",
                     },
                   ],
+                  1100,
+                  2600,
+                  1300,
                   800,
-                  2600
+                  { align: "center", justify: "center" },
+                  "scheme"
                 )
               }
               className={styles.imgPlan}
@@ -1455,7 +1534,11 @@ const Content = () => {
                     },
                   ],
                   700,
-                  2950
+                  2950,
+                  1000,
+                  800,
+                  { align: "center", justify: "center" },
+                  "main"
                 )
               }
               className={styles.imgPlanTown}
@@ -1471,8 +1554,12 @@ const Content = () => {
                       image: "/EkaterinaDesc.png",
                     },
                   ],
-                  400,
-                  3000
+                  600,
+                  3000,
+                  900,
+                  900,
+                  { align: "flex-start", justify: "center" },
+                  "main"
                 )
               }
               className={styles.imgEkaterinaDesc}
@@ -1492,8 +1579,12 @@ const Content = () => {
                       image: "/ВеликийКнязь.png",
                     },
                   ],
-                  400,
-                  3300
+                  500,
+                  3300,
+                  1200,
+                  800,
+                  { align: "flex-end", justify: "flex-start" },
+                  "person"
                 )
               }
               className={styles.imgDesc1}
@@ -1509,8 +1600,12 @@ const Content = () => {
                       image: "/МихаилНиколаевич.png",
                     },
                   ],
-                  400,
-                  3900
+                  550,
+                  3900,
+                  1200,
+                  800,
+                  { align: "flex-end", justify: "flex-start" },
+                  "person"
                 )
               }
               className={styles.imgDesc2}
@@ -1528,8 +1623,12 @@ const Content = () => {
                       image: "/Konovnicin1.jpg",
                     },
                   ],
-                  400,
-                  3300
+                  550,
+                  3300,
+                  1200,
+                  750,
+                  { align: "flex-end", justify: "flex-start" },
+                  "person"
                 )
               }
               className={styles.imgZubov}
@@ -1545,8 +1644,12 @@ const Content = () => {
                       image: "/KorpusPavel.png",
                     },
                   ],
-                  400,
-                  3500
+                  500,
+                  3500,
+                  1000,
+                  900,
+                  { align: "flex-start", justify: "center" },
+                  "main"
                 )
               }
               className={styles.imgKorpus}
@@ -1562,8 +1665,12 @@ const Content = () => {
                       image: "/VolontKorpus.png",
                     },
                   ],
-                  400,
-                  3700
+                  500,
+                  3700,
+                  1000,
+                  800,
+                  { align: "flex-start", justify: "center" },
+                  "main"
                 )
               }
               className={styles.imgVolont}
