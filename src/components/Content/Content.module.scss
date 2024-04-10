@@ -43,10 +43,21 @@
 
       .imageArray {
         position: absolute;
-
-        width: 900px;
+        width: 550px;
         height: 100%;
+        left: 2%;
       }
+
+      .personDescription {
+        position: absolute;
+        width: 650px;
+        height: 100%;
+        right: 3%;
+        border: 2px solid #efc074;
+        border-radius: 15px;
+        overflow-y: scroll;
+      }
+
       .descriptionImage {
         position: absolute;
         right: 20px;

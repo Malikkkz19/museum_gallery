@@ -3,6 +3,7 @@ import styles from "./Content.module.scss";
 import Modal from "../Modal/Modal";
 // import DescImage from "../DescImage/DescImage";
 import ReactImageMagnify from "react-image-magnify";
+import { personDescription } from "../../utils/data";
 
 const Content = () => {
   const [modalActive, setModalActive] = useState(false);
@@ -68,7 +69,7 @@ const Content = () => {
                 setActive={setModalActive}
                 position={position}
               >
-                {selected.length < 2 && (
+                {selected.length < 2 && id !== "person" && (
                   <div
                     className={styles.modal}
                     style={{
@@ -799,6 +800,56 @@ const Content = () => {
                         7. Большое Охтенское. 8 Малое Охтенское. 9.
                         Старообрядческое.
                       </p>
+                    </div>
+                  </div>
+                )}
+                {id === "person" && (
+                  <div
+                    className={styles.modal}
+                    style={{
+                      width: sizeModal,
+                      height: heightModal,
+                      alignItems: positionImg.align,
+                      justifyContent: positionImg.justify,
+                    }}
+                  >
+                    <div className={styles.imageArray}>
+                      {selected.map((imageData) => (
+                        <img
+                          className={`${styles.imgModal} ${
+                            imageData ? styles.imgModalActive : ""
+                          }`}
+                          src={imageData.image}
+                          alt="x"
+                          style={{
+                            width: width,
+                          }}
+                        />
+                      ))}
+                    </div>
+                    <div className={styles.personDescription}>
+                      {personDescription.map(({ title, content }) => (
+                        <div>
+                          <div
+                            style={{
+                              display: "flex",
+                              justifyContent: "center",
+                            }}
+                            key={title}
+                          >
+                            <div
+                              style={{
+                                color: "#efc074",
+                                fontSize: 30,
+                                fontWeight: "bold",
+                              }}
+                            >
+                              {title}
+                            </div>
+                          </div>
+                          <div>{content}</div>
+                        </div>
+                      ))}
                     </div>
                   </div>
                 )}
