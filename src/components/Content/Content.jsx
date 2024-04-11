@@ -77,7 +77,9 @@ const Content = () => {
                   id !== "Golenischev" &&
                   id !== "Bruce" &&
                   id !== "Minikh" &&
-                  id !== "Shuvalov" && (
+                  id !== "Shuvalov" &&
+                  id !== "Vilboa" &&
+                  id !== "Orlov" && (
                     <div
                       className={styles.modal}
                       style={{
@@ -1188,6 +1190,100 @@ const Content = () => {
                     </div>
                   </div>
                 )}
+                {id === "Vilboa" && (
+                  <div
+                    className={styles.modal}
+                    style={{
+                      width: sizeModal,
+                      height: heightModal,
+                      alignItems: positionImg.align,
+                      justifyContent: positionImg.justify,
+                    }}
+                  >
+                    <div className={styles.imageArray}>
+                      {selected.map((imageData) => (
+                        <img
+                          className={`${styles.imgModal} ${
+                            imageData ? styles.imgModalActive : ""
+                          }`}
+                          src={imageData.image}
+                          alt="x"
+                          style={{
+                            width: width,
+                          }}
+                        />
+                      ))}
+                    </div>
+                    <div className={styles.personDescription}>
+                      <div>
+                        <div
+                          style={{
+                            display: "flex",
+                            justifyContent: "center",
+                          }}
+                        >
+                          <div
+                            style={{
+                              color: "#efc074",
+                              fontSize: 32,
+                              fontWeight: "bold",
+                            }}
+                          >
+                            {personDescription[8].title}
+                          </div>
+                        </div>
+                        <div>{personDescription[8].content}</div>
+                      </div>
+                    </div>
+                  </div>
+                )}
+                {id === "Orlov" && (
+                  <div
+                    className={styles.modal}
+                    style={{
+                      width: sizeModal,
+                      height: heightModal,
+                      alignItems: positionImg.align,
+                      justifyContent: positionImg.justify,
+                    }}
+                  >
+                    <div className={styles.imageArray}>
+                      {selected.map((imageData) => (
+                        <img
+                          className={`${styles.imgModal} ${
+                            imageData ? styles.imgModalActive : ""
+                          }`}
+                          src={imageData.image}
+                          alt="x"
+                          style={{
+                            width: width,
+                          }}
+                        />
+                      ))}
+                    </div>
+                    <div className={styles.personDescription}>
+                      <div>
+                        <div
+                          style={{
+                            display: "flex",
+                            justifyContent: "center",
+                          }}
+                        >
+                          <div
+                            style={{
+                              color: "#efc074",
+                              fontSize: 32,
+                              fontWeight: "bold",
+                            }}
+                          >
+                            {personDescription[9].title}
+                          </div>
+                        </div>
+                        <div>{personDescription[9].content}</div>
+                      </div>
+                    </div>
+                  </div>
+                )}
               </Modal>
             )}
           </div>
@@ -1613,15 +1709,15 @@ const Content = () => {
                   [
                     {
                       name: "",
-                      image: "/Вильбоа.png",
+                      image: "/Vilboa.png",
                     },
                   ],
-                  600,
+                  450,
                   1450,
-                  1000,
-                  900,
-                  { align: "flex-start", justify: "center" },
-                  "main"
+                  1200,
+                  800,
+                  { align: "flex-end", justify: "flex-start" },
+                  "Vilboa"
                 )
               }
               className={styles.imgVilboa}
@@ -1662,12 +1758,12 @@ const Content = () => {
                       image: "/Orlov.png",
                     },
                   ],
-                  500,
+                  450,
                   1500,
                   1200,
                   800,
                   { align: "flex-end", justify: "flex-start" },
-                  "person"
+                  "Orlov"
                 )
               }
               className={styles.descImage1}
