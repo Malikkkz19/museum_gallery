@@ -40,7 +40,7 @@
       display: flex;
       justify-content: center;
       align-items: start;
-
+      transition: all 250ms ease-in-out;
       .imageArray {
         position: absolute;
         width: 550px;
@@ -117,8 +117,10 @@
     .imgBruce {
       overflow: hidden;
       border-radius: 15px;
+      width: 190px;
+      height: 254px;
       top: 10%;
-      left: 33%;
+      left: 31%;
       position: absolute;
       cursor: pointer;
       transition: all 250ms ease-in-out;
@@ -132,7 +134,7 @@
       top: 10%;
       cursor: pointer;
       position: absolute;
-      right: 11%;
+      right: 6%;
       transition: all 250ms ease-in-out;
       overflow: hidden;
       width: 230px;
@@ -176,7 +178,7 @@
       border-radius: 15px;
       cursor: pointer;
       top: 10%;
-      right: -93px;
+      right: -110px;
       transition: all 250ms ease-in-out;
       &:hover {
         transform: scale(1.03);
@@ -690,6 +692,20 @@
       top: 45%;
       border-radius: 15px;
       right: 3%;
+      cursor: pointer;
+      transition: all 250ms ease-in-out;
+      &:hover {
+        transform: scale(1.03);
+      }
+    }
+    .imgDesc3 {
+      z-index: 1;
+      width: 205px;
+      height: 260px;
+      position: absolute;
+      top: 45%;
+      border-radius: 15px;
+      right: -27%;
       cursor: pointer;
       transition: all 250ms ease-in-out;
       &:hover {

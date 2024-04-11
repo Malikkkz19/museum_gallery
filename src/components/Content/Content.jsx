@@ -13,7 +13,7 @@ const Content = () => {
   const [sizeModal, setSizeModal] = useState(0);
   const [heightModal, setHeightModal] = useState(0);
   const [positionImg, setPositionImg] = useState({ align: "", justify: "" });
-  const [id, setId] = useState(0);
+  const [id, setId] = useState("");
   // const [content, setContent] = useState("");
 
   const handleItemClick = (
@@ -69,30 +69,38 @@ const Content = () => {
                 setActive={setModalActive}
                 position={position}
               >
-                {selected.length < 2 && id !== "person" && (
-                  <div
-                    className={styles.modal}
-                    style={{
-                      width: sizeModal,
-                      height: heightModal,
-                      alignItems: positionImg.align,
-                      justifyContent: positionImg.justify,
-                    }}
-                  >
-                    {selected.map((imageData) => (
-                      <img
-                        className={`${styles.imgModal} ${
-                          imageData ? styles.imgModalActive : ""
-                        }`}
-                        src={imageData.image}
-                        alt="x"
-                        style={{
-                          width: width,
-                        }}
-                      />
-                    ))}
-                  </div>
-                )}
+                {selected.length < 2 &&
+                  id !== "Kutuzov" &&
+                  id !== "Arakcheev" &&
+                  id !== "Melissino" &&
+                  id !== "Konovnicin" &&
+                  id !== "Golenischev" &&
+                  id !== "Bruce" &&
+                  id !== "Minikh" &&
+                  id !== "Shuvalov" && (
+                    <div
+                      className={styles.modal}
+                      style={{
+                        width: sizeModal,
+                        height: heightModal,
+                        alignItems: positionImg.align,
+                        justifyContent: positionImg.justify,
+                      }}
+                    >
+                      {selected.map((imageData) => (
+                        <img
+                          className={`${styles.imgModal} ${
+                            imageData ? styles.imgModalActive : ""
+                          }`}
+                          src={imageData.image}
+                          alt="x"
+                          style={{
+                            width: width,
+                          }}
+                        />
+                      ))}
+                    </div>
+                  )}
                 {selected.length > 1 && (
                   <div
                     className={styles.modal}
@@ -803,7 +811,7 @@ const Content = () => {
                     </div>
                   </div>
                 )}
-                {id === "person" && (
+                {id === "Kutuzov" && (
                   <div
                     className={styles.modal}
                     style={{
@@ -828,34 +836,362 @@ const Content = () => {
                       ))}
                     </div>
                     <div className={styles.personDescription}>
-                      {personDescription.map(({ title, content }) => (
-                        <div>
+                      <div>
+                        <div
+                          style={{
+                            display: "flex",
+                            justifyContent: "center",
+                          }}
+                        >
                           <div
                             style={{
-                              display: "flex",
-                              justifyContent: "center",
+                              color: "#efc074",
+                              fontSize: 30,
+                              fontWeight: "bold",
                             }}
-                            key={title}
                           >
-                            <div
-                              style={{
-                                color: "#efc074",
-                                fontSize: 30,
-                                fontWeight: "bold",
-                              }}
-                            >
-                              {title}
-                            </div>
+                            {personDescription[0].title}
                           </div>
-                          <div>{content}</div>
                         </div>
+                        <div>{personDescription[0].content}</div>
+                      </div>
+                      ))
+                    </div>
+                  </div>
+                )}
+                {id === "Arakcheev" && (
+                  <div
+                    className={styles.modal}
+                    style={{
+                      width: sizeModal,
+                      height: heightModal,
+                      alignItems: positionImg.align,
+                      justifyContent: positionImg.justify,
+                    }}
+                  >
+                    <div className={styles.imageArray}>
+                      {selected.map((imageData) => (
+                        <img
+                          className={`${styles.imgModal} ${
+                            imageData ? styles.imgModalActive : ""
+                          }`}
+                          src={imageData.image}
+                          alt="x"
+                          style={{
+                            width: width,
+                          }}
+                        />
                       ))}
+                    </div>
+                    <div className={styles.personDescription}>
+                      <div>
+                        <div
+                          style={{
+                            display: "flex",
+                            justifyContent: "center",
+                          }}
+                        >
+                          <div
+                            style={{
+                              color: "#efc074",
+                              fontSize: 35,
+                              fontWeight: "bold",
+                            }}
+                          >
+                            {personDescription[1].title}
+                          </div>
+                        </div>
+                        <div>{personDescription[1].content}</div>
+                      </div>
+                    </div>
+                  </div>
+                )}
+                {id === "Melissino" && (
+                  <div
+                    className={styles.modal}
+                    style={{
+                      width: sizeModal,
+                      height: heightModal,
+                      alignItems: positionImg.align,
+                      justifyContent: positionImg.justify,
+                    }}
+                  >
+                    <div className={styles.imageArray}>
+                      {selected.map((imageData) => (
+                        <img
+                          className={`${styles.imgModal} ${
+                            imageData ? styles.imgModalActive : ""
+                          }`}
+                          src={imageData.image}
+                          alt="x"
+                          style={{
+                            width: width,
+                          }}
+                        />
+                      ))}
+                    </div>
+                    <div className={styles.personDescription}>
+                      <div>
+                        <div
+                          style={{
+                            display: "flex",
+                            justifyContent: "center",
+                          }}
+                        >
+                          <div
+                            style={{
+                              color: "#efc074",
+                              fontSize: 35,
+                              fontWeight: "bold",
+                            }}
+                          >
+                            {personDescription[2].title}
+                          </div>
+                        </div>
+                        <div>{personDescription[2].content}</div>
+                      </div>
+                    </div>
+                  </div>
+                )}
+                {id === "Konovnicin" && (
+                  <div
+                    className={styles.modal}
+                    style={{
+                      width: sizeModal,
+                      height: heightModal,
+                      alignItems: positionImg.align,
+                      justifyContent: positionImg.justify,
+                    }}
+                  >
+                    <div className={styles.imageArray}>
+                      {selected.map((imageData) => (
+                        <img
+                          className={`${styles.imgModal} ${
+                            imageData ? styles.imgModalActive : ""
+                          }`}
+                          src={imageData.image}
+                          alt="x"
+                          style={{
+                            width: width,
+                          }}
+                        />
+                      ))}
+                    </div>
+                    <div className={styles.personDescription}>
+                      <div>
+                        <div
+                          style={{
+                            display: "flex",
+                            justifyContent: "center",
+                          }}
+                        >
+                          <div
+                            style={{
+                              color: "#efc074",
+                              fontSize: 35,
+                              fontWeight: "bold",
+                            }}
+                          >
+                            {personDescription[3].title}
+                          </div>
+                        </div>
+                        <div>{personDescription[3].content}</div>
+                      </div>
+                    </div>
+                  </div>
+                )}
+                {id === "Golenischev" && (
+                  <div
+                    className={styles.modal}
+                    style={{
+                      width: sizeModal,
+                      height: heightModal,
+                      alignItems: positionImg.align,
+                      justifyContent: positionImg.justify,
+                    }}
+                  >
+                    <div className={styles.imageArray}>
+                      {selected.map((imageData) => (
+                        <img
+                          className={`${styles.imgModal} ${
+                            imageData ? styles.imgModalActive : ""
+                          }`}
+                          src={imageData.image}
+                          alt="x"
+                          style={{
+                            width: width,
+                          }}
+                        />
+                      ))}
+                    </div>
+                    <div className={styles.personDescription}>
+                      <div>
+                        <div
+                          style={{
+                            display: "flex",
+                            justifyContent: "center",
+                          }}
+                        >
+                          <div
+                            style={{
+                              color: "#efc074",
+                              fontSize: 32,
+                              fontWeight: "bold",
+                            }}
+                          >
+                            {personDescription[4].title}
+                          </div>
+                        </div>
+                        <div>{personDescription[4].content}</div>
+                      </div>
+                    </div>
+                  </div>
+                )}
+                {id === "Bruce" && (
+                  <div
+                    className={styles.modal}
+                    style={{
+                      width: sizeModal,
+                      height: heightModal,
+                      alignItems: positionImg.align,
+                      justifyContent: positionImg.justify,
+                    }}
+                  >
+                    <div className={styles.imageArray}>
+                      {selected.map((imageData) => (
+                        <img
+                          className={`${styles.imgModal} ${
+                            imageData ? styles.imgModalActive : ""
+                          }`}
+                          src={imageData.image}
+                          alt="x"
+                          style={{
+                            width: width,
+                          }}
+                        />
+                      ))}
+                    </div>
+                    <div className={styles.personDescription}>
+                      <div>
+                        <div
+                          style={{
+                            display: "flex",
+                            justifyContent: "center",
+                          }}
+                        >
+                          <div
+                            style={{
+                              color: "#efc074",
+                              fontSize: 32,
+                              fontWeight: "bold",
+                            }}
+                          >
+                            {personDescription[5].title}
+                          </div>
+                        </div>
+                        <div>{personDescription[5].content}</div>
+                      </div>
+                    </div>
+                  </div>
+                )}
+                {id === "Minikh" && (
+                  <div
+                    className={styles.modal}
+                    style={{
+                      width: sizeModal,
+                      height: heightModal,
+                      alignItems: positionImg.align,
+                      justifyContent: positionImg.justify,
+                    }}
+                  >
+                    <div className={styles.imageArray}>
+                      {selected.map((imageData) => (
+                        <img
+                          className={`${styles.imgModal} ${
+                            imageData ? styles.imgModalActive : ""
+                          }`}
+                          src={imageData.image}
+                          alt="x"
+                          style={{
+                            width: width,
+                          }}
+                        />
+                      ))}
+                    </div>
+                    <div className={styles.personDescription}>
+                      <div>
+                        <div
+                          style={{
+                            display: "flex",
+                            justifyContent: "center",
+                          }}
+                        >
+                          <div
+                            style={{
+                              color: "#efc074",
+                              fontSize: 32,
+                              fontWeight: "bold",
+                            }}
+                          >
+                            {personDescription[6].title}
+                          </div>
+                        </div>
+                        <div>{personDescription[6].content}</div>
+                      </div>
+                    </div>
+                  </div>
+                )}
+                {id === "Shuvalov" && (
+                  <div
+                    className={styles.modal}
+                    style={{
+                      width: sizeModal,
+                      height: heightModal,
+                      alignItems: positionImg.align,
+                      justifyContent: positionImg.justify,
+                    }}
+                  >
+                    <div className={styles.imageArray}>
+                      {selected.map((imageData) => (
+                        <img
+                          className={`${styles.imgModal} ${
+                            imageData ? styles.imgModalActive : ""
+                          }`}
+                          src={imageData.image}
+                          alt="x"
+                          style={{
+                            width: width,
+                          }}
+                        />
+                      ))}
+                    </div>
+                    <div className={styles.personDescription}>
+                      <div>
+                        <div
+                          style={{
+                            display: "flex",
+                            justifyContent: "center",
+                          }}
+                        >
+                          <div
+                            style={{
+                              color: "#efc074",
+                              fontSize: 32,
+                              fontWeight: "bold",
+                            }}
+                          >
+                            {personDescription[7].title}
+                          </div>
+                        </div>
+                        <div>{personDescription[7].content}</div>
+                      </div>
                     </div>
                   </div>
                 )}
               </Modal>
             )}
           </div>
+
           <div className={styles.historyPetr}>
             <img
               onClick={() =>
@@ -886,21 +1222,21 @@ const Content = () => {
                   [
                     {
                       name: "",
-                      image: "/Yakov.jpeg",
+                      image: "/YakovBruce.jpg",
                     },
                   ],
-                  400,
+                  450,
                   -100,
                   1200,
                   800,
                   { align: "flex-end", justify: "flex-start" },
-                  "person"
+                  "Bruce"
                 )
               }
               height={150}
               width={126}
               className={styles.imgBruce}
-              src="/Брюс.png"
+              src="/YakovBruce.jpg"
               alt="Bruce"
             />
             <img
@@ -977,12 +1313,12 @@ const Content = () => {
                       image: "/Minikh.jpg",
                     },
                   ],
-                  400,
+                  470,
                   -150,
                   1200,
                   800,
                   { align: "flex-end", justify: "flex-start" },
-                  "person"
+                  "Minikh"
                 )
               }
               className={styles.imgMinih}
@@ -1148,12 +1484,12 @@ const Content = () => {
                       image: "/Shuvalov.jpg",
                     },
                   ],
-                  500,
+                  450,
                   600,
                   1200,
                   900,
                   { align: "flex-end", justify: "flex-start" },
-                  "person"
+                  "Shuvalov"
                 )
               }
               className={styles.descImage}
@@ -1221,7 +1557,7 @@ const Content = () => {
                     align: "flex-end",
                     justify: "flex-start",
                   },
-                  "person"
+                  "Kutuzov"
                 )
               }
               className={styles.imgKutuzov}
@@ -1391,12 +1727,12 @@ const Content = () => {
                       image: "/Melissino1.png",
                     },
                   ],
-                  500,
+                  470,
                   1700,
                   1200,
                   800,
                   { align: "flex-end", justify: "flex-start" },
-                  "person"
+                  "Melissino"
                 )
               }
               className={styles.imgMelissino}
@@ -1433,12 +1769,12 @@ const Content = () => {
                       image: "/Arakcheev1.png",
                     },
                   ],
-                  590,
+                  480,
                   2200,
                   1200,
                   800,
                   { align: "flex-end", justify: "flex-start" },
-                  "person"
+                  "Arakcheev"
                 )
               }
               className={styles.imgArakcheev}
@@ -1663,6 +1999,27 @@ const Content = () => {
               src="/МихаилНиколаевич.png"
               alt="Golenischev"
             />
+            <img
+              onClick={() =>
+                handleItemClick(
+                  [
+                    {
+                      name: "",
+                      image: "/GolenischevK.jpg",
+                    },
+                  ],
+                  450,
+                  3900,
+                  1200,
+                  800,
+                  { align: "flex-end", justify: "flex-start" },
+                  "Golenischev"
+                )
+              }
+              className={styles.imgDesc3}
+              src="/Golenischev.png"
+              alt="Golenischev"
+            />
           </div>
           <div className={styles.historyAlexanderI}>
             <img
@@ -1674,12 +2031,12 @@ const Content = () => {
                       image: "/Konovnicin1.jpg",
                     },
                   ],
-                  550,
+                  450,
                   3300,
                   1200,
                   750,
                   { align: "flex-end", justify: "flex-start" },
-                  "person"
+                  "Konovnicin"
                 )
               }
               className={styles.imgZubov}
@@ -1737,8 +2094,15 @@ const Content = () => {
                       image: "/Excercirgaus.png",
                     },
                   ],
-                  400,
-                  3900
+                  550,
+                  3900,
+                  800,
+                  800,
+                  {
+                    align: "flex-start",
+                    justify: "center",
+                  },
+                  "main"
                 )
               }
               className={styles.imgExcercirgaus}
@@ -1754,8 +2118,12 @@ const Content = () => {
                       image: "/ProjectStone.png",
                     },
                   ],
+                  1000,
+                  3400,
+                  1200,
                   800,
-                  3400
+                  { align: "flex-start", justify: "center" },
+                  "main"
                 )
               }
               className={styles.imgProjectStone}
@@ -1771,8 +2139,12 @@ const Content = () => {
                       image: "/ProjectEkatII.png",
                     },
                   ],
-                  400,
-                  3700
+                  550,
+                  3700,
+                  800,
+                  800,
+                  { align: "flex-start", justify: "center" },
+                  "main"
                 )
               }
               className={styles.imgProjectEkaterinaII}
@@ -1789,7 +2161,11 @@ const Content = () => {
                     },
                   ],
                   400,
-                  3900
+                  3900,
+                  1200,
+                  800,
+                  { align: "flex-end", justify: "flex-start" },
+                  "person"
                 )
               }
               className={styles.imgSmokingAlexI}
@@ -1809,8 +2185,12 @@ const Content = () => {
                       image: "/Znamya1862.png",
                     },
                   ],
-                  400,
-                  5000
+                  550,
+                  5000,
+                  900,
+                  800,
+                  { align: "flex-start", justify: "center" },
+                  "main"
                 )
               }
               className={styles.descImage}
@@ -1828,8 +2208,11 @@ const Content = () => {
                       image: "/SmokingNikolayI.png",
                     },
                   ],
-                  400,
-                  4100
+                  500,
+                  4100,
+                  1200,
+                  800,
+                  { align: "flex-end", justify: "flex-start" }
                 )
               }
               className={styles.imgSmokingNikolayI}
@@ -1845,8 +2228,12 @@ const Content = () => {
                       image: "/Desc2Cadet.png",
                     },
                   ],
-                  400,
-                  4300
+                  550,
+                  4300,
+                  900,
+                  800,
+                  { align: "flex-start", justify: "center" },
+                  "main"
                 )
               }
               className={styles.imgCadetKorpus}
@@ -1862,8 +2249,12 @@ const Content = () => {
                       image: "/Mendeleev.png",
                     },
                   ],
-                  400,
-                  4600
+                  500,
+                  4600,
+                  1200,
+                  800,
+                  { align: "flex-end", justify: "flex-start" },
+                  "person"
                 )
               }
               className={styles.imgMendeleev}
@@ -1879,8 +2270,12 @@ const Content = () => {
                       image: "/Dobrolyubov.png",
                     },
                   ],
-                  400,
-                  4800
+                  500,
+                  4800,
+                  1200,
+                  800,
+                  { align: "flex-end", justify: "flex-start" },
+                  "person"
                 )
               }
               className={styles.imgDobrolyubov}
@@ -1896,8 +2291,12 @@ const Content = () => {
                       image: "/Chernishevskiy.png",
                     },
                   ],
-                  400,
-                  5000
+                  500,
+                  5000,
+                  1200,
+                  800,
+                  { align: "flex-end", justify: "flex-start" },
+                  "person"
                 )
               }
               className={styles.imgChernishevskiy}
@@ -1913,8 +2312,12 @@ const Content = () => {
                       image: "/Схемa2.png",
                     },
                   ],
+                  1100,
+                  4300,
+                  1300,
                   800,
-                  4300
+                  { align: "center", justify: "center" },
+                  "main"
                 )
               }
               className={styles.imgGeneralPlan2}
@@ -1930,8 +2333,12 @@ const Content = () => {
                       image: "/Znamya1844.png",
                     },
                   ],
-                  400,
-                  4500
+                  550,
+                  4500,
+                  800,
+                  800,
+                  { align: "flex-start", justify: "center" },
+                  "main"
                 )
               }
               className={styles.imgZnamya1844}
@@ -1947,8 +2354,12 @@ const Content = () => {
                       image: "/GeneralPlan1858.png",
                     },
                   ],
+                  1100,
+                  4900,
+                  1300,
                   800,
-                  4900
+                  { align: "center", justify: "center" },
+                  "main"
                 )
               }
               className={styles.imgGeneralPlan1858}
@@ -1968,8 +2379,12 @@ const Content = () => {
                       image: "/Attestat.png",
                     },
                   ],
-                  400,
-                  5600
+                  550,
+                  5600,
+                  900,
+                  800,
+                  { align: "flex-start", justify: "center" },
+                  "main"
                 )
               }
               className={styles.imgAttestat}
@@ -1985,8 +2400,12 @@ const Content = () => {
                       image: "/SmokingAlexanderII.png",
                     },
                   ],
-                  400,
-                  5500
+                  500,
+                  5500,
+                  1200,
+                  800,
+                  { align: "flex-end", justify: "flex-start" },
+                  "person"
                 )
               }
               className={styles.imgSmokingAlexII}
@@ -2002,8 +2421,12 @@ const Content = () => {
                       image: "/Desc2.png",
                     },
                   ],
-                  400,
-                  5800
+                  550,
+                  5800,
+                  900,
+                  800,
+                  { align: "center", justify: "center" },
+                  "main"
                 )
               }
               className={styles.img1863}
@@ -2019,8 +2442,12 @@ const Content = () => {
                       image: "/Cadets1887.png",
                     },
                   ],
-                  400,
-                  5900
+                  550,
+                  5900,
+                  900,
+                  800,
+                  { align: "center", justify: "center" },
+                  "main"
                 )
               }
               className={styles.imgCadets1887}
@@ -2036,8 +2463,12 @@ const Content = () => {
                       image: "/DesctoPlan.png",
                     },
                   ],
-                  400,
-                  5300
+                  550,
+                  5300,
+                  900,
+                  800,
+                  { align: "center", justify: "center" },
+                  "main"
                 )
               }
               className={styles.imgDesctoPlan}
@@ -2053,8 +2484,12 @@ const Content = () => {
                       image: "/ChurchNevskiy.png",
                     },
                   ],
+                  1000,
+                  5500,
+                  1200,
                   800,
-                  5500
+                  { align: "center", justify: "center" },
+                  "main"
                 )
               }
               className={styles.imgChurchNevskiy}
@@ -2070,8 +2505,12 @@ const Content = () => {
                       image: "/Soyuzov.png",
                     },
                   ],
-                  400,
-                  5900
+                  550,
+                  5900,
+                  900,
+                  800,
+                  { align: "center", justify: "center" },
+                  "main"
                 )
               }
               className={styles.imgSoyuzov}
@@ -2091,8 +2530,12 @@ const Content = () => {
                       image: "/Mordovin.png",
                     },
                   ],
+                  1000,
+                  6000,
+                  1200,
                   800,
-                  6000
+                  { align: "center", justify: "center" },
+                  "main"
                 )
               }
               className={styles.imgMordovin}
@@ -2108,8 +2551,12 @@ const Content = () => {
                       image: "/AltarNevskiy.png",
                     },
                   ],
+                  1000,
+                  6000,
+                  1200,
                   800,
-                  6000
+                  { align: "center", justify: "center" },
+                  "main"
                 )
               }
               className={styles.imgAltarNevskiy}
@@ -2129,8 +2576,12 @@ const Content = () => {
                       image: "/Moleben.png",
                     },
                   ],
-                  600,
-                  6200
+                  800,
+                  6200,
+                  1000,
+                  700,
+                  { align: "center", justify: "center" },
+                  "main"
                 )
               }
               className={styles.imgMoleben}
@@ -2146,8 +2597,12 @@ const Content = () => {
                       image: "/NikolayII.png",
                     },
                   ],
-                  600,
-                  6200
+                  800,
+                  6200,
+                  1000,
+                  800,
+                  { align: "center", justify: "center" },
+                  "main"
                 )
               }
               className={styles.imgNikolayII}
@@ -2163,8 +2618,12 @@ const Content = () => {
                       image: "/BirthdayCadet.png",
                     },
                   ],
-                  750,
-                  6200
+                  900,
+                  6200,
+                  1100,
+                  800,
+                  { align: "center", justify: "center" },
+                  "main"
                 )
               }
               className={styles.imgBirthdayCadet}
@@ -2180,8 +2639,12 @@ const Content = () => {
                       image: "/Gramota.png",
                     },
                   ],
-                  500,
-                  6200
+                  800,
+                  6200,
+                  1000,
+                  900,
+                  { align: "center", justify: "center" },
+                  "main"
                 )
               }
               className={styles.imgGramota}
