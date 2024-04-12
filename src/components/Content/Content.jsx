@@ -79,7 +79,10 @@ const Content = () => {
                   id !== "Minikh" &&
                   id !== "Shuvalov" &&
                   id !== "Vilboa" &&
-                  id !== "Orlov" && (
+                  id !== "Orlov" &&
+                  id !== "Meller" &&
+                  id !== "Potemkin" &&
+                  id !== "MikhailPavlovich" && (
                     <div
                       className={styles.modal}
                       style={{
@@ -1284,6 +1287,147 @@ const Content = () => {
                     </div>
                   </div>
                 )}
+                {id === "Meller" && (
+                  <div
+                    className={styles.modal}
+                    style={{
+                      width: sizeModal,
+                      height: heightModal,
+                      alignItems: positionImg.align,
+                      justifyContent: positionImg.justify,
+                    }}
+                  >
+                    <div className={styles.imageArray}>
+                      {selected.map((imageData) => (
+                        <img
+                          className={`${styles.imgModal} ${
+                            imageData ? styles.imgModalActive : ""
+                          }`}
+                          src={imageData.image}
+                          alt="x"
+                          style={{
+                            width: width,
+                          }}
+                        />
+                      ))}
+                    </div>
+                    <div className={styles.personDescription}>
+                      <div>
+                        <div
+                          style={{
+                            display: "flex",
+                            justifyContent: "center",
+                          }}
+                        >
+                          <div
+                            style={{
+                              color: "#efc074",
+                              fontSize: 32,
+                              fontWeight: "bold",
+                            }}
+                          >
+                            {personDescription[10].title}
+                          </div>
+                        </div>
+                        <div>{personDescription[10].content}</div>
+                      </div>
+                    </div>
+                  </div>
+                )}
+                {id === "Potemkin" && (
+                  <div
+                    className={styles.modal}
+                    style={{
+                      width: sizeModal,
+                      height: heightModal,
+                      alignItems: positionImg.align,
+                      justifyContent: positionImg.justify,
+                    }}
+                  >
+                    <div className={styles.imageArray}>
+                      {selected.map((imageData) => (
+                        <img
+                          className={`${styles.imgModal} ${
+                            imageData ? styles.imgModalActive : ""
+                          }`}
+                          src={imageData.image}
+                          alt="x"
+                          style={{
+                            width: width,
+                          }}
+                        />
+                      ))}
+                    </div>
+                    <div className={styles.personDescription}>
+                      <div>
+                        <div
+                          style={{
+                            display: "flex",
+                            justifyContent: "center",
+                          }}
+                        >
+                          <div
+                            style={{
+                              color: "#efc074",
+                              fontSize: 32,
+                              fontWeight: "bold",
+                            }}
+                          >
+                            {personDescription[11].title}
+                          </div>
+                        </div>
+                        <div>{personDescription[11].content}</div>
+                      </div>
+                    </div>
+                  </div>
+                )}
+                {id === "MikhailPavlovich" && (
+                  <div
+                    className={styles.modal}
+                    style={{
+                      width: sizeModal,
+                      height: heightModal,
+                      alignItems: positionImg.align,
+                      justifyContent: positionImg.justify,
+                    }}
+                  >
+                    <div className={styles.imageArray}>
+                      {selected.map((imageData) => (
+                        <img
+                          className={`${styles.imgModal} ${
+                            imageData ? styles.imgModalActive : ""
+                          }`}
+                          src={imageData.image}
+                          alt="x"
+                          style={{
+                            width: width,
+                          }}
+                        />
+                      ))}
+                    </div>
+                    <div className={styles.personDescription}>
+                      <div>
+                        <div
+                          style={{
+                            display: "flex",
+                            justifyContent: "center",
+                          }}
+                        >
+                          <div
+                            style={{
+                              color: "#efc074",
+                              fontSize: 32,
+                              fontWeight: "bold",
+                            }}
+                          >
+                            {personDescription[12].title}
+                          </div>
+                        </div>
+                        <div>{personDescription[12].content}</div>
+                      </div>
+                    </div>
+                  </div>
+                )}
               </Modal>
             )}
           </div>
@@ -1670,12 +1814,12 @@ const Content = () => {
                       image: "/Meller1.jpg",
                     },
                   ],
-                  500,
+                  450,
                   1200,
                   1200,
                   800,
                   { align: "flex-end", justify: "flex-start" },
-                  "person"
+                  "Meller"
                 )
               }
               className={styles.imgMichaelDesc}
@@ -1779,12 +1923,12 @@ const Content = () => {
                       image: "/Potemkin.png",
                     },
                   ],
-                  500,
+                  450,
                   2500,
                   1200,
                   800,
                   { align: "flex-end", justify: "flex-start" },
-                  "person"
+                  "Potemkin"
                 )
               }
               className={styles.descImage2}
@@ -2062,12 +2206,12 @@ const Content = () => {
                       image: "/ВеликийКнязь.png",
                     },
                   ],
-                  500,
+                  450,
                   3300,
                   1200,
                   800,
                   { align: "flex-end", justify: "flex-start" },
-                  "person"
+                  "MikhailPavlovich"
                 )
               }
               className={styles.imgDesc1}
