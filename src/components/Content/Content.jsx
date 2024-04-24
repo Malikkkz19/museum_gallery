@@ -1476,7 +1476,7 @@ const Content = () => {
               height={150}
               width={126}
               className={styles.imgBruce}
-              src="/YakovBruce.jpg"
+              src="/Брюс.png"
               alt="Bruce"
             />
             <img
@@ -1733,7 +1733,7 @@ const Content = () => {
                 )
               }
               className={styles.descImage}
-              src="/Shuvalov1.png"
+              src="/Шувалов.png"
               alt="desc"
             />
           </div>
@@ -1756,7 +1756,7 @@ const Content = () => {
                 )
               }
               className={styles.imgMordvinov}
-              src="/мордвинов.png"
+              src="/Мордвинов.png"
               alt="Mordvinov"
             />
             <img
@@ -1823,7 +1823,7 @@ const Content = () => {
                 )
               }
               className={styles.imgMichaelDesc}
-              src="/Meller.png"
+              src="/Меллер.png"
               alt="Desc Michael"
             />
             <img
@@ -1832,7 +1832,7 @@ const Content = () => {
                   [
                     {
                       name: "",
-                      image: "/Шувалов.png",
+                      image: "/Шувалов12.png",
                     },
                   ],
                   500,
@@ -1844,7 +1844,7 @@ const Content = () => {
                 )
               }
               className={styles.imgShuvalovDesc}
-              src="/Шувалов.png"
+              src="/Шувалов12.png"
               alt="Desc Shuvalov"
             />
             <img
@@ -1911,7 +1911,7 @@ const Content = () => {
                 )
               }
               className={styles.descImage1}
-              src="/Orlov.png"
+              src="/Орлов.png"
               alt="Description Orlov"
             />
             <img
@@ -1932,7 +1932,7 @@ const Content = () => {
                 )
               }
               className={styles.descImage2}
-              src="/Potemkin.png"
+              src="/Потемкин.png"
               alt="Description Orlov"
             />
             <img
@@ -1941,7 +1941,7 @@ const Content = () => {
                   [
                     {
                       name: "",
-                      image: "/Платон.png",
+                      image: "/ЗубовПлатон.png",
                     },
                   ],
                   500,
@@ -1953,7 +1953,7 @@ const Content = () => {
                 )
               }
               className={styles.descImage3}
-              src="/Платон.png"
+              src="/ЗубовПлатон.png"
               alt="Description Orlov"
             />
           </div>
@@ -1976,7 +1976,7 @@ const Content = () => {
                 )
               }
               className={styles.imgMelissino}
-              src="/Melissino.png"
+              src="/Мелиссино.png"
               alt="Melissino"
             />
             <img
@@ -2018,7 +2018,7 @@ const Content = () => {
                 )
               }
               className={styles.imgArakcheev}
-              src="/Arakcheev.png"
+              src="/Аракчеев.png"
               alt="Arakcheev"
             />
             <img
@@ -2215,7 +2215,7 @@ const Content = () => {
                 )
               }
               className={styles.imgDesc1}
-              src="/ВеликийКнязь.png"
+              src="/Павлович.png"
               alt="Konovnicin"
             />
             <img
@@ -2236,7 +2236,7 @@ const Content = () => {
                 )
               }
               className={styles.imgDesc2}
-              src="/МихаилНиколаевич.png"
+              src="/Романов.png"
               alt="Golenischev"
             />
             <img
@@ -2257,7 +2257,7 @@ const Content = () => {
                 )
               }
               className={styles.imgDesc3}
-              src="/Golenischev.png"
+              src="/Голенищев-Кутузов.png"
               alt="Golenischev"
             />
           </div>
@@ -2280,7 +2280,7 @@ const Content = () => {
                 )
               }
               className={styles.imgZubov}
-              src="/Konovnicin.png"
+              src="/Коновницын.png"
               alt="Zubov"
             />
             <img
@@ -2498,7 +2498,7 @@ const Content = () => {
                 )
               }
               className={styles.imgMendeleev}
-              src="/Mendeleev.png"
+              src="/Менделеев.png"
               alt="Mendeleev"
             />
             <img
@@ -2519,7 +2519,7 @@ const Content = () => {
                 )
               }
               className={styles.imgDobrolyubov}
-              src="/Dobrolyubov.png"
+              src="/Добролюбов.png"
               alt="Dobrolyubov"
             />
             <img
@@ -2528,7 +2528,7 @@ const Content = () => {
                   [
                     {
                       name: "",
-                      image: "/Chernishevskiy.png",
+                      image: "/Чернышевск.png",
                     },
                   ],
                   500,
@@ -2540,7 +2540,7 @@ const Content = () => {
                 )
               }
               className={styles.imgChernishevskiy}
-              src="/Chernishevskiy.png"
+              src="/Чернышевск.png"
               alt="Chernishevskiy"
             />
             <img
