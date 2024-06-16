@@ -15,22 +15,24 @@
   border: 2px solid #e4c03e;
   position: relative;
   width: 691px;
-  height: 1250px;
+  height: 1251px;
   background-image: url("/Petr1.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position: center -3px;
+  padding-top: -2px;
   .description {
     .descImage {
       cursor: pointer;
       position: absolute;
-      top: 40%;
+      top: 70%;
+      z-index: 1;
       left: 1%;
-      width: 200px;
+      width: 300px;
       &:hover {
         transform: scale(1.02);
       }
-      height: 282px;
+      height: 400px;
       transition: all 250ms ease-in-out;
     }
     .modal {
@@ -94,20 +96,20 @@
 
     position: absolute;
     width: 691px;
-    height: 600px;
+    height: 530px;
   }
   .historyPetr {
     position: absolute;
     width: 691px;
-    height: 650px;
+    height: 720px;
     bottom: 0%;
     .imgDecree {
       overflow: hidden;
-      border-radius: 15px;
-      top: 10%;
+
+      top: 15%;
       cursor: pointer;
       position: absolute;
-      left: 3%;
+      left: 50%;
       transition: all 250ms ease-in-out;
       &:hover {
         transform: scale(1.03);
@@ -116,11 +118,11 @@
     }
     .imgBruce {
       overflow: hidden;
-      border-radius: 15px;
+
       width: 190px;
       height: 254px;
-      top: 10%;
-      left: 31%;
+      top: -1%;
+      left: 46%;
       position: absolute;
       cursor: pointer;
       transition: all 250ms ease-in-out;
@@ -130,26 +132,27 @@
     }
     .imgGun {
       overflow: hidden;
-      border-radius: 15px;
-      top: 10%;
+      z-index: 1;
+      top: 35%;
       cursor: pointer;
       position: absolute;
-      right: 7%;
+      left: 1%;
       transition: all 250ms ease-in-out;
       overflow: hidden;
-      width: 230px;
-      height: 254px;
+      width: 150px;
+      height: 214px;
       &:hover {
         transform: scale(1.03);
       }
     }
     .imgTown {
       overflow: hidden;
-      border-radius: 15px;
+      width: 410px;
+      height: 300px;
       cursor: pointer;
       position: absolute;
-      bottom: 5%;
-      left: 3%;
+      bottom: 2%;
+      left: 1%;
       transition: all 250ms ease-in-out;
       &:hover {
         transform: scale(1.03);
@@ -160,10 +163,10 @@
       height: 280px;
       position: absolute;
       overflow: hidden;
-      border-radius: 15px;
+
       cursor: pointer;
       bottom: 5%;
-      right: 11%;
+      right: 13.4%;
       transition: all 250ms ease-in-out;
       &:hover {
         transform: scale(1.03);
@@ -172,13 +175,12 @@
     .imgMinih {
       z-index: 1;
       width: 190px;
-      height: 261px;
+      height: 254px;
       position: absolute;
       overflow: hidden;
-      border-radius: 15px;
       cursor: pointer;
-      top: 10%;
-      right: -155px;
+      top: -1%;
+      right: -135px;
       transition: all 250ms ease-in-out;
       &:hover {
         transform: scale(1.03);
@@ -186,14 +188,14 @@
     }
     .imgSveyskiy {
       z-index: 1;
-      width: 140px;
-      height: 280px;
+      width: 150px;
+      height: 214px;
       position: absolute;
       overflow: hidden;
-      border-radius: 15px;
+
       cursor: pointer;
-      bottom: 5%;
-      right: -93px;
+      top: 35%;
+      left: 23%;
       transition: all 250ms ease-in-out;
       &:hover {
         transform: scale(1.03);
@@ -236,29 +238,29 @@
     height: 650px;
     bottom: 0%;
     .imgMap {
-      width: 420px;
-      height: 261px;
+      width: 400px;
+      height: 281px;
       overflow: hidden;
       cursor: pointer;
       transition: all 250ms ease-in-out;
       position: absolute;
-      border-radius: 15px;
-      top: 10%;
-      left: 27%;
+
+      top: 28.5%;
+      left: -13%;
       &:hover {
         transform: scale(1.03);
       }
     }
     .imgText {
-      width: 235px;
-      height: 280px;
+      width: 205px;
+      height: 165px;
       overflow: hidden;
       cursor: pointer;
       transition: all 250ms ease-in-out;
       position: absolute;
       border-radius: 15px;
-      bottom: 5%;
-      left: 23%;
+      bottom: 2%;
+      left: -13%;
       &:hover {
         transform: scale(1.03);
       }

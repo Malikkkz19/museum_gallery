@@ -59,7 +59,7 @@ const Content = () => {
                 )
               }
               className={styles.descImage}
-              src="/museum2.png"
+              src="/Указ1.png"
               alt="desc"
             />
 
@@ -1497,7 +1497,7 @@ const Content = () => {
                 )
               }
               className={styles.imgGun}
-              src="/Пушечно-линейныйДвор.png"
+              src="/пушечный.jpg"
               alt="Пушечно-линейный двор"
             />
             <img
@@ -1506,7 +1506,7 @@ const Content = () => {
                   [
                     {
                       name: "",
-                      image: "/СухареваБашня.png",
+                      image: "/Сухарева.png",
                     },
                   ],
                   800,
@@ -1518,9 +1518,9 @@ const Content = () => {
                 )
               }
               className={styles.imgTown}
-              height={400}
+              height={300}
               width={395}
-              src="/СухареваБашня.png"
+              src="/КартаМСК.png"
               alt="Сухарева Башня на карте"
             />
             <img
@@ -1541,7 +1541,7 @@ const Content = () => {
                 )
               }
               className={styles.imgIng}
-              src="/УказОбУчреждении.png"
+              src="/Указ1719.jpg"
               alt="Указ об учреждении инженерной роты"
             />
             <img
@@ -1583,7 +1583,7 @@ const Content = () => {
                 )
               }
               className={styles.imgSveyskiy}
-              src="/свейский.png"
+              src="/Сухарева.png"
               alt="Свейский"
             />
           </div>
