@@ -35,10 +35,56 @@
       color: #e9cd67;
       text-shadow: 1px 1px 3px #000;
     }
-    .Mordvinov {
+    .Mordvinov1 {
       position: absolute;
       top: 1%;
       left: 11.6%;
+      z-index: 2;
+      width: 200px;
+      height: 260px;
+      .imgMordvinov1 {
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 260px;
+      }
+    }
+    .descMordvinov1 {
+      position: absolute;
+      top: 52%;
+      left: 11.6%;
+      width: 200px;
+      height: 100px;
+      text-align: center;
+      color: #e9cd67;
+      text-shadow: 1px 1px 3px #000;
+    }
+    .Begichev {
+      position: absolute;
+      top: 1%;
+      left: 28%;
+      z-index: 2;
+      width: 200px;
+      height: 260px;
+      .imgBegichev {
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 260px;
+      }
+    }
+    .descBegichev {
+      position: absolute;
+      top: 52%;
+      left: 28%;
+      width: 200px;
+      height: 100px;
+      text-align: center;
+      color: #e9cd67;
+      text-shadow: 1px 1px 3px #000;
+    }
+    .Mordvinov {
+      position: absolute;
+      top: 1%;
+      left: 34%;
       z-index: 2;
       width: 200px;
       height: 260px;
@@ -51,7 +97,329 @@
     .descMordvinov {
       position: absolute;
       top: 52%;
-      left: 11.6%;
+      left: 34%;
+      width: 200px;
+      height: 100px;
+      text-align: center;
+      color: #e9cd67;
+      text-shadow: 1px 1px 3px #000;
+    }
+    .Melissino {
+      position: absolute;
+      top: 1%;
+      left: 40%;
+      z-index: 2;
+      width: 200px;
+      height: 260px;
+      .imgMelissino {
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 260px;
+      }
+    }
+    .descMelissino {
+      position: absolute;
+      top: 52%;
+      left: 40%;
+      width: 200px;
+      height: 100px;
+      text-align: center;
+      color: #e9cd67;
+      text-shadow: 1px 1px 3px #000;
+    }
+    .Korsakov {
+      position: absolute;
+      top: 1%;
+      left: 46%;
+      z-index: 2;
+      width: 200px;
+      height: 260px;
+      .imgKorsakov {
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 260px;
+      }
+    }
+    .descKorsakov {
+      position: absolute;
+      top: 52%;
+      left: 46%;
+      width: 200px;
+      height: 100px;
+      text-align: center;
+      color: #e9cd67;
+      text-shadow: 1px 1px 3px #000;
+    }
+    .Kleymichel {
+      position: absolute;
+      top: 1%;
+      left: 50%;
+      z-index: 2;
+      width: 200px;
+      height: 260px;
+      .imgKleymichel {
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 260px;
+      }
+    }
+    .descKleymichel {
+      position: absolute;
+      top: 52%;
+      left: 50%;
+      width: 200px;
+      height: 100px;
+      text-align: center;
+      color: #e9cd67;
+      text-shadow: 1px 1px 3px #000;
+    }
+    .Zubov {
+      position: absolute;
+      top: 1%;
+      left: 54.3%;
+      z-index: 2;
+      width: 200px;
+      height: 260px;
+      .imgZubov {
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 260px;
+      }
+    }
+    .descZubov {
+      position: absolute;
+      top: 52%;
+      left: 54.3%;
+      width: 200px;
+      height: 100px;
+      text-align: center;
+      color: #e9cd67;
+      text-shadow: 1px 1px 3px #000;
+    }
+    .Kleymichel1 {
+      position: absolute;
+      top: 1%;
+      left: 57.5%;
+      z-index: 2;
+      width: 200px;
+      height: 260px;
+      .imgKleymichel1 {
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 260px;
+      }
+    }
+    .descKleymichel1 {
+      position: absolute;
+      top: 52%;
+      left: 57.5%;
+      width: 200px;
+      height: 100px;
+      text-align: center;
+      color: #e9cd67;
+      text-shadow: 1px 1px 3px #000;
+    }
+    .Kuruta {
+      position: absolute;
+      top: 1%;
+      left: 60.4%;
+      z-index: 2;
+      width: 200px;
+      height: 260px;
+      .imgKuruta {
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 260px;
+      }
+    }
+    .descKuruta {
+      position: absolute;
+      top: 52%;
+      left: 60.3%;
+      width: 200px;
+      height: 100px;
+      text-align: center;
+      color: #e9cd67;
+      text-shadow: 1px 1px 3px #000;
+    }
+    .Bibikov {
+      position: absolute;
+      top: 1%;
+      left: 64.5%;
+      z-index: 2;
+      width: 200px;
+      height: 260px;
+      .imgBibikov {
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 260px;
+      }
+    }
+    .descBibikov {
+      position: absolute;
+      top: 52%;
+      left: 64.35%;
+      width: 200px;
+      height: 100px;
+      text-align: center;
+      color: #e9cd67;
+      text-shadow: 1px 1px 3px #000;
+    }
+    .Putyata {
+      position: absolute;
+      top: 1%;
+      left: 67%;
+      z-index: 2;
+      width: 200px;
+      height: 260px;
+      .imgPutyata {
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 260px;
+      }
+    }
+    .descPutyata {
+      position: absolute;
+      top: 52%;
+      left: 67%;
+      width: 200px;
+      height: 100px;
+      text-align: center;
+      color: #e9cd67;
+      text-shadow: 1px 1px 3px #000;
+    }
+    .Stepanov {
+      position: absolute;
+      top: 1%;
+      left: 72.1%;
+      z-index: 2;
+      width: 200px;
+      height: 260px;
+      .imgStepanov {
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 260px;
+      }
+    }
+    .descStepanov {
+      position: absolute;
+      top: 52%;
+      left: 72%;
+      width: 200px;
+      height: 100px;
+      text-align: center;
+      color: #e9cd67;
+      text-shadow: 1px 1px 3px #000;
+    }
+    .Danilovich {
+      position: absolute;
+      top: 1%;
+      left: 76.6%;
+      z-index: 2;
+      width: 200px;
+      height: 260px;
+      .imgDanilovich {
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 260px;
+      }
+    }
+    .descDanilovich {
+      position: absolute;
+      top: 52%;
+      left: 76.5%;
+      width: 200px;
+      height: 100px;
+      text-align: center;
+      color: #e9cd67;
+      text-shadow: 1px 1px 3px #000;
+    }
+    .Makarov {
+      position: absolute;
+      top: 1%;
+      left: 79.9%;
+      z-index: 2;
+      width: 200px;
+      height: 260px;
+      .imgMakarov {
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 260px;
+      }
+    }
+    .descMakarov {
+      position: absolute;
+      top: 52%;
+      left: 79.8%;
+      width: 200px;
+      height: 100px;
+      text-align: center;
+      color: #e9cd67;
+      text-shadow: 1px 1px 3px #000;
+    }
+    .Durop {
+      position: absolute;
+      top: 1%;
+      left: 84.4%;
+      z-index: 2;
+      width: 200px;
+      height: 260px;
+      .imgDurop {
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 260px;
+      }
+    }
+    .descDurop {
+      position: absolute;
+      top: 52%;
+      left: 84.4%;
+      width: 200px;
+      height: 100px;
+      text-align: center;
+      color: #e9cd67;
+      text-shadow: 1px 1px 3px #000;
+    }
+    .Sumarokov {
+      position: absolute;
+      top: 1%;
+      left: 88.1%;
+      z-index: 2;
+      width: 240px;
+      height: 260px;
+      .imgSumarokov {
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 260px;
+      }
+    }
+    .descSumarokov {
+      position: absolute;
+      top: 52%;
+      left: 88.35%;
+      width: 200px;
+      height: 100px;
+      text-align: center;
+      color: #e9cd67;
+      text-shadow: 1px 1px 3px #000;
+    }
+    .Lidenberg {
+      position: absolute;
+      top: 1%;
+      left: 94%;
+      z-index: 2;
+      width: 200px;
+      height: 260px;
+      .imgLidenberg {
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 260px;
+      }
+    }
+    .descLidenberg {
+      position: absolute;
+      top: 52%;
+      left: 93.9%;
       width: 200px;
       height: 100px;
       text-align: center;
