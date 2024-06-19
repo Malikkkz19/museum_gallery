@@ -16,7 +16,7 @@
   position: relative;
   width: 691px;
   height: 1251px;
-  background-image: url("/Petrr1.png");
+  background-image: url("/Petrrr.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: -15px -5px;
@@ -77,13 +77,26 @@
         border: 2px solid #ffffff;
         border-radius: 15px;
         transition: transform 250ms ease-in-out;
+
         &:hover {
           transform: scale(1.03);
         }
       }
+      .imgModalMap {
+        border: 2px solid #ffffff;
+        border-radius: 15px;
+        transition: transform 250ms ease-in-out;
+
+        &:hover {
+          transform: scale(2.2);
+          transform-origin: top left;
+        }
+      }
       .imgModalActive {
         animation: myAnimation 250ms ease-in-out;
+        z-index: 3;
       }
+
       @keyframes myAnimation {
         0% {
           opacity: 0;
@@ -103,17 +116,23 @@
     width: 691px;
     height: 720px;
     bottom: 0%;
-    .imgDecree {
+    .Decree {
+      text-align: justify;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: #fff;
       overflow: hidden;
-
-      top: 15%;
-      cursor: pointer;
+      width: 280px;
+      height: 150px;
+      top: 35%;
       position: absolute;
-      left: 50%;
+      left: 46%;
       transition: all 250ms ease-in-out;
+      font-size: 7.78px;
+      z-index: 2;
       &:hover {
-        transform: scale(1.03);
-        transition: transform 250ms ease-in-out;
+        transform: scale(2.5);
+        transition: all 250ms ease-in-out;
+        z-index: 4;
       }
     }
     .imgBruce {
@@ -132,7 +151,7 @@
     }
     .imgGun {
       overflow: hidden;
-      z-index: 1;
+      z-index: 3;
       top: 35%;
       cursor: pointer;
       position: absolute;
@@ -154,22 +173,43 @@
       bottom: 2%;
       left: 1%;
       transition: all 250ms ease-in-out;
+      z-index: 2;
       &:hover {
-        transform: scale(1.03);
+        transform: scale(2.2);
+        transform-origin: bottom left;
+
+        z-index: 3;
       }
     }
     .imgIng {
       width: 170px;
-      height: 280px;
+      height: 230px;
       position: absolute;
       overflow: hidden;
 
       cursor: pointer;
-      bottom: 5%;
+      bottom: 11%;
       right: 13.4%;
       transition: all 250ms ease-in-out;
       &:hover {
         transform: scale(1.03);
+      }
+    }
+    .Ing {
+      color: #fff;
+      font-size: 6.5px;
+      background-color: rgba(0, 0, 0, 0.5);
+      width: 170px;
+      height: 130px;
+      position: absolute;
+      overflow: hidden;
+      bottom: 1%;
+      right: 13.4%;
+      transition: all 250ms ease-in-out;
+      &:hover {
+        transform: scale(2.5);
+        transform-origin: bottom;
+        z-index: 3;
       }
     }
     .imgMinih {
@@ -186,8 +226,8 @@
         transform: scale(1.03);
       }
     }
-    .imgSveyskiy {
-      z-index: 1;
+    .imgSuhareva {
+      z-index: 2;
       width: 150px;
       height: 214px;
       position: absolute;
@@ -211,7 +251,7 @@
   position: relative;
   width: 613px;
   height: 1250px;
-  background-image: url("/AnnaI.png");
+  background-image: url("/Annaaa.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -252,18 +292,23 @@
         transform: scale(1.03);
       }
     }
-    .imgText {
+    .Text {
       width: 205px;
       height: 165px;
       overflow: hidden;
-      cursor: pointer;
+      background-color: rgba(0, 0, 0, 0.5);
       transition: all 250ms ease-in-out;
       position: absolute;
-      border-radius: 15px;
+      z-index: 2;
+      font-size: 7.3px;
+      color: #fff;
+      text-align: justify;
+      padding: 2px;
       bottom: 2%;
       left: -13%;
       &:hover {
-        transform: scale(1.03);
+        transform: scale(2.5);
+        transform-origin: bottom;
       }
     }
 
@@ -307,7 +352,7 @@
   border-bottom: 0.3px solid #fff;
   width: 945px;
   height: 1250px;
-  background-image: url("/ElizI.png");
+  background-image: url("/Elizavetaaa.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -440,7 +485,7 @@
   position: relative;
   width: 1330px;
   height: 1250px;
-  background-image: url("/EkatII.png");
+  background-image: url("/Ekaterinaaa.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -623,7 +668,7 @@
   position: relative;
   width: 380px;
   height: 1250px;
-  background-image: url("/PavI.png");
+  background-image: url("/Pavelll.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: -330px center;

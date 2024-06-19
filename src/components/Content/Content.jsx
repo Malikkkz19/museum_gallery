@@ -16,6 +16,12 @@ const Content = () => {
   const [id, setId] = useState("");
   // const [content, setContent] = useState("");
 
+  // const imageStyle = {
+  //   transition: "all 250ms ease-in-out",
+  //   transform: "scale(2.2)",
+  //   width: "100px",
+  // };
+
   const handleItemClick = (
     item,
     width,
@@ -42,22 +48,6 @@ const Content = () => {
           <div className={styles.description}>
             <img
               id="Petr1"
-              onClick={() =>
-                handleItemClick(
-                  [
-                    {
-                      name: "Петр I",
-                      image: "/museum2.png",
-                    },
-                  ],
-                  600,
-                  -100,
-                  1000,
-                  900,
-                  { align: "flex-start", justify: "center" },
-                  "main"
-                )
-              }
               className={styles.descImage}
               src="/Указ1.png"
               alt="desc"
@@ -119,18 +109,16 @@ const Content = () => {
                     <div className={styles.imageArray}>
                       {selected.map((imageData) => (
                         <img
-                          className={`${styles.imgModal} ${
+                          className={`${styles.imgModalMap} ${
                             imageData ? styles.imgModalActive : ""
                           }`}
                           src={imageData.image}
                           alt="x"
-                          style={{
-                            width: width,
-                          }}
+                          style={{ width: width }}
                         />
                       ))}
                     </div>
-                    <div className={styles.descriptionImage}>
+                    {/* <div className={styles.descriptionImage}>
                       <p
                         style={{
                           height: "770px",
@@ -813,7 +801,7 @@ const Content = () => {
                         7. Большое Охтенское. 8 Малое Охтенское. 9.
                         Старообрядческое.
                       </p>
-                    </div>
+                    </div> */}
                   </div>
                 )}
                 {id === "Kutuzov" && (
@@ -1433,36 +1421,33 @@ const Content = () => {
           </div>
 
           <div className={styles.historyPetr}>
+            <div className={styles.Decree}>
+              <span style={{ paddingLeft: "10px" }}>
+                В <b>1701 году</b>
+              </span>{" "}
+              по указу Петра I в Москве организована Артиллерийская школа,
+              которая состояла из трёх частей - школа «верхняя» - инженерная и
+              две школы «нижних» - «цифирная» и «словесная». <br />
+              <span style={{ paddingLeft: "10px" }}>Главный надзор</span> за
+              Артиллерийской школой принадлежал Якову Вилимовичу Брюсу.
+              <br />{" "}
+              <span style={{ color: "#eac949", paddingInline: "10px" }}>
+                <b>16 января 1712 года</b>
+              </span>{" "}
+              «верхняя» школа выделена из Артиллерийской, и переведена на новое
+              место - к Сухаревой Башне в Немецкой слободе. Школа делилась на
+              три класса: класс арифметики, класс геометрии и тригонометрии,
+              класс фортификации. Учителями в инженерную школу были назначены
+              пленный «свейский майор» и инженер Рейтер и полковник инженер
+              Широк (Шток).
+            </div>
             <img
               onClick={() =>
                 handleItemClick(
                   [
                     {
                       name: "",
-                      image: "/УказПетра1.png",
-                    },
-                  ],
-                  500,
-                  -100,
-                  1200,
-                  800,
-                  { align: "flex-end", justify: "flex-start" },
-                  "person"
-                )
-              }
-              className={styles.imgDecree}
-              height={150}
-              width={180}
-              src="/УказПетра1.png"
-              alt="decree"
-            />
-            <img
-              onClick={() =>
-                handleItemClick(
-                  [
-                    {
-                      name: "",
-                      image: "/YakovBruce.jpg",
+                      image: "/Брюс.png",
                     },
                   ],
                   450,
@@ -1485,13 +1470,13 @@ const Content = () => {
                   [
                     {
                       name: "",
-                      image: "/Пушечно-линейныйДвор.png",
+                      image: "/пушечный.jpg",
                     },
                   ],
-                  800,
+                  900,
                   -100,
                   1000,
-                  800,
+                  700,
                   { align: "flex-start", justify: "center" },
                   "main"
                 )
@@ -1501,27 +1486,9 @@ const Content = () => {
               alt="Пушечно-линейный двор"
             />
             <img
-              onClick={() =>
-                handleItemClick(
-                  [
-                    {
-                      name: "",
-                      image: "/Сухарева.png",
-                    },
-                  ],
-                  800,
-                  -100,
-                  1000,
-                  800,
-                  { align: "flex-start", justify: "center" },
-                  "main"
-                )
-              }
               className={styles.imgTown}
-              height={300}
-              width={395}
               src="/КартаМСК.png"
-              alt="Сухарева Башня на карте"
+              alt="Карта МСК"
             />
             <img
               onClick={() =>
@@ -1529,10 +1496,10 @@ const Content = () => {
                   [
                     {
                       name: "",
-                      image: "/УказОбУчреждении.png",
+                      image: "/Указ1719.jpg",
                     },
                   ],
-                  400,
+                  600,
                   -250,
                   700,
                   1000,
@@ -1544,6 +1511,23 @@ const Content = () => {
               src="/Указ1719.jpg"
               alt="Указ об учреждении инженерной роты"
             />
+            <div className={styles.Ing}>
+              <b style={{ textAlign: "center" }}>
+                Указ об учреждении инженерной роты{" "}
+              </b>{" "}
+              <br />
+              <p style={{ textAlign: "justify" }}>
+                <b style={{ paddingLeft: "10px" }}>7 марта 1719 года</b> в
+                Санкт-Петербурге учреждена Инженерная рота. Именной указ,
+                объявленный из Военной коллегии, гласил: «Великий Государь
+                указал: учинить при Санкт-Петербурге Инженерную роту и быть ей
+                под владением Полковника Инженера Кулона, а в тое роту взять с
+                Москвы Инженерной школы учеников всех, сколько их в той школе
+                ныне обретается и Инженера, который при той школе определен для
+                учения школьников, с надлежащими их инструменты и со всем, что
+                есть».
+              </p>
+            </div>
             <img
               onClick={() =>
                 handleItemClick(
@@ -1571,20 +1555,20 @@ const Content = () => {
                   [
                     {
                       name: "",
-                      image: "/свейский.png",
+                      image: "/Сухарева.png",
                     },
                   ],
-                  360,
+                  560,
                   -150,
-                  1200,
+                  650,
                   800,
-                  { align: "flex-end", justify: "flex-start" },
-                  "person"
+                  { align: "center", justify: "center" },
+                  "main"
                 )
               }
-              className={styles.imgSveyskiy}
+              className={styles.imgSuhareva}
               src="/Сухарева.png"
-              alt="Свейский"
+              alt="Suhareva"
             />
           </div>
         </div>
@@ -1640,9 +1624,10 @@ const Content = () => {
                       image: "/Карта.png",
                     },
                   ],
-                  900,
-                  1000,
-                  1500
+                  800,
+                  300,
+                  1190,
+                  1100
                 );
               }}
               className={styles.imgMap}
@@ -1650,23 +1635,21 @@ const Content = () => {
               alt="Карта"
             />
 
-            <img
-              onClick={() =>
-                handleItemClick(
-                  [
-                    {
-                      name: "",
-                      image: "/Текст.png",
-                    },
-                  ],
-                  500,
-                  100
-                )
-              }
-              className={styles.imgText}
-              src="/Текст.png"
-              alt="Text about Ekaterina I"
-            />
+            <div className={styles.Text}>
+              <b style={{ paddingLeft: "10px" }}>7 марта 1719 года</b> в
+              Санкт-Петербурге учреждена инженерная рота. <br />
+              <b style={{ paddingLeft: "10px" }}>В апреле 1719 года</b> ученики
+              Московской инженерной школы переведены в Санкт-Петербург. Во главе
+              Петербургской школы поставлен инженер-полковник Де-Кулон
+              (De-Colong). <br />
+              <b style={{ paddingLeft: "10px" }}>В июне 1728 года</b>
+              именным указом Екатерины I Инженерная часть выделена из ведения
+              Канцелярии Главной Артиллерии, и подчинена особой Инженерной
+              конторе под руководством графа Фон-Миниха. <br />
+              <b style={{ paddingLeft: "10px" }}>В 1733 году</b> Инженерная
+              школа переведена в построенный для неё казеный деревянный дом на
+              Петербургской стороне, на берегу реки Петровка (Ждановка).
+            </div>
 
             <img
               onClick={() =>
