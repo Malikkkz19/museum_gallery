@@ -1592,7 +1592,7 @@ const Content = () => {
                 )
               }
               className={styles.descImage}
-              src="/Сенатский Указ.png"
+              src="/СенатУказ.png"
               alt="Description about Ekaterina I"
             />
           </div>
@@ -1650,6 +1650,20 @@ const Content = () => {
               школа переведена в построенный для неё казеный деревянный дом на
               Петербургской стороне, на берегу реки Петровка (Ждановка).
             </div>
+            <div className={styles.Text1}>
+              <b style={{ paddingLeft: "10px" }}>В 1731 году</b> на Литейном
+              дворе в Санкт-Петербурге граф Миних основал Артиллерийскую школу.
+              <br /> <span style={{ paddingLeft: "10px" }}>
+                Её основной
+              </span>{" "}
+              контингент составили незнатные дворяне и офицерские дети. <br />
+              <span style={{ paddingLeft: "10px" }}>Директором школы</span>{" "}
+              назначен капитан Гинтер. <br />{" "}
+              <span style={{ paddingLeft: "10px" }}>
+                Первоночально обучалось
+              </span>{" "}
+              60 учеников, вскоре их численость была доведена до 90.
+            </div>
 
             <img
               onClick={() =>
@@ -1679,20 +1693,20 @@ const Content = () => {
                   [
                     {
                       name: "",
-                      image: "/описаниекарты.png",
+                      image: "/Vilgelm.jpeg",
                     },
                   ],
-                  880,
+                  500,
                   650,
-                  1000,
-                  900,
-                  { align: "flex-start", justify: "center" },
+                  1200,
+                  800,
+                  { align: "center", justify: "flex-start" },
                   "main"
                 )
               }
-              className={styles.imgDescMap}
-              src="/описаниекарты.png"
-              alt="Desc for map"
+              className={styles.imgVilgelm}
+              src="/Vilgelm.jpeg"
+              alt="Vilgelm"
             />
           </div>
         </div>
