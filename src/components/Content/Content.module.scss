@@ -299,17 +299,18 @@
       background-color: rgba(0, 0, 0, 0.5);
       transition: all 250ms ease-in-out;
       position: absolute;
-      z-index: 2;
+      z-index: 3;
       font-size: 7.3px;
       color: #fff;
       text-align: justify;
       padding: 2px;
       bottom: 2%;
       left: -13%;
+
       &:hover {
         transform: scale(2.5);
         transform-origin: bottom;
-        z-index: 3;
+        z-index: 4;
       }
     }
     .Text1 {
@@ -319,7 +320,7 @@
       background-color: rgba(0, 0, 0, 0.5);
       transition: all 250ms ease-in-out;
       position: absolute;
-      z-index: 2;
+      z-index: 3;
       font-size: 9.8px;
       color: #fff;
       text-align: justify;
@@ -329,6 +330,7 @@
       &:hover {
         transform: scale(2.5);
         transform-origin: bottom;
+        z-index: 3;
       }
     }
 
@@ -363,7 +365,7 @@
       &:hover {
         transform: scale(4);
         transform-origin: bottom;
-        z-index: 3;
+        z-index: 4;
       }
     }
     .imgVilgelm {
@@ -427,6 +429,7 @@
       &:hover {
         transform: scale(3);
         transform-origin: bottom;
+        z-index: 4;
       }
     }
   }
@@ -452,7 +455,7 @@
       position: absolute;
       z-index: 2;
       bottom: -28%;
-      left: 33%;
+      left: 34%;
       &:hover {
         transform: scale(1.02);
       }
@@ -465,24 +468,67 @@
     width: 945px;
     height: 650px;
     bottom: 0%;
-    .imgMordvinov {
-      width: 200px;
-      height: 262px;
-      top: 10%;
-      left: 44%;
+    .imgUchenik {
+      width: 150px;
+      height: 221px;
+      bottom: 2%;
+      left: 56%;
       cursor: pointer;
       transition: all 250ms ease-in-out;
       position: absolute;
-      border-radius: 15px;
+      z-index: 3;
       &:hover {
-        transform: scale(1.03);
+        transition: all 250ms ease-in-out;
+        transform: scale(3);
+        transform-origin: bottom;
+        z-index: 4;
+      }
+    }
+    .textSuvorov {
+      width: 280px;
+      height: 160px;
+      overflow: hidden;
+      background-color: rgba(0, 0, 0, 0.5);
+      transition: all 250ms ease-in-out;
+      position: absolute;
+      z-index: 2;
+      font-size: 7.6px;
+      color: #fff;
+      text-align: justify;
+      padding: 2px;
+      bottom: 2%;
+      left: 2%;
+      &:hover {
+        transform: scale(3);
+        transform-origin: bottom;
+        z-index: 4;
+      }
+    }
+    .textShuv {
+      width: 360px;
+      height: 202px;
+      overflow: hidden;
+      background-color: rgba(0, 0, 0, 0.5);
+      transition: all 250ms ease-in-out;
+      position: absolute;
+      z-index: 3;
+      font-size: 8px;
+      color: #fff;
+      text-align: justify;
+      padding: 2px;
+      top: 30%;
+      left: 24%;
+      &:hover {
+        transform: scale(2.5);
+        transform-origin: center;
+        z-index: 3;
       }
     }
     .imgKutuzov {
       width: 150px;
       height: 221px;
       bottom: 2%;
-      left: 35%;
+      left: 34%;
       cursor: pointer;
       transition: all 250ms ease-in-out;
       position: absolute;
@@ -506,45 +552,45 @@
       }
     }
 
-    .imgMichaelDesc {
-      width: 200px;
-      height: 261px;
-      top: 10%;
-      left: 70%;
-      cursor: pointer;
+    .textSchool {
+      width: 250px;
+      height: 230px;
+      overflow: hidden;
+      background-color: rgba(0, 0, 0, 0.5);
       transition: all 250ms ease-in-out;
       position: absolute;
-      border-radius: 15px;
-      &:hover {
-        transform: scale(1.03);
-      }
-    }
-    .imgShuvalovDesc {
-      width: 300px;
-      height: 221px;
       z-index: 2;
-      bottom: 38%;
-      left: 27%;
-      cursor: pointer;
-      transition: all 250ms ease-in-out;
-      position: absolute;
-      border-radius: 15px;
+      font-size: 7.8px;
+      color: #fff;
+      text-align: justify;
+      padding: 2px;
+      bottom: 2%;
+      right: 1%;
       &:hover {
-        transform: scale(1.03);
+        transform: scale(3);
+        transform-origin: bottom;
+        z-index: 3;
       }
     }
-    .imgVilboa {
-      z-index: 1;
-      width: 200px;
-      height: 281px;
-      bottom: 5%;
-      right: -9%;
-      cursor: pointer;
+
+    .textVilboa {
+      width: 300px;
+      height: 200px;
+      overflow: hidden;
+      background-color: rgba(0, 0, 0, 0.5);
       transition: all 250ms ease-in-out;
       position: absolute;
-      border-radius: 15px;
+      z-index: 2;
+      font-size: 8px;
+      color: #fff;
+      text-align: justify;
+      padding: 2px;
+      bottom: 39%;
+      right: -2%;
       &:hover {
-        transform: scale(1.03);
+        transform: scale(3);
+        transform-origin: center;
+        z-index: 3;
       }
     }
     .imgSmoking {
@@ -582,8 +628,8 @@
       width: 185px;
       height: 260px;
       position: absolute;
-      top: 45%;
-      border-radius: 15px;
+      bottom: -29%;
+
       left: 1%;
       cursor: pointer;
       transition: all 250ms ease-in-out;
