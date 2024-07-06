@@ -340,11 +340,30 @@
       cursor: pointer;
       transition: all 250ms ease-in-out;
       position: absolute;
-
       bottom: 37%;
       right: -29%;
       &:hover {
         transform: scale(1.03);
+      }
+    }
+    .textLomonosov {
+      width: 190px;
+      height: 60px;
+      overflow: hidden;
+      background-color: rgba(0, 0, 0, 0.5);
+      transition: all 250ms ease-in-out;
+      position: absolute;
+      z-index: 2;
+      font-size: 6px;
+      color: #fff;
+      text-align: justify;
+      padding: 2px;
+      bottom: 28%;
+      right: -32%;
+      &:hover {
+        transform: scale(4);
+        transform-origin: bottom;
+        z-index: 3;
       }
     }
     .imgVilgelm {
@@ -359,6 +378,55 @@
       left: 66.8%;
       &:hover {
         transform: scale(1.03);
+      }
+    }
+    .imgMatveevich {
+      z-index: 2;
+      width: 160px;
+      height: 214px;
+      overflow: hidden;
+      cursor: pointer;
+      transition: all 250ms ease-in-out;
+      position: absolute;
+      top: 28%;
+      left: 60.8%;
+      &:hover {
+        transform: scale(1.03);
+      }
+    }
+    .textMatveevich {
+      width: 205px;
+      height: 70px;
+      overflow: hidden;
+      background-color: rgba(0, 0, 0, 0.5);
+      transition: all 250ms ease-in-out;
+      position: absolute;
+      z-index: 2;
+      font-size: 7.3px;
+      color: #fff;
+      text-align: justify;
+      padding: 2px;
+      bottom: 28%;
+      left: 56%;
+      &:hover {
+        transform: scale(2.5);
+        transform-origin: bottom;
+        z-index: 3;
+      }
+    }
+    .imgKanal {
+      z-index: 2;
+      width: 240px;
+      height: 160px;
+      overflow: hidden;
+      cursor: pointer;
+      transition: all 250ms ease-in-out;
+      position: absolute;
+      bottom: 2%;
+      left: 59%;
+      &:hover {
+        transform: scale(3);
+        transform-origin: bottom;
       }
     }
   }

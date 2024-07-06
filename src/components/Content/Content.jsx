@@ -1575,22 +1575,6 @@ const Content = () => {
         <div className={styles.imp2}>
           <div className={styles.description}>
             <img
-              onClick={() =>
-                handleItemClick(
-                  [
-                    {
-                      name: "",
-                      image: "/Сенатский Указ.png",
-                    },
-                  ],
-                  700,
-                  50,
-                  1000,
-                  800,
-                  { align: "flex-start", justify: "center" },
-                  "main"
-                )
-              }
               className={styles.descImage}
               src="/СенатУказ.png"
               alt="Description about Ekaterina I"
@@ -1686,6 +1670,15 @@ const Content = () => {
               src="/Ломоносов1.png"
               alt="Lomonosov"
             />
+            <div className={styles.textLomonosov}>
+              <span style={{ paddingLeft: "10px" }}>
+                Михаил  Васильевич  Ломоносов
+              </span>{" "}
+              оказал существенное влияние на Петра Ивановича Шувалова в ходе
+              реформирования Инженерной школы , при подготовке плана учреждения
+              Кадетского корпуса. М.В. Ломоносов читал лекции ученикам
+              Артиллерийской школы по физике и химии .
+            </div>
 
             <img
               onClick={() =>
@@ -1700,7 +1693,7 @@ const Content = () => {
                   650,
                   1200,
                   800,
-                  { align: "center", justify: "flex-start" },
+                  { align: "centerf", justify: "flex-start" },
                   "main"
                 )
               }
@@ -1708,6 +1701,37 @@ const Content = () => {
               src="/Vilgelm.jpeg"
               alt="Vilgelm"
             />
+            <img
+              onClick={() =>
+                handleItemClick(
+                  [
+                    {
+                      name: "",
+                      image: "/Матвеевич.jpeg",
+                    },
+                  ],
+                  500,
+                  650,
+                  1200,
+                  800,
+                  { align: "centerf", justify: "flex-start" },
+                  "main"
+                )
+              }
+              className={styles.imgMatveevich}
+              src="/Матвеевич.jpeg"
+              alt="Матвеевич"
+            />
+            <div className={styles.textMatveevich}>
+              <span style={{ paddingLeft: "10px" }}>Светлейший князь</span>{" "}
+              Илларион Матвеевич Голенищев-Кутузов. Генерал-поручик и сенатор.{" "}
+              <span style={{ paddingLeft: "10px" }}>В 1737 году</span> Илларион
+              Матвеевич блестяще окончил Инженерную школу.{" "}
+              <span style={{ paddingLeft: "10px" }}>Илларион</span> Матвеевич
+              после Абрама Петровича Ганнибала стал главным военным инженером
+              России.
+            </div>
+            <img className={styles.imgKanal} src="/Канал.png" alt="Канал" />
           </div>
         </div>
         <div className={styles.imp3}>
