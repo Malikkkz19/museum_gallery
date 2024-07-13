@@ -2148,7 +2148,7 @@ const Content = () => {
 
                 className={styles.imgGeneralPlan2}
                 src="/Схемa2.png"
-                alt="GeneralPlan2123123123213"
+                alt="GeneralPlan212312123133123213"
             />
           </div>
         </div>
