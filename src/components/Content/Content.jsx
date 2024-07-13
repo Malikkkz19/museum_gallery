@@ -2175,27 +2175,7 @@ const Content = () => {
               src="/plantown.png"
               alt="Plan Town"
             />
-            <img
-              onClick={() =>
-                handleItemClick(
-                  [
-                    {
-                      name: "",
-                      image: "/EkaterinaDesc.png",
-                    },
-                  ],
-                  600,
-                  3000,
-                  900,
-                  900,
-                  { align: "flex-start", justify: "center" },
-                  "main"
-                )
-              }
-              className={styles.imgEkaterinaDesc}
-              src="/EkaterinaDesc.png"
-              alt="Description Ekaterina"
-            />
+
           </div>
         </div>
         <div className={styles.imp6}>
