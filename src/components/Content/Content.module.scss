@@ -640,6 +640,7 @@
       width: 185px;
       height: 260px;
       position: absolute;
+      z-index: 2;
       bottom: -30%;
       right: 30%;
       cursor: pointer;
@@ -701,6 +702,19 @@
       position: absolute;
       top: -12%;
       right: -21%;
+      transition: all 250ms ease-in-out;
+      &:hover {
+        transform: scale(1.03);
+      }
+    }
+    .imgMeller {
+      width: 190px;
+      height: 261px;
+      cursor: pointer;
+      z-index:2;
+      position: absolute;
+      top: -12%;
+      left: 30%;
       transition: all 250ms ease-in-out;
       &:hover {
         transform: scale(1.03);

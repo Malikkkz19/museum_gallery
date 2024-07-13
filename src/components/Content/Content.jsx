@@ -49,7 +49,7 @@ const Content = () => {
             <img
               id="Petr1"
               className={styles.descImage}
-              src="/Указ1.png"
+              src="/УказПетра.png"
               alt="desc"
             />
 
@@ -2032,6 +2032,27 @@ const Content = () => {
               className={styles.imgArakcheev}
               src="/Аракчеев.png"
               alt="Arakcheev"
+            />
+            <img
+                onClick={() =>
+                    handleItemClick(
+                        [
+                          {
+                            name: "",
+                            image: "/Meller.png",
+                          },
+                        ],
+                        480,
+                        2200,
+                        1200,
+                        800,
+                        { align: "flex-end", justify: "flex-start" },
+                        "Meller"
+                    )
+                }
+                className={styles.imgMeller}
+                src="/Meller.png"
+                alt="Meller"
             />
             <img
               onClick={() =>
