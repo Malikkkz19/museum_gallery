@@ -2139,25 +2139,16 @@ const Content = () => {
               alt="Znamya"
             />
             <img
-              onClick={() =>
-                handleItemClick(
-                  [
-                    {
-                      name: "",
-                      image: "/Схема1.png",
-                    },
-                  ],
-                  1100,
-                  2600,
-                  1300,
-                  800,
-                  { align: "center", justify: "center" },
-                  "scheme"
-                )
-              }
+
               className={styles.imgPlan}
               src="/Схема1.png"
               alt="General Plan"
+            />
+            <img
+
+                className={styles.imgGeneralPlan2}
+                src="/Схемa2.png"
+                alt="GeneralPlan2"
             />
           </div>
         </div>
@@ -2555,27 +2546,7 @@ const Content = () => {
               src="/Чернышевск.png"
               alt="Chernishevskiy"
             />
-            <img
-              onClick={() =>
-                handleItemClick(
-                  [
-                    {
-                      name: "",
-                      image: "/Схемa2.png",
-                    },
-                  ],
-                  1100,
-                  4300,
-                  1300,
-                  800,
-                  { align: "center", justify: "center" },
-                  "main"
-                )
-              }
-              className={styles.imgGeneralPlan2}
-              src="/Схемa2.png"
-              alt="GeneralPlan2"
-            />
+
             <img
               onClick={() =>
                 handleItemClick(
