@@ -49,7 +49,7 @@ const Content = () => {
             <img
               id="Petr1"
               className={styles.descImage}
-              src="/Указ1.png"
+              src="/УказПетра.png"
               alt="desc"
             />
 
@@ -1648,7 +1648,27 @@ const Content = () => {
               </span>{" "}
               60 учеников, вскоре их численость была доведена до 90.
             </div>
-
+            <img
+              onClick={() =>
+                handleItemClick(
+                  [
+                    {
+                      name: "",
+                      image: "/Репнин.png",
+                    },
+                  ],
+                  500,
+                  400,
+                  1200,
+                  900,
+                  { align: "flex-end", justify: "flex-start" },
+                  "person"
+                )
+              }
+              className={styles.imgRepnin}
+              src="/Репнин.png"
+              alt="Repnin"
+            />
             <img
               onClick={() =>
                 handleItemClick(
@@ -1856,7 +1876,27 @@ const Content = () => {
               камню. В ходе установления нового штата корпуса в 1784 году Школа
               художеств опять была переименована в Солдатскую роту.
             </div>
-
+            <img
+              onClick={() =>
+                handleItemClick(
+                  [
+                    {
+                      name: "",
+                      image: "/вильбоа1.png",
+                    },
+                  ],
+                  450,
+                  1500,
+                  1200,
+                  900,
+                  { align: "flex-end", justify: "flex-start" },
+                  "person"
+                )
+              }
+              className={styles.imgVilboa}
+              src="/вильбоа1.png"
+              alt="Vilboa"
+            />
             <div className={styles.textVilboa}>
               <span style={{ paddingLeft: "10px" }}>25 октября 1762 года</span>{" "}
               Императрицей Екатериной II, по представлению
@@ -2039,6 +2079,27 @@ const Content = () => {
                   [
                     {
                       name: "",
+                      image: "/Meller.png",
+                    },
+                  ],
+                  480,
+                  2200,
+                  1200,
+                  800,
+                  { align: "flex-end", justify: "flex-start" },
+                  "Meller"
+                )
+              }
+              className={styles.imgMeller}
+              src="/Meller.png"
+              alt="Meller"
+            />
+            <img
+              onClick={() =>
+                handleItemClick(
+                  [
+                    {
+                      name: "",
                       image: "/ArakcheevDesc.png",
                     },
                   ],
@@ -2139,25 +2200,14 @@ const Content = () => {
               alt="Znamya"
             />
             <img
-              onClick={() =>
-                handleItemClick(
-                  [
-                    {
-                      name: "",
-                      image: "/Схема1.png",
-                    },
-                  ],
-                  1100,
-                  2600,
-                  1300,
-                  800,
-                  { align: "center", justify: "center" },
-                  "scheme"
-                )
-              }
               className={styles.imgPlan}
               src="/Схема1.png"
               alt="General Plan"
+            />
+            <img
+              className={styles.imgGeneralPlan2}
+              src="/Схемa2.png"
+              alt="GeneralPlan212312123234133123213"
             />
           </div>
         </div>
@@ -2183,27 +2233,6 @@ const Content = () => {
               className={styles.imgPlanTown}
               src="/plantown.png"
               alt="Plan Town"
-            />
-            <img
-              onClick={() =>
-                handleItemClick(
-                  [
-                    {
-                      name: "",
-                      image: "/EkaterinaDesc.png",
-                    },
-                  ],
-                  600,
-                  3000,
-                  900,
-                  900,
-                  { align: "flex-start", justify: "center" },
-                  "main"
-                )
-              }
-              className={styles.imgEkaterinaDesc}
-              src="/EkaterinaDesc.png"
-              alt="Description Ekaterina"
             />
           </div>
         </div>
@@ -2555,27 +2584,7 @@ const Content = () => {
               src="/Чернышевск.png"
               alt="Chernishevskiy"
             />
-            <img
-              onClick={() =>
-                handleItemClick(
-                  [
-                    {
-                      name: "",
-                      image: "/Схемa2.png",
-                    },
-                  ],
-                  1100,
-                  4300,
-                  1300,
-                  800,
-                  { align: "center", justify: "center" },
-                  "main"
-                )
-              }
-              className={styles.imgGeneralPlan2}
-              src="/Схемa2.png"
-              alt="GeneralPlan2"
-            />
+
             <img
               onClick={() =>
                 handleItemClick(
