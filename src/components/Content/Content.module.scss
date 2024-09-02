@@ -468,7 +468,7 @@
       width: 200px;
       height: 250px;
       position: absolute;
-      z-index: 2;
+      z-index: 3;
       bottom: -28%;
       left: 34%;
       &:hover {
@@ -622,10 +622,10 @@
     }
     .imgSmoking {
       z-index: 1;
-      width: 200px;
+      width: 320px;
       height: 150px;
       top: 31%;
-      right: -22%;
+      right: -35.5%;
       cursor: pointer;
       transition: all 250ms ease-in-out;
       position: absolute;
@@ -651,6 +651,7 @@
     height: 600px;
     position: absolute;
     .descImage1 {
+      z-index: 2;
       width: 185px;
       height: 260px;
       position: absolute;
@@ -675,20 +676,6 @@
         transform: scale(1.03);
       }
     }
-    .descImage3 {
-      z-index: 1;
-      width: 185px;
-      height: 260px;
-      position: absolute;
-      top: 45%;
-      border-radius: 15px;
-      right: -4%;
-      cursor: pointer;
-      transition: all 250ms ease-in-out;
-      &:hover {
-        transform: scale(1.03);
-      }
-    }
   }
   .historyEkaterinaII {
     width: 1330px;
@@ -701,20 +688,40 @@
       cursor: pointer;
       position: absolute;
       top: -12%;
-      right: 12%;
+      right: 10%;
       transition: all 250ms ease-in-out;
       &:hover {
         transform: scale(1.03);
       }
     }
-    .imgDescMelissino {
-      width: 200px;
-      height: 240px;
-      cursor: pointer;
+    .descMelissino {
+      width: 240px;
+      height: 195px;
+      overflow: hidden;
+      background-color: rgba(0, 0, 0, 0.5);
+      transition: all 250ms ease-in-out;
       position: absolute;
-      top: 28%;
-      right: 12%;
-      opacity: 0.9;
+      z-index: 2;
+      font-size: 9px;
+      color: #fff;
+      text-align: justify;
+      padding: 2px;
+      bottom: 39%;
+      right: 9%;
+      &:hover {
+        transform: scale(3);
+        transform-origin: center;
+        z-index: 3;
+      }
+    }
+    .imgSmokingg {
+      width: 150px;
+      height: 171px;
+      cursor: pointer;
+      z-index: 2;
+      position: absolute;
+      top: 26%;
+      right: -4%;
       transition: all 250ms ease-in-out;
       &:hover {
         transform: scale(1.03);
@@ -727,7 +734,7 @@
       z-index: 2;
       position: absolute;
       top: -12%;
-      right: -21%;
+      right: -22.5%;
       transition: all 250ms ease-in-out;
       &:hover {
         transform: scale(1.03);
@@ -746,27 +753,67 @@
         transform: scale(1.03);
       }
     }
-    .imgDescArakcheev {
-      width: 200px;
-      height: 171px;
-      cursor: pointer;
-      z-index: 2;
+    .descArakcheev {
+      width: 280px;
+      height: 170px;
+      overflow: hidden;
+      background-color: rgba(0, 0, 0, 0.5);
+      transition: all 250ms ease-in-out;
       position: absolute;
-      top: 28.1%;
-      right: -21.3%;
+      z-index: 2;
+      font-size: 7.4px;
+      color: #fff;
+      text-align: justify;
+      padding: 2px;
+      bottom: 46%;
+      right: -26%;
+      &:hover {
+        transform: scale(3);
+        transform-origin: center;
+        z-index: 3;
+      }
+    }
+    .imgMedalion {
+      z-index: 1;
+      width: 250px;
+      height: 150px;
+      cursor: pointer;
+      position: absolute;
+      top: 31%;
+      right: 54.7%;
       transition: all 250ms ease-in-out;
       &:hover {
         transform: scale(1.03);
       }
     }
-    .imgSmoking {
-      z-index: 1;
-      width: 200px;
-      height: 150px;
+    .textMedalion {
+      width: 210px;
+      height: 120px;
+      overflow: hidden;
+      background-color: rgba(0, 0, 0, 0.5);
+      transition: all 250ms ease-in-out;
+      position: absolute;
+      z-index: 2;
+      font-size: 7.7px;
+      color: #fff;
+      text-align: justify;
+      padding: 2px;
+      bottom: 48%;
+      right: 37.5%;
+      &:hover {
+        transform: scale(3);
+        transform-origin: center;
+        z-index: 3;
+      }
+    }
+    .imgHorse {
+      z-index: 0.5;
+      width: 155px;
+      height: 140px;
       cursor: pointer;
       position: absolute;
-      top: 31%;
-      right: 58%;
+      top: 30%;
+      right: 26.5%;
       transition: all 250ms ease-in-out;
       &:hover {
         transform: scale(1.03);
@@ -786,14 +833,34 @@
     }
     .imgGreece {
       width: 315px;
-      height: 281px;
+      height: 190px;
       cursor: pointer;
       position: absolute;
-      bottom: 2%;
+      bottom: 16%;
       left: 39%;
       transition: all 250ms ease-in-out;
       &:hover {
         transform: scale(1.03);
+      }
+    }
+    .descCadets {
+      width: 315px;
+      height: 88px;
+      overflow: hidden;
+      background-color: rgba(0, 0, 0, 0.5);
+      transition: all 250ms ease-in-out;
+      position: absolute;
+      z-index: 2;
+      font-size: 7px;
+      color: #fff;
+      text-align: justify;
+      padding: 2px;
+      bottom: 3%;
+      left: 39%;
+      &:hover {
+        transform: scale(3);
+        transform-origin: bottom;
+        z-index: 3;
       }
     }
     .imgZnamya {
@@ -857,14 +924,44 @@
     height: 1250px;
     .imgPlanTown {
       width: 350px;
-      height: 261px;
+      height: 120px;
       cursor: pointer;
       position: absolute;
-      bottom: 2%;
+      bottom: 14%;
       left: 4%;
       transition: all 250ms ease-in-out;
       &:hover {
-        transform: scale(1.03);
+        transform: scale(3);
+        transform-origin: center;
+        z-index: 3;
+      }
+    }
+    .descEk2 {
+      width: 130px;
+      height: 160px;
+      cursor: pointer;
+      position: absolute;
+      bottom: 1%;
+      left: 2%;
+      transition: all 250ms ease-in-out;
+      &:hover {
+        transform: scale(3);
+        transform-origin: bottom;
+        z-index: 3;
+      }
+    }
+    .imgManeg {
+      width: 230px;
+      height: 150px;
+      cursor: pointer;
+      position: absolute;
+      bottom: 1%;
+      right: 2%;
+      transition: all 250ms ease-in-out;
+      &:hover {
+        transform: scale(3);
+        transform-origin: bottom;
+        z-index: 3;
       }
     }
   }

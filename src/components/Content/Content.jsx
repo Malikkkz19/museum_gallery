@@ -1470,10 +1470,10 @@ const Content = () => {
                   [
                     {
                       name: "",
-                      image: "/пушечный.jpg",
+                      image: "/пуш.png",
                     },
                   ],
-                  900,
+                  600,
                   -100,
                   1000,
                   700,
@@ -1482,7 +1482,7 @@ const Content = () => {
                 )
               }
               className={styles.imgGun}
-              src="/пушечный.jpg"
+              src="/пуш.png"
               alt="Пушечно-линейный двор"
             />
             <img
@@ -1713,12 +1713,12 @@ const Content = () => {
                   650,
                   1200,
                   800,
-                  { align: "centerf", justify: "flex-start" },
+                  { align: "center", justify: "flex-start" },
                   "main"
                 )
               }
               className={styles.imgVilgelm}
-              src="/Vilgelm.jpeg"
+              src="/Vilgelm.png"
               alt="Vilgelm"
             />
             <img
@@ -1739,7 +1739,7 @@ const Content = () => {
                 )
               }
               className={styles.imgMatveevich}
-              src="/Матвеевич.jpeg"
+              src="/Гол-Кут.png"
               alt="Матвеевич"
             />
             <div className={styles.textMatveevich}>
@@ -1987,27 +1987,6 @@ const Content = () => {
               src="/Потемкин.png"
               alt="Description Orlov"
             />
-            <img
-              onClick={() =>
-                handleItemClick(
-                  [
-                    {
-                      name: "",
-                      image: "/ЗубовПлатон.png",
-                    },
-                  ],
-                  500,
-                  2700,
-                  1200,
-                  800,
-                  { align: "flex-end", justify: "flex-start" },
-                  "person"
-                )
-              }
-              className={styles.descImage3}
-              src="/ЗубовПлатон.png"
-              alt="Description Orlov"
-            />
           </div>
           <div className={styles.historyEkaterinaII}>
             <img
@@ -2031,26 +2010,44 @@ const Content = () => {
               src="/Мелиссино.png"
               alt="Melissino"
             />
+            <div className={styles.descMelissino} alt="Desc Melissino">
+              <span style={{ paddingLeft: "10px" }}>Пётр </span>Иванович
+              Мелиссино - первый русский генерал от артиллерии, с 1783 по 1797
+              год директор Артиллерийского и Инженерного шляхетного (кадетского
+              с 1794) корпуса. <br />{" "}
+              <span style={{ paddingLeft: "10px" }}>Автор</span> проекта
+              реформирования Корпуса (1784). <br />
+              <span style={{ paddingLeft: "10px" }}>В период</span> его
+              руководства по проекту Демерцова построено здание кадетских
+              классов (1795-1796 гг.). <br />
+              <span style={{ paddingLeft: "10px" }}>Фигурой,</span> ростом и
+              осанкой Мелиссино настолько напоминал Петра I, что скульптор
+              Фальконе просил его позировать для фигуры "Медного всадника".{" "}
+              <br />
+              <span style={{ paddingLeft: "10px" }}>После</span>
+              смерти П.И. Мелиссино, корпусом командовали А.И. Корсаков, А.А.
+              Клеймихель.
+            </div>
             <img
               onClick={() =>
                 handleItemClick(
                   [
                     {
                       name: "",
-                      image: "/MelissinoDesc.png",
+                      image: "/Форма.png",
                     },
                   ],
-                  600,
-                  2000,
-                  1000,
-                  900,
-                  { align: "flex-start", justify: "center" },
+                  480,
+                  2200,
+                  1200,
+                  800,
+                  { align: "flex-end", justify: "flex-start" },
                   "main"
                 )
               }
-              className={styles.imgDescMelissino}
-              src="/MelissinoDesc.png"
-              alt="Desc Melissino"
+              className={styles.imgSmokingg}
+              src="/Форма.png"
+              alt="Forma"
             />
             <img
               onClick={() =>
@@ -2094,48 +2091,45 @@ const Content = () => {
               src="/Meller.png"
               alt="Meller"
             />
+            <div className={styles.descArakcheev} alt="Desc Arakcheev">
+              <span style={{ paddingLeft: "10px" }}>Aракчеев</span> Алексей
+              Андреевич - генерал от артиллерии, военный министр. В 1787 году
+              закончил Артиллерийский и инженерный кадетский корпус в звании
+              подпоручика и оставлен при корпусе, преподавал математику и
+              артиллерию. <br />
+              <span style={{ paddingLeft: "10px" }}>Председатель</span> комиссии
+              по преобразованию артиллерии Русской армии с 1802 года. <br />
+              <span style={{ paddingLeft: "10px" }}>Инспектор</span> всей
+              артиллерии и командир лейб-гвардии артиллерийского батальона.
+              Участник Аустерлицкого сражения (командир пехотной дивизии).{" "}
+              <br />
+              <span style={{ paddingLeft: "10px" }}>13</span>
+              января 1808 года назначен военным министром Российской империи;{" "}
+              <br />
+              <span style={{ paddingLeft: "10px" }}>С</span> 1 января 1810
+              председатель департамента военных дел в Государственном совете.{" "}
+              <br />
+              <span style={{ paddingLeft: "10px" }}>С</span> 14 июня 1812 -
+              управляющий Канцелярией императора Александра I.
+            </div>
             <img
-              onClick={() =>
-                handleItemClick(
-                  [
-                    {
-                      name: "",
-                      image: "/ArakcheevDesc.png",
-                    },
-                  ],
-                  600,
-                  2400,
-                  1000,
-                  900,
-                  { align: "flex-start", justify: "center" },
-                  "main"
-                )
-              }
-              className={styles.imgDescArakcheev}
-              src="/ArakcheevDesc.png"
-              alt="Desc Arakcheev"
+              className={styles.imgMedalion}
+              src="/Medalion.png"
+              alt="Medalion"
             />
-            <img
-              onClick={() =>
-                handleItemClick(
-                  [
-                    {
-                      name: "",
-                      image: "/SmokingPavelI.png",
-                    },
-                  ],
-                  500,
-                  2650,
-                  1200,
-                  800,
-                  { align: "flex-end", justify: "flex-start" },
-                  "person"
-                )
-              }
-              className={styles.imgSmoking}
-              src="/SmokingPavelI.png"
-              alt="Smoking PavelI"
-            />
+            <div className={styles.textMedalion}>
+              <span style={{ paddingLeft: "10px" }}>Наибoлее</span>{" "}
+              преуспевающие кадеты награждались серебряными, вызолоченными
+              медалями, на одной стороне которой находился вензель императрицы
+              Екатерины II, а на другой - надпись: «За прилежность и хорошее
+              поведение».
+              <br /> <span style={{ paddingLeft: "10px" }}>Медаль</span>{" "}
+              носилась на позолоченной цепочке, в петлице. Количество кадетов,
+              имевших медали, никогда не превышало 12. <br />
+              <span style={{ paddingLeft: "10px" }}>Такой</span> медалью в
+              августе 1786 года был награжден кадет Алексей Аракчеев.
+            </div>
+            <img className={styles.imgHorse} src="/Horse.png" alt="Horse" />
             <img
               onClick={() =>
                 handleItemClick(
@@ -2178,6 +2172,18 @@ const Content = () => {
               src="/Greece.png"
               alt="Greece"
             />
+            <div className={styles.descCadets}>
+              <span style={{ paddingLeft: "10px" }}>7 января</span> 1775 года
+              организованна Греческая гимназия, которая в 1792 году
+              преобразована в Корпус чужестранных единоверцев. <br />
+              <span style={{ paddingLeft: "10px" }}>М.И. Мордвинову</span> было
+              поручено «устроить помещение для греческих мальчиков на 200
+              человек». 7 января 1775 года повелено было поместить эту школу
+              рядом с Артиллерийским и инженерным шляхетным корпусом. Указ
+              гласил: «...поручаем вам построить для них деревянный дом на
+              пустом против Артиллерийского кадетского корпуса месте, на что и
+              приказали отпустить вам из Кабинета двадцать тысяч рублей»
+            </div>
             <img
               onClick={() =>
                 handleItemClick(
@@ -2214,22 +2220,12 @@ const Content = () => {
         <div className={styles.imp5}>
           <div className={styles.historyPavelI}>
             <img
-              onClick={() =>
-                handleItemClick(
-                  [
-                    {
-                      name: "",
-                      image: "/plantown.png",
-                    },
-                  ],
-                  700,
-                  2950,
-                  1000,
-                  800,
-                  { align: "center", justify: "center" },
-                  "main"
-                )
-              }
+              className={styles.descEk2}
+              src="/descek2.png"
+              alt="Desc Ekaterina 2"
+            />
+            <img className={styles.imgManeg} src="/maneg.png" alt="Maneg" />
+            <img
               className={styles.imgPlanTown}
               src="/plantown.png"
               alt="Plan Town"
