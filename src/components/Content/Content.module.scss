@@ -178,7 +178,7 @@
         transform: scale(2.2);
         transform-origin: bottom left;
 
-        z-index: 3;
+        z-index: 4;
       }
     }
     .imgIng {
@@ -1000,9 +1000,9 @@
       width: 205px;
       height: 260px;
       position: absolute;
-      top: 45%;
-      border-radius: 15px;
-      right: 3%;
+      bottom: -30%;
+
+      right: -90%;
       cursor: pointer;
       transition: all 250ms ease-in-out;
       &:hover {
@@ -1230,12 +1230,12 @@
     height: 600px;
     .descImage {
       z-index: 1;
-      width: 185px;
-      height: 260px;
+      width: 240px;
+      height: 235px;
       position: absolute;
-      top: 45%;
-      border-radius: 15px;
-      right: -8%;
+      bottom: -103%;
+
+      right: -34%;
       cursor: pointer;
       transition: all 250ms ease-in-out;
       &:hover {
@@ -1249,99 +1249,244 @@
     height: 650px;
     bottom: 0%;
     .imgSmokingNikolayI {
-      width: 190px;
-      height: 261px;
+      width: 280px;
+      height: 161px;
       cursor: pointer;
       position: absolute;
-      top: 10%;
-      left: 6%;
-      border-radius: 15px;
+      top: 31%;
+      left: 31%;
+
       transition: all 250ms ease-in-out;
       &:hover {
         transform: scale(1.03);
       }
     }
-    .imgCadetKorpus {
-      width: 190px;
-      height: 261px;
+    .imgOber {
+      width: 140px;
+      height: 180px;
       cursor: pointer;
       position: absolute;
-      top: 10%;
-      left: 28%;
-      border-radius: 15px;
+      top: 29%;
+      left: 59%;
       transition: all 250ms ease-in-out;
       &:hover {
         transform: scale(1.03);
       }
     }
+    .imgBaraban {
+      width: 140px;
+      height: 180px;
+      cursor: pointer;
+      position: absolute;
+      top: 29%;
+      left: 73%;
+      transition: all 250ms ease-in-out;
+      &:hover {
+        transform: scale(1.03);
+      }
+    }
+    .descSenat {
+      width: 260px;
+      height: 180px;
+      overflow: hidden;
+      background-color: rgba(0, 0, 0, 0.5);
+      transition: all 250ms ease-in-out;
+      position: absolute;
+      z-index: 2;
+      font-size: 8px;
+      color: #fff;
+      text-align: justify;
+      padding: 2px;
+      bottom: 43.5%;
+      left: 4%;
+      &:hover {
+        transform: scale(3);
+        transform-origin: bottom;
+        z-index: 3;
+      }
+    }
+
     .imgMendeleev {
-      width: 190px;
-      height: 261px;
+      width: 195px;
+      height: 281px;
       cursor: pointer;
       position: absolute;
-      top: 10%;
-      left: 50%;
-      border-radius: 15px;
+      top: -12%;
+      right: -53%;
+      z-index: 2;
+
       transition: all 250ms ease-in-out;
       &:hover {
         transform: scale(1.03);
+      }
+    }
+    .descMendeleev {
+      width: 195px;
+      height: 110px;
+      overflow: hidden;
+      background-color: rgba(0, 0, 0, 0.5);
+      transition: all 250ms ease-in-out;
+      position: absolute;
+      z-index: 2;
+      font-size: 7.5px;
+      color: #fff;
+      text-align: justify;
+      padding: 2px;
+      top: 31.3%;
+      right: -53%;
+      &:hover {
+        transform: scale(3);
+        transform-origin: bottom;
+        z-index: 3;
       }
     }
     .imgDobrolyubov {
-      width: 190px;
-      height: 261px;
+      width: 195px;
+      height: 281px;
       cursor: pointer;
       position: absolute;
-      top: 10%;
-      right: 9%;
-      border-radius: 15px;
+      top: -12%;
+      z-index: 2;
+      right: -33%;
+
       transition: all 250ms ease-in-out;
       &:hover {
         transform: scale(1.03);
+      }
+    }
+    .descDobrolyubov {
+      width: 195px;
+      height: 40px;
+      overflow: hidden;
+      background-color: rgba(0, 0, 0, 0.5);
+      transition: all 250ms ease-in-out;
+      position: absolute;
+      z-index: 2;
+      font-size: 7.5px;
+      color: #fff;
+      text-align: justify;
+      padding: 2px;
+      top: 31.2%;
+      right: -33%;
+      &:hover {
+        transform: scale(3);
+        transform-origin: bottom;
+        z-index: 3;
       }
     }
     .imgChernishevskiy {
       z-index: 1;
-      width: 190px;
-      height: 261px;
+      width: 195px;
+      height: 281px;
       cursor: pointer;
       position: absolute;
-      top: 10%;
+      top: -12%;
       right: -13%;
-      border-radius: 15px;
+
       transition: all 250ms ease-in-out;
       &:hover {
         transform: scale(1.03);
       }
     }
-
+    .descChernishevskiy {
+      width: 195px;
+      height: 110px;
+      overflow: hidden;
+      background-color: rgba(0, 0, 0, 0.5);
+      transition: all 250ms ease-in-out;
+      position: absolute;
+      z-index: 2;
+      font-size: 7.5px;
+      color: #fff;
+      text-align: justify;
+      padding: 2px;
+      top: 31%;
+      right: -13%;
+      &:hover {
+        transform: scale(3);
+        transform-origin: bottom;
+        z-index: 3;
+      }
+    }
     .imgZnamya1844 {
-      width: 200px;
-      height: 281px;
+      width: 220px;
+      height: 211px;
       cursor: pointer;
       position: absolute;
-      bottom: 5%;
-      left: 48%;
-      border-radius: 15px;
+      top: -8%;
+      left: 21%;
+
       transition: all 250ms ease-in-out;
       &:hover {
         transform: scale(1.03);
         border: 1px solid #41403d;
       }
     }
-    .imgGeneralPlan1858 {
-      z-index: 1;
-      width: 400px;
-      height: 281px;
+    .imgZdan2 {
+      width: 600px;
+      height: 205px;
       cursor: pointer;
       position: absolute;
       bottom: 5%;
-      right: -10%;
-      border-radius: 15px;
+      left: 13%;
       transition: all 250ms ease-in-out;
       &:hover {
         transform: scale(1.03);
-        border: 1px solid #ffffff;
+        border: 1px solid #41403d;
+      }
+    }
+    .imgFlag {
+      z-index: 2;
+      width: 170px;
+      height: 170px;
+      cursor: pointer;
+      position: absolute;
+      bottom: 15%;
+      right: -7%;
+      transition: all 250ms ease-in-out;
+      &:hover {
+        transform: scale(1.03);
+        border: 1px solid #41403d;
+      }
+    }
+    .descFlag1 {
+      width: 160px;
+      height: 175px;
+      overflow: hidden;
+      background-color: rgba(0, 0, 0, 0.5);
+      transition: all 250ms ease-in-out;
+      position: absolute;
+      z-index: 2;
+      font-size: 7.6px;
+      color: #fff;
+      text-align: justify;
+      padding: 2px;
+      bottom: 15%;
+      right: 10%;
+      &:hover {
+        transform: scale(3);
+        transform-origin: bottom;
+        z-index: 3;
+      }
+    }
+    .descFlag2 {
+      width: 330px;
+      height: 80px;
+      overflow: hidden;
+      background-color: rgba(0, 0, 0, 0.5);
+      transition: all 250ms ease-in-out;
+      position: absolute;
+      z-index: 2;
+      font-size: 7.6px;
+      color: #fff;
+      text-align: justify;
+      padding: 2px;
+      bottom: 2%;
+      right: -7%;
+      &:hover {
+        transform: scale(3);
+        transform-origin: bottom;
+        z-index: 3;
       }
     }
   }
@@ -1362,27 +1507,15 @@
     height: 650px;
     position: absolute;
     bottom: 0%;
-    .imgAttestat {
-      width: 190px;
-      height: 261px;
-      cursor: pointer;
-      position: absolute;
-      top: 10%;
-      left: 18%;
-      border-radius: 15px;
-      transition: all 250ms ease-in-out;
-      &:hover {
-        transform: scale(1.03);
-      }
-    }
+
     .imgSmokingAlexII {
-      width: 190px;
-      height: 261px;
+      width: 180px;
+      height: 311px;
       cursor: pointer;
       position: absolute;
-      top: 10%;
-      left: 43%;
-      border-radius: 15px;
+      bottom: 3%;
+      left: 41%;
+      z-index: 2;
       transition: all 250ms ease-in-out;
       &:hover {
         transform: scale(1.03);
@@ -1416,19 +1549,7 @@
         transform: scale(1.03);
       }
     }
-    .imgDesctoPlan {
-      width: 190px;
-      height: 281px;
-      cursor: pointer;
-      position: absolute;
-      bottom: 5%;
-      left: 14%;
-      border-radius: 15px;
-      transition: all 250ms ease-in-out;
-      &:hover {
-        transform: scale(1.03);
-      }
-    }
+
     .imgChurchNevskiy {
       width: 410px;
       height: 281px;

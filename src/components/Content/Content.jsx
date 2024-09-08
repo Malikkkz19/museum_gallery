@@ -2513,7 +2513,7 @@ const Content = () => {
                   [
                     {
                       name: "",
-                      image: "/Znamya1862.png",
+                      image: "/Знамя1862.png",
                     },
                   ],
                   550,
@@ -2525,7 +2525,7 @@ const Content = () => {
                 )
               }
               className={styles.descImage}
-              src="/Znamya1862.png"
+              src="/Знамя1862.png"
               alt="Знамя 1862 года"
             />
           </div>
@@ -2556,21 +2556,60 @@ const Content = () => {
                   [
                     {
                       name: "",
-                      image: "/Desc2Cadet.png",
+                      image: "/Ober.png",
                     },
                   ],
-                  550,
-                  4300,
-                  900,
+                  500,
+                  4100,
+                  1200,
                   800,
-                  { align: "flex-start", justify: "center" },
-                  "main"
+                  { align: "flex-end", justify: "flex-start" }
                 )
               }
-              className={styles.imgCadetKorpus}
-              src="/Desc2Cadet.png"
-              alt="Description 2 Cadet "
+              className={styles.imgOber}
+              src="/Ober.png"
+              alt="Ober"
             />
+            <img
+              onClick={() =>
+                handleItemClick(
+                  [
+                    {
+                      name: "",
+                      image: "/Baraban.png",
+                    },
+                  ],
+                  500,
+                  4100,
+                  1200,
+                  800,
+                  { align: "flex-end", justify: "flex-start" }
+                )
+              }
+              className={styles.imgBaraban}
+              src="/Baraban.png"
+              alt="Baraban"
+            />
+            <div className={styles.descSenat}>
+              <span style={{ paddingLeft: "10px" }}>В</span> событиях на
+              Сенатской площади 14 декабря 1825 года, восстании Черниговского
+              пехотного полка и выступлении Литовского пионерного батальона
+              участвовали воспитанники Второго кадетского корпуса и Дворянского
+              полка.
+              <br /> <span style={{ paddingLeft: "10px" }}>36</span>{" "}
+              воспитанников кадетского корпуса были привлечены к следствию по
+              делу об участии в тайных обществах. <br />
+              <span style={{ paddingLeft: "10px" }}>Среди</span> них:
+              генерал-майоры Ф. Г. Кальм, И.К. Арнольди, Н. М. Попов; полковники
+              И.Г. Бурцов и М.Ф. Митьков; подполковники Г.С. Батеньков и А.К.
+              Берстель; майоры В.Ф. Раевский и Н.И.Лорер; капитаны Н.Н. Семичев
+              и С.О. Розен; поручик Д. А. Нащокин и разжалованный из
+              штабс-капитанов в рядовые Д. Грахольский. <br />
+              <span style={{ paddingLeft: "10px" }}>Все</span> они, за
+              исключением генералов И.К. Арнольди и Н.М. Попова, понесли
+              наказание.
+            </div>
+
             <img
               onClick={() =>
                 handleItemClick(
@@ -2592,6 +2631,15 @@ const Content = () => {
               src="/Менделеев.png"
               alt="Mendeleev"
             />
+            <div className={styles.descMendeleev}>
+              <span style={{ paddingLeft: "10px" }}>В</span> 1861 году
+              «Физическую географию» и «Химию» преподавал 27-летний магистр
+              физики и химии Дмитрий Иванович Менделеев, создавший учебных
+              классах Корпуса самую первую в Санкт- Петербурге химическую
+              лабораторию. Кадеты 2-го кадетского корпуса тоже стали первыми,
+              кто познакомился с его знаменитой Периодической таблицей
+              химических элементов.
+            </div>
             <img
               onClick={() =>
                 handleItemClick(
@@ -2610,16 +2658,21 @@ const Content = () => {
                 )
               }
               className={styles.imgDobrolyubov}
-              src="/Добролюбов.png"
+              src="/Добролюбов1.png"
               alt="Dobrolyubov"
             />
+            <div className={styles.descDobrolyubov}>
+              <span style={{ paddingLeft: "10px" }}>В</span> конце 1850-х годов
+              «словесность» преподавал литературный критик, публицист Николай
+              Александрович Добролюбов.
+            </div>
             <img
               onClick={() =>
                 handleItemClick(
                   [
                     {
                       name: "",
-                      image: "/Чернышевск.png",
+                      image: "/Чернышевск1.png",
                     },
                   ],
                   500,
@@ -2631,17 +2684,25 @@ const Content = () => {
                 )
               }
               className={styles.imgChernishevskiy}
-              src="/Чернышевск.png"
+              src="/Чернышевск1.png"
               alt="Chernishevskiy"
             />
-
+            <div className={styles.descChernishevskiy}>
+              <span style={{ paddingLeft: "10px" }}>В</span> течение трех
+              месяцев 1850 года, нескольких месяцев 1853 года, а затем с 24
+              января 1854 года по 14 ноября 1855 года в Корпусе работал в
+              качестве учителя 3-го ранга по предмету «Русская словесность»
+              титулярный советник Николай Григорьевич Чернышевский, уволенный с
+              этой должности по «домашним обстоятельствам» (получив при
+              увольнении отличную аттестацию).
+            </div>
             <img
               onClick={() =>
                 handleItemClick(
                   [
                     {
                       name: "",
-                      image: "/Znamya1844.png",
+                      image: "/Знамя1844.png",
                     },
                   ],
                   550,
@@ -2653,7 +2714,7 @@ const Content = () => {
                 )
               }
               className={styles.imgZnamya1844}
-              src="/Znamya1844.png"
+              src="/Знамя1844.png"
               alt="Znamya1844"
             />
             <img
@@ -2662,46 +2723,66 @@ const Content = () => {
                   [
                     {
                       name: "",
-                      image: "/GeneralPlan1858.png",
+                      image: "/Здание2.png",
                     },
                   ],
-                  1100,
-                  4900,
-                  1300,
+                  550,
+                  4500,
                   800,
-                  { align: "center", justify: "center" },
+                  800,
+                  { align: "flex-start", justify: "center" },
                   "main"
                 )
               }
-              className={styles.imgGeneralPlan1858}
-              src="/GeneralPlan1858.png"
-              alt="GeneralPlan1858"
+              className={styles.imgZdan2}
+              src="/Здание2.png"
+              alt="Здание2"
             />
-          </div>
-        </div>
-        <div className={styles.imp8}>
-          <div className={styles.historyAlexanderII}>
             <img
               onClick={() =>
                 handleItemClick(
                   [
                     {
                       name: "",
-                      image: "/Attestat.png",
+                      image: "/Flag.png",
                     },
                   ],
                   550,
-                  5600,
-                  900,
+                  4500,
+                  800,
                   800,
                   { align: "flex-start", justify: "center" },
                   "main"
                 )
               }
-              className={styles.imgAttestat}
-              src="/Attestat.png"
-              alt="Attestat"
+              className={styles.imgFlag}
+              src="/Flag.png"
+              alt="Flag"
             />
+            <div className={styles.descFlag1}>
+              <span style={{ paddingLeft: "10px" }}>В</span> 1836 году
+              Императором Николаем 1 Второму Кадетскому Корпусу пожалованы:
+              портрет Императора Петра Великого - основателя Инженерной школы;
+              портрет Императрицы Екатерины II преобразовательницы Соединённой
+              Артиллерийской и Инженерной Дворянской школы Артиллерийский и
+              Инженерный Шляхетный кадетский корпус, а 1837 году пожалован
+              портрет фельдмаршала, Светлейшего князя Голенищева - Кутузова
+              Смоленского, как бывшего воспитанника учебного заведения.
+            </div>
+            <div className={styles.descFlag2}>
+              <span style={{ paddingLeft: "10px" }}>25</span> июля 1838 года
+              Указом Императора Николая 1 Второму кадетскому корпусу были
+              пожалованы на знамена юбилейные знаки отличия орденская
+              Андреевская лента и скоба на древко, как старейшему
+              военно-учебному заведению. Торжественный ритуал прибивки знамени
+              состоялся 11 сентября 1838 года в 19 часов в столовой зале
+              Кадетского корпуса, в присутствии представителей императорской
+              фамилии и генералитета Русской армии.
+            </div>
+          </div>
+        </div>
+        <div className={styles.imp8}>
+          <div className={styles.historyAlexanderII}>
             <img
               onClick={() =>
                 handleItemClick(
@@ -2765,27 +2846,7 @@ const Content = () => {
               src="/Cadets1887.png"
               alt="Cadets1887"
             />
-            <img
-              onClick={() =>
-                handleItemClick(
-                  [
-                    {
-                      name: "",
-                      image: "/DesctoPlan.png",
-                    },
-                  ],
-                  550,
-                  5300,
-                  900,
-                  800,
-                  { align: "center", justify: "center" },
-                  "main"
-                )
-              }
-              className={styles.imgDesctoPlan}
-              src="/DesctoPlan.png"
-              alt="DesctoPlan"
-            />
+
             <img
               onClick={() =>
                 handleItemClick(
