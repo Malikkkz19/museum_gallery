@@ -2922,26 +2922,24 @@ const Content = () => {
         <div className={styles.imp9}>
           <div className={styles.historyAlexanderIII}>
             <img
-              onClick={() =>
-                handleItemClick(
-                  [
-                    {
-                      name: "",
-                      image: "/Mordovin.png",
-                    },
-                  ],
-                  1000,
-                  6000,
-                  1200,
-                  800,
-                  { align: "center", justify: "center" },
-                  "main"
-                )
-              }
               className={styles.imgMordovin}
               src="/Mordovin.png"
               alt="Mordovin"
             />
+            <div className={styles.descNev}>
+              <span style={{ paddingLeft: "10px" }}>Храм</span> во имя Святого
+              Благоверного Князя Александра Невского построен по проекту
+              академика Ф.И. Демерцова в 1803 году, освящен 24 мая 1804 года.
+              <br />
+              <span style={{ paddingLeft: "10px" }}>Изначально</span>
+              действовали две церкви: во имя Святой Великомученицы Екатерины
+              («нижняя», «тёплая» церковь, упраздненная в 1819 году) и во имя
+              Святого Благоверного Князя Александра Невсого («верхняя»,
+              «холодная») <br />
+              <span style={{ paddingLeft: "10px" }}>Также</span> до 1899 года
+              при Втором Кадетском корпусе существовали Католическая и
+              Лютеранская церкви.
+            </div>
             <img
               onClick={() =>
                 handleItemClick(
