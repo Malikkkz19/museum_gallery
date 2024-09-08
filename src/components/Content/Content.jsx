@@ -2252,8 +2252,8 @@ const Content = () => {
                 )
               }
               className={styles.imgDesc1}
-              src="/Павлович.png"
-              alt="Konovnicin"
+              src="/МихаилПавлович.png"
+              alt="МихаилПавлович"
             />
             <img
               onClick={() =>
@@ -2305,6 +2305,70 @@ const Content = () => {
                   [
                     {
                       name: "",
+                      image: "/Зубов.png",
+                    },
+                  ],
+                  450,
+                  3300,
+                  1200,
+                  750,
+                  { align: "flex-end", justify: "flex-start" },
+                  "Zubov"
+                )
+              }
+              className={styles.imgZub}
+              src="/Зубов.png"
+              alt="Zubov"
+            />
+            <img
+              onClick={() =>
+                handleItemClick(
+                  [
+                    {
+                      name: "",
+                      image: "/ФормаАлек1.png",
+                    },
+                  ],
+                  450,
+                  3300,
+                  1200,
+                  750,
+                  { align: "flex-end", justify: "flex-start" },
+                  "Zubov"
+                )
+              }
+              className={styles.imgSmokingAlex1}
+              src="/ФормаАлек1.png"
+              alt="SmokingAlex1"
+            />
+            <img
+              onClick={() =>
+                handleItemClick(
+                  [
+                    {
+                      name: "",
+                      image: "/КонстПавл.png",
+                    },
+                  ],
+                  450,
+                  3300,
+                  1200,
+                  750,
+                  { align: "flex-end", justify: "flex-start" },
+                  "Zubov"
+                )
+              }
+              className={styles.imgKonst}
+              src="/КонстПавл.png"
+              alt="KOnstantin"
+            />
+
+            <img
+              onClick={() =>
+                handleItemClick(
+                  [
+                    {
+                      name: "",
                       image: "/Konovnicin1.jpg",
                     },
                   ],
@@ -2320,55 +2384,77 @@ const Content = () => {
               src="/Коновницын.png"
               alt="Zubov"
             />
+            <div className={styles.descKorpus}>
+              <span style={{ paddingLeft: "10px" }}>В 1800 году</span> по
+              распоряжению Императора Павла 1, Корпус был переименован во Второй
+              Кадетский корпус, и был отнесён к Первой группе учебных заведений,
+              получив право из числа дворянских детей готовить непосредственно
+              офицеров. Директором был назначен генерал от инфантерии В. А.
+              Зубов. <br />
+              <span style={{ paddingLeft: "10px" }}>В</span> 1803 году было
+              завершено строительство правого фаса кадетских камер, и строения,
+              выходящего на Большую Спасскую улицу (ныне улица Красного
+              курсанта), а в 1805 году левого фаса. <br />
+              <span style={{ paddingLeft: "10px" }}>После</span>
+              смерти В. А. Зубова в 1804 году, корпус вновь возглавил генерал А.
+              А. Клеймихель, командовавший корпусом до 1816 года. <br />
+              <span style={{ paddingLeft: "10px" }}>2</span> апреля 1806 года
+              воспитанники Второго КК разделены на 4 роты: одну гренадерскую и
+              три мушкетерские. <br />
+              <span style={{ paddingLeft: "10px" }}>С 1809 </span>по 1811 год по
+              проекту исполняющего должность корпусного архитектора, учителя
+              гражданской архитектуры капитана Кузнецова вместо деревянных
+              манежа и конюшни, были построены новые каменные здания (манеж с
+              принадлежащими ему квартирами и конюшней).
+            </div>
+            <div className={styles.descKorpus2}>
+              <span style={{ paddingLeft: "10px" }}>14</span> марта 1807 года
+              при Втором кадетском корпусе создан Волонтерский корпус. <br />
+              <span style={{ paddingLeft: "10px" }}>В</span> 1809 году из
+              дворян, обучавшихся в Первом и Втором кадетских корпусах, при
+              Втором КК сформированы 1 и 2. Дворянские батальоны. <br />
+              <span style={{ paddingLeft: "10px" }}>Волонтерский</span> корпус
+              осуществлял ускоренную подготовку дворян не моложе 16 лет,
+              желающих поступить на военную службу, чтобы те, «познав порядок
+              воинской службы, были затем представлены в офицеры». Срок обучения
+              составлял два года. <br />
+              <span style={{ paddingLeft: "10px" }}>Своей</span>
+              достаточной учебной базы Волонтерский корпус не имел. Часть
+              занятий его воспитанниками посещалась совместно с кадетами Второго
+              кадетского корпуса, а большинство педагогов еще и работало в обоих
+              учебных заведениях одновременно. Общими стали административная
+              часть, лазарет, столовая, и часть объектов учебно- материальной
+              базы. <br />
+              <span style={{ paddingLeft: "10px" }}>В</span> 1808 году это
+              учебное заведение получило название Дворянского полка. <br />
+              <span style={{ paddingLeft: "10px" }}>28</span> ноября 1811 года
+              для дворян, приготовлявшихся к кавалерийской службе учреждён
+              Дворянский кавалерийский эскадрон.
+            </div>
+            <div className={styles.descKorpus3}>
+              <span style={{ paddingLeft: "10px" }}>С</span> 3 февраля 1806 года
+              Второй Кадетский Корпус поступил под управление Великого Князя
+              Константина Павловича. <br />
+              <span style={{ paddingLeft: "10px" }}>В</span> 1819 году Второй
+              кадетский Корпус перешёл в подчинение Главного директора
+              Пажеского, кадетских корпусов и Дворянского полка генерала от
+              инфантерии Коновницына Петра Петровича, оставаясь при этом под
+              главным начальством Великого Князя Константина Павловича. <br />
+              <span style={{ paddingLeft: "10px" }}>В</span> 1823 году на эту
+              должность был назначен генерал от кавалерии Павел Васильевич
+              Голенищев Кутузов. <br />
+              <span style={{ paddingLeft: "10px" }}>В</span> 1824 году Великий
+              Князь Михаил Павлович принял второй Кадетский Корпус под личное
+              покровительство.
+            </div>
+
             <img
               onClick={() =>
                 handleItemClick(
                   [
                     {
                       name: "",
-                      image: "/KorpusPavel.png",
-                    },
-                  ],
-                  500,
-                  3500,
-                  1000,
-                  900,
-                  { align: "flex-start", justify: "center" },
-                  "main"
-                )
-              }
-              className={styles.imgKorpus}
-              src="/KorpusPavel.png"
-              alt="KorpusPavel"
-            />
-            <img
-              onClick={() =>
-                handleItemClick(
-                  [
-                    {
-                      name: "",
-                      image: "/VolontKorpus.png",
-                    },
-                  ],
-                  500,
-                  3700,
-                  1000,
-                  800,
-                  { align: "flex-start", justify: "center" },
-                  "main"
-                )
-              }
-              className={styles.imgVolont}
-              src="/VolontKorpus.png"
-              alt="VolontKorpus"
-            />
-            <img
-              onClick={() =>
-                handleItemClick(
-                  [
-                    {
-                      name: "",
-                      image: "/Excercirgaus.png",
+                      image: "/Excercirgaus1.png",
                     },
                   ],
                   550,
@@ -2383,72 +2469,40 @@ const Content = () => {
                 )
               }
               className={styles.imgExcercirgaus}
-              src="/Excercirgaus.png"
+              src="/Excercirgaus1.png"
               alt="Excercirgaus"
             />
-            <img
-              onClick={() =>
-                handleItemClick(
-                  [
-                    {
-                      name: "",
-                      image: "/ProjectStone.png",
-                    },
-                  ],
-                  1000,
-                  3400,
-                  1200,
-                  800,
-                  { align: "flex-start", justify: "center" },
-                  "main"
-                )
-              }
-              className={styles.imgProjectStone}
-              src="/ProjectStone.png"
-              alt="ProjectStone"
-            />
-            <img
-              onClick={() =>
-                handleItemClick(
-                  [
-                    {
-                      name: "",
-                      image: "/ProjectEkatII.png",
-                    },
-                  ],
-                  550,
-                  3700,
-                  800,
-                  800,
-                  { align: "flex-start", justify: "center" },
-                  "main"
-                )
-              }
-              className={styles.imgProjectEkaterinaII}
-              src="/ProjectEkatII.png"
-              alt="ProjectEkaterinaII"
-            />
-            <img
-              onClick={() =>
-                handleItemClick(
-                  [
-                    {
-                      name: "",
-                      image: "/SmokingAlexI.png",
-                    },
-                  ],
-                  400,
-                  3900,
-                  1200,
-                  800,
-                  { align: "flex-end", justify: "flex-start" },
-                  "person"
-                )
-              }
-              className={styles.imgSmokingAlexI}
-              src="/SmokingAlexI.png"
-              alt="SmokingAlexI"
-            />
+            <div className={styles.descExcercirgaus}>
+              <span style={{ paddingLeft: "10px" }}>В</span> 1820 году по
+              проекту архитектора Л. Руска специально для Дворянского полка был
+              построен самый большой в Петербурге экзерциргауз, предназначенный
+              для проведения экзерций строевой подготовки, ружейных приемов,
+              верховой езды, фехтования, военно-прикладных упражнений.
+              <br />
+              <span style={{ paddingLeft: "10px" }}>Впоследствии</span> здание
+              было перестроено по проекту архитектора Афанасьева.
+            </div>
+            <div className={styles.descShtat}>
+              <span style={{ paddingLeft: "10px" }}>По</span> штатам 1817 года
+              во Втором кадетском корпусе числилось 700 кадетов. В 1830 году
+              количество рот было увеличено до четырёх, первая рота стала
+              именоваться ротой Великого Князя Михаила Павловича, шефа Второго
+              кадетского корпуса. Кадетский корпус непосредственно подчинялся
+              Главному директору кадетских корпусов. Эту должность с 1819 по
+              1823 год занимал генералот инфантерии Пётр Петрович Коновницын.{" "}
+              <br />
+              <span style={{ paddingLeft: "10px" }}>С</span> 1816 по 1831 год
+              Вторым кадетским корпусом, Дворянским полком и Кавалерийским
+              эскадроном (в составе Дворянского полка) командовал генерал- майор
+              Д.Д. Курута, являвшийся одновременно начальником штаба при Великом
+              Князе Константине Павловиче. <br />
+              <span style={{ paddingLeft: "10px" }}>Во</span> время отсутствия в
+              Корпусе А.А. Клеймихеля и Д.Д. Куруты (с 1804 по 1832 год ),
+              руководство им осуществлял А.И. Маркевич, Сыном А.И. Маркевича,
+              подполковником С.А. Маркевичем, инспектором классов Второго
+              кадетского корпуса, был написан первый исторический рукописный
+              труд «Краткая история Второго кадетского корпуса»
+            </div>
           </div>
         </div>
         <div className={styles.imp7}>
