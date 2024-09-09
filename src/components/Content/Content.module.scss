@@ -1743,7 +1743,7 @@
       background-color: rgba(0, 0, 0, 0.5);
       transition: all 250ms ease-in-out;
       position: absolute;
-      z-index: 2;
+      z-index: 1;
       font-size: 8px;
       color: #fff;
       text-align: justify;
@@ -1762,16 +1762,20 @@
 
     .imgAltarNevskiy {
       z-index: 1;
-      width: 420px;
+      width: 400px;
       height: 281px;
       cursor: pointer;
       position: absolute;
-      bottom: 5%;
-      left: 29%;
-      border-radius: 15px;
+      bottom: 3%;
+      left: -7%;
+
       transition: all 250ms ease-in-out;
       &:hover {
-        transform: scale(1.03);
+        z-index: 3;
+        transform: scale(2.5);
+
+        border-radius: 5px;
+        transform-origin: bottom;
       }
     }
   }
@@ -1793,42 +1797,154 @@
     height: 650px;
     bottom: 0%;
     .imgMoleben {
-      width: 310px;
-      height: 221px;
+      width: 320px;
+      height: 191px;
       cursor: pointer;
       position: absolute;
-      top: 16.4%;
-      left: 19%;
-      border-radius: 15px;
+      top: 20%;
+      left: -3%;
       transition: all 250ms ease-in-out;
       &:hover {
-        transform: scale(1.03);
+        transform: scale(2.5);
+        transform-origin: center;
+        z-index: 3;
       }
     }
     .imgNikolayII {
-      width: 300px;
-      height: 221px;
+      width: 450px;
+      height: 271px;
       cursor: pointer;
       position: absolute;
-      top: 16.4%;
-      left: 60%;
-      border-radius: 15px;
+      top: -10%;
+      left: 40%;
+
       transition: all 250ms ease-in-out;
       &:hover {
-        transform: scale(1.03);
+        transform: scale(2);
+        transform-origin: center right;
+        z-index: 3;
       }
     }
     .imgBirthdayCadet {
-      width: 400px;
-      height: 281px;
+      width: 320px;
+      height: 191px;
       cursor: pointer;
       position: absolute;
-      bottom: 5%;
-      left: 17%;
-      border-radius: 15px;
+      top: -10%;
+      left: -3%;
+      z-index: 1;
       transition: all 250ms ease-in-out;
       &:hover {
-        transform: scale(1.03);
+        transform: scale(2.5);
+        transform-origin: center;
+        z-index: 3;
+      }
+    }
+    .descNik2 {
+      width: 450px;
+      height: 85px;
+      overflow: hidden;
+      background-color: rgba(0, 0, 0, 0.5);
+      transition: all 250ms ease-in-out;
+      position: absolute;
+      z-index: 1;
+      font-size: 10px;
+      color: #fff;
+      text-align: justify;
+      padding: 2px;
+      top: 35%;
+      right: 2%;
+      &:hover {
+        transform: scale(2.5);
+        transform-origin: center right;
+        background-color: rgba(57, 53, 53, 0.95);
+        border: 1px solid #efc074;
+        border-radius: 5px;
+        z-index: 3;
+      }
+    }
+    .titleNik2 {
+      width: 788px;
+      height: 30px;
+      overflow: hidden;
+      background-color: rgba(0, 0, 0, 0.5);
+      transition: all 250ms ease-in-out;
+      position: absolute;
+      z-index: 1;
+      font-size: 20px;
+      color: #fff;
+      text-align: justify;
+      padding: 2px;
+      top: -15%;
+      right: 2.2%;
+      text-align: center;
+      opacity: 0.8;
+    }
+    .mainSchool {
+      width: 530px;
+      height: 300px;
+      overflow: hidden;
+      background-color: rgba(0, 0, 0, 0.5);
+      transition: all 250ms ease-in-out;
+      position: absolute;
+      z-index: 1;
+      font-size: 10px;
+      color: #fff;
+      text-align: justify;
+      padding: 2px;
+      bottom: 2%;
+      right: 35%;
+      &:hover {
+        transform: scale(2);
+        transform-origin: bottom;
+        background-color: rgba(57, 53, 53, 0.95);
+        border: 1px solid #efc074;
+        border-radius: 5px;
+        z-index: 3;
+      }
+      .imgMordovin {
+        height: 130px;
+        width: 100px;
+      }
+      .mainSchoolTitle {
+        font-size: 16px;
+        text-align: center;
+      }
+      .imgNagr {
+        height: 130px;
+        width: 100px;
+      }
+      .mainSchoolText {
+        width: 300px;
+        font-size: 6.7px;
+        height: 130px;
+      }
+      .gallery {
+        display: flex;
+        justify-content: space-between;
+        height: 100px;
+        width: 526px;
+        margin-top: 13px;
+        margin-inline: 10px;
+        .galleryManeg {
+          width: 80px;
+          height: 100px;
+        }
+        .galleryImg1 {
+          width: 100px;
+          height: 100px;
+          left: 30px;
+        }
+        .galleryImg2 {
+          width: 100px;
+          height: 100px;
+          left: 30px;
+        }
+        .galleryImg3 {
+          width: 100px;
+          height: 100px;
+          left: 30px;
+        }
       }
     }
     .imgGramota {
@@ -1838,10 +1954,12 @@
       position: absolute;
       bottom: 5%;
       right: 2%;
-      border-radius: 15px;
       transition: all 250ms ease-in-out;
       &:hover {
-        transform: scale(1.03);
+        transform: scale(2.5);
+        transform-origin: bottom right;
+        background-color: rgba(0, 0, 0, 1);
+        z-index: 3;
       }
     }
   }

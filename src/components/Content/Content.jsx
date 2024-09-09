@@ -2941,22 +2941,6 @@ const Content = () => {
               Лютеранская церкви.
             </div>
             <img
-              onClick={() =>
-                handleItemClick(
-                  [
-                    {
-                      name: "",
-                      image: "/AltarNevskiy.png",
-                    },
-                  ],
-                  1000,
-                  6000,
-                  1200,
-                  800,
-                  { align: "center", justify: "center" },
-                  "main"
-                )
-              }
               className={styles.imgAltarNevskiy}
               src="/AltarNevskiy.png"
               alt="AltarNevskiy"
@@ -2966,22 +2950,6 @@ const Content = () => {
         <div className={styles.imp10}>
           <div className={styles.historyNikolayII}>
             <img
-              onClick={() =>
-                handleItemClick(
-                  [
-                    {
-                      name: "",
-                      image: "/Moleben.png",
-                    },
-                  ],
-                  800,
-                  6200,
-                  1000,
-                  700,
-                  { align: "center", justify: "center" },
-                  "main"
-                )
-              }
               className={styles.imgMoleben}
               src="/Moleben.png"
               alt="Moleben"
@@ -3007,6 +2975,15 @@ const Content = () => {
               src="/NikolayII.png"
               alt="NikolayII"
             />
+            <div className={styles.descNik2}>
+              <span style={{ paddingLeft: "10px" }}>31</span> января 1910,
+              повелением императора Николая II, Второму кадетскому корпусу было
+              отдано старшинство со дня образования Инженерной школы, Петром I,
+              16 января 1712 года. <br />
+              <span style={{ paddingLeft: "10px" }}>16</span> января 1712 года
+              приказом по военному ведомству Второму кадетскому корпусу было
+              присвоено имя Императора Петра Великого.
+            </div>
             <img
               onClick={() =>
                 handleItemClick(
@@ -3028,6 +3005,80 @@ const Content = () => {
               src="/BirthdayCadet.png"
               alt="BirthdayCadet"
             />
+            <div className={styles.titleNik2}>
+              ПРАЗДНОВАНИЕ 200-ЛЕТИЯ КОРПУСА
+            </div>
+            <div className={styles.mainSchool}>
+              <div className={styles.mainSchoolTitle}>
+                ГЛАВНАЯ ГИМНАСТИКО-ФЕХТОВАЛЬНАЯ ШКОЛА
+              </div>
+              <br />
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  height: "150px",
+                }}
+              >
+                <img
+                  className={styles.imgMordovin}
+                  src="/imgMordovin.png"
+                  alt="Mordovin"
+                />
+                <div className={styles.mainSchoolText}>
+                  <span style={{ paddingLeft: "10px" }}>17</span> мая 1909 года
+                  Высочайшим повелением Императора Николая II учреждена Главная
+                  гимнастическо-фехтовальная школа, которая размещалась в здании
+                  экзерциргауза Дворянского полка.
+                  <br />
+                  <span style={{ paddingLeft: "10px" }}>Руководил</span> школой
+                  полковник Мордовин А.П. Подчинялась она главнокомандующему
+                  войсками гвардии Петербургского военного округа. <br />
+                  <span style={{ paddingLeft: "10px" }}>Под</span> знаменами
+                  школы был собран цвет армейского спорта тех. <br />
+                  <span style={{ paddingLeft: "10px" }}>Спортсмены</span> школы
+                  составляли по ряду видов спорта костяк национальных сборных.{" "}
+                  <br />
+                  <span style={{ paddingLeft: "10px" }}>На</span> первой
+                  Всероссийской олимпиаде в Киеве в 1913 году школа завоевали
+                  Тобщекомандное место. <br />
+                  <span style={{ paddingLeft: "10px" }}>В</span>{" "}
+                  послереволюционный период правопреемником школы стала
+                  Советская военная Главная гимнастико-фехтовальная школа,
+                  созданная в 1918 году в Петрограде (в настоящее время Военный
+                  институт физической культуры).
+                  <br /> <span style={{ paddingLeft: "10px" }}>Школа</span>
+                  готовила преподавателей гимнастики и фехтования для войск и
+                  самой шк занималась разработкой и внедрением методических
+                  рекомендаций по проведени занятий гимнастикой и фехтованием.
+                  войсках
+                </div>
+                <img className={styles.imgNagr} src="/imgNagr.png" alt="Nagr" />
+              </div>
+              <div className={styles.gallery}>
+                <img
+                  className={styles.galleryManeg}
+                  src="/Манеж.png"
+                  alt="Манеж"
+                />
+
+                <img
+                  className={styles.galleryImg1}
+                  src="/Дочери.png"
+                  alt="Дочери"
+                />
+                <img
+                  className={styles.galleryImg2}
+                  src="/Занятия.png"
+                  alt="Занятия"
+                />
+                <img
+                  className={styles.galleryImg3}
+                  src="/Занятия2.png"
+                  alt="Занятия2"
+                />
+              </div>
+            </div>
             <img
               onClick={() =>
                 handleItemClick(
