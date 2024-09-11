@@ -918,7 +918,11 @@
       left: 1%;
       transition: all 250ms ease-in-out;
       &:hover {
-        transform: scale(1.03);
+        transform: scale(2);
+        transform-origin: bottom;
+        border: 1px solid #efc074;
+        border-radius: 10px;
+        z-index: 3;
       }
     }
     .imgGeneralPlan2 {
@@ -979,6 +983,8 @@
       &:hover {
         transform: scale(3);
         transform-origin: center;
+        border: 1px solid #efc074;
+        border-radius: 10px;
         z-index: 3;
       }
     }
@@ -993,7 +999,7 @@
       &:hover {
         transform: scale(3);
         transform-origin: bottom;
-
+        background-color: rgba(0, 0, 0, 0.9);
         z-index: 3;
       }
     }
@@ -1008,7 +1014,8 @@
       &:hover {
         transform: scale(3);
         transform-origin: bottom;
-
+        border: 1px solid #efc074;
+        border-radius: 10px;
         z-index: 3;
       }
     }
@@ -1297,12 +1304,15 @@
       height: 235px;
       position: absolute;
       bottom: -103%;
-
       right: -34%;
       cursor: pointer;
       transition: all 250ms ease-in-out;
       &:hover {
-        transform: scale(1.03);
+        transform: scale(3);
+        transform-origin: bottom;
+        z-index: 3;
+        border: 1px solid #efc074;
+        border-radius: 10px;
       }
     }
   }
@@ -1536,11 +1546,13 @@
       position: absolute;
       top: -8%;
       left: 21%;
-
       transition: all 250ms ease-in-out;
       &:hover {
-        transform: scale(1.03);
-        border: 1px solid #41403d;
+        transform: scale(2.5);
+        transform-origin: center;
+        border: 1px solid #efc074;
+        border-radius: 10px;
+        z-index: 3;
       }
     }
     .imgZdan2 {
@@ -1566,8 +1578,11 @@
       right: -7%;
       transition: all 250ms ease-in-out;
       &:hover {
-        transform: scale(1.03);
-        border: 1px solid #41403d;
+        transform: scale(3.5);
+        border: 1px solid #efc074;
+        border-radius: 10px;
+        z-index: 3;
+        transform-origin: bottom;
       }
     }
     .descFlag1 {
@@ -1674,10 +1689,13 @@
       position: absolute;
       top: 33%;
       right: 5%;
-
       transition: all 250ms ease-in-out;
       &:hover {
-        transform: scale(1.03);
+        transform: scale(3.5);
+        transform-origin: center;
+        border: 1px solid #efc074;
+        border-radius: 10px;
+        z-index: 3;
       }
     }
     .descMonah {

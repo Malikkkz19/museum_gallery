@@ -204,7 +204,16 @@ const Header = () => {
           <div className={styles.dateEight}>1918</div>
         </div>
       </div>
-      <div className={styles.headerBottom}></div>
+      <div className={styles.headerBottom}>
+        <div className={styles.goldenLine1}></div>
+        <div className={styles.goldenLine2}></div>
+        <div className={styles.goldenLine3}></div>
+        <div className={styles.goldenLine4}></div>
+        <div className={styles.goldenLine5}></div>
+        <div className={styles.goldenLine6}></div>
+        <div className={styles.goldenLine7}></div>
+        <div className={styles.goldenLine8}></div>
+      </div>
     </div>
   );
 };

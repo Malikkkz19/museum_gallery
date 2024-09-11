@@ -2185,27 +2185,7 @@ const Content = () => {
               пустом против Артиллерийского кадетского корпуса месте, на что и
               приказали отпустить вам из Кабинета двадцать тысяч рублей»
             </div>
-            <img
-              onClick={() =>
-                handleItemClick(
-                  [
-                    {
-                      name: "",
-                      image: "/Znamya.png",
-                    },
-                  ],
-                  600,
-                  2250,
-                  1000,
-                  900,
-                  { align: "flex-start", justify: "center" },
-                  "main"
-                )
-              }
-              className={styles.imgZnamya}
-              src="/Znamya.png"
-              alt="Znamya"
-            />
+            <img className={styles.imgZnamya} src="/Znamya.png" alt="Znamya" />
             <img
               className={styles.imgPlan}
               src="/Схема1.png"
@@ -2509,22 +2489,6 @@ const Content = () => {
         <div className={styles.imp7}>
           <div className={styles.description}>
             <img
-              onClick={() =>
-                handleItemClick(
-                  [
-                    {
-                      name: "",
-                      image: "/Знамя1862.png",
-                    },
-                  ],
-                  550,
-                  5000,
-                  900,
-                  800,
-                  { align: "flex-start", justify: "center" },
-                  "main"
-                )
-              }
               className={styles.descImage}
               src="/Знамя1862.png"
               alt="Знамя 1862 года"
@@ -2721,22 +2685,6 @@ const Content = () => {
               увольнении отличную аттестацию).
             </div>
             <img
-              onClick={() =>
-                handleItemClick(
-                  [
-                    {
-                      name: "",
-                      image: "/Знамя1844.png",
-                    },
-                  ],
-                  550,
-                  4500,
-                  800,
-                  800,
-                  { align: "flex-start", justify: "center" },
-                  "main"
-                )
-              }
               className={styles.imgZnamya1844}
               src="/Знамя1844.png"
               alt="Znamya1844"
@@ -2762,27 +2710,7 @@ const Content = () => {
               src="/Здание2.png"
               alt="Здание2"
             />
-            <img
-              onClick={() =>
-                handleItemClick(
-                  [
-                    {
-                      name: "",
-                      image: "/Flag.png",
-                    },
-                  ],
-                  550,
-                  4500,
-                  800,
-                  800,
-                  { align: "flex-start", justify: "center" },
-                  "main"
-                )
-              }
-              className={styles.imgFlag}
-              src="/Flag.png"
-              alt="Flag"
-            />
+            <img className={styles.imgFlag} src="/Flag.png" alt="Flag" />
             <div className={styles.descFlag1}>
               <span style={{ paddingLeft: "10px" }}>В</span> 1836 году
               Императором Николаем 1 Второму Кадетскому Корпусу пожалованы:
