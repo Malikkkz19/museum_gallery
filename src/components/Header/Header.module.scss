@@ -1,6 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+
 
 .header {
   width: 7920px;
@@ -481,6 +483,8 @@
     width: 100%;
     height: 260px;
     background-color: #176c76;
+    font-family: "Cinzel", serif;
+    color: white;
     .goldenLine1 {
       position: absolute;
       left: 40px;
@@ -617,7 +621,63 @@
       border-radius: 10px;
       margin-top: 250px;
     }
-
+    .textHeader1 {
+      position: absolute;
+      font-size: 65px;
+      margin-top: 140px;
+      left: 1000px;
+      letter-spacing: 20px;
+    }
+    .textHeader2 {
+      position: absolute;
+      font-size: 65px;
+      margin-top: 15px;
+      left: 1365px;
+      letter-spacing: 20px;
+    }
+    .textHeader3 {
+      position: absolute;
+      font-size: 40px;
+      margin-top: 36px;
+      width: 800px;
+      text-align: center;
+      left: 2867px;
+      letter-spacing: 5px;
+    }
+    .textHeader4 {
+      position: absolute;
+      font-size: 40px;
+      margin-top: 36px;
+      width: 800px;
+      text-align: center;
+      left: 3770px;
+      letter-spacing: 5px;
+    }
+    .textHeader5 {
+      position: absolute;
+      font-size: 65px;
+      margin-top: 78px;
+      text-align: center;
+      left: 4940px;
+      letter-spacing: 10px;
+    }
+    .textHeader6 {
+      position: absolute;
+      font-size: 50px;
+      margin-top: 17px;
+      width: 350px;
+      text-align: center;
+      left: 6320px;
+      letter-spacing: 5px;
+    }
+    .textHeader7 {
+      position: absolute;
+      font-size: 30px;
+      margin-top: 17px;
+      text-align: center;
+      left: 6885px;
+      letter-spacing: 3px;
+    }
 
 
   }
