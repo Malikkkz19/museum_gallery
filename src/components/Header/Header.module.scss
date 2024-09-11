@@ -471,7 +471,7 @@
       }
       .dateEight {
         position: absolute;
-        right: 270px;
+        right: 30px;
       }
     }
   }
@@ -546,12 +546,79 @@
     }
     .goldenLine8 {
       position: absolute;
-      left: 7615px;
+      left: 7856px;
       height: 240px;
       width: 5px;
       background-color: #e9cd67;
       border-radius: 5px;
       margin-top: 10px;
     }
+    .goldenHorizLine1 {
+      position: absolute;
+      height:5px;
+      width: 1808px;
+      left: 1100px;
+      background-color: #e9cd67;
+      border-radius: 5px;
+      margin-top: 115px;
+    }
+
+    .goldenHorizLine2 {
+      position: absolute;
+      height:5px;
+      width: 2859px;
+      left: 50px;
+      background-color: #e9cd67;
+      border-radius: 10px;
+      margin-top: 250px;
+    }
+    .goldenHorizLine3 {
+      position: absolute;
+      height:5px;
+      width: 683px;
+      left: 2926px;
+      background-color: #e9cd67;
+      border-radius: 10px;
+      margin-top: 250px;
+    }
+    .goldenHorizLine4 {
+      position: absolute;
+      height:5px;
+      width: 1132px;
+      left: 3627px;
+      background-color: #e9cd67;
+      border-radius: 10px;
+      margin-top: 250px;
+    }
+    .goldenHorizLine5 {
+      position: absolute;
+      height:5px;
+      width: 1522px;
+      left: 4776px;
+      background-color: #e9cd67;
+      border-radius: 10px;
+      margin-top: 250px;
+    }
+    .goldenHorizLine6 {
+      position: absolute;
+      height:5px;
+      width: 351px;
+      left: 6317px;
+      background-color: #e9cd67;
+      border-radius: 10px;
+      margin-top: 250px;
+    }
+    .goldenHorizLine7 {
+      position: absolute;
+      height:5px;
+      width: 1160px;
+      left: 6688px;
+      background-color: #e9cd67;
+      border-radius: 10px;
+      margin-top: 250px;
+    }
+
+
+
   }
 }
