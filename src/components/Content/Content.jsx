@@ -2830,43 +2830,11 @@ const Content = () => {
             />
 
             <img
-              onClick={() =>
-                handleItemClick(
-                  [
-                    {
-                      name: "",
-                      image: "/Кадеты1887.png",
-                    },
-                  ],
-                  550,
-                  5900,
-                  900,
-                  800,
-                  { align: "center", justify: "center" },
-                  "main"
-                )
-              }
               className={styles.imgCadets1887}
               src="/Кадеты1887.png"
               alt="Cadets1887"
             />
             <img
-              onClick={() =>
-                handleItemClick(
-                  [
-                    {
-                      name: "",
-                      image: "/Кадеты2.png",
-                    },
-                  ],
-                  550,
-                  5900,
-                  900,
-                  800,
-                  { align: "center", justify: "center" },
-                  "main"
-                )
-              }
               className={styles.imgCadets2}
               src="/Кадеты2.png"
               alt="Cadets1887"
@@ -2955,22 +2923,6 @@ const Content = () => {
               alt="Moleben"
             />
             <img
-              onClick={() =>
-                handleItemClick(
-                  [
-                    {
-                      name: "",
-                      image: "/NikolayII.png",
-                    },
-                  ],
-                  800,
-                  6200,
-                  1000,
-                  800,
-                  { align: "center", justify: "center" },
-                  "main"
-                )
-              }
               className={styles.imgNikolayII}
               src="/NikolayII.png"
               alt="NikolayII"
@@ -2985,22 +2937,6 @@ const Content = () => {
               присвоено имя Императора Петра Великого.
             </div>
             <img
-              onClick={() =>
-                handleItemClick(
-                  [
-                    {
-                      name: "",
-                      image: "/BirthdayCadet.png",
-                    },
-                  ],
-                  900,
-                  6200,
-                  1100,
-                  800,
-                  { align: "center", justify: "center" },
-                  "main"
-                )
-              }
               className={styles.imgBirthdayCadet}
               src="/BirthdayCadet.png"
               alt="BirthdayCadet"
@@ -3080,22 +3016,6 @@ const Content = () => {
               </div>
             </div>
             <img
-              onClick={() =>
-                handleItemClick(
-                  [
-                    {
-                      name: "",
-                      image: "/Gramota.png",
-                    },
-                  ],
-                  800,
-                  6200,
-                  1000,
-                  900,
-                  { align: "center", justify: "center" },
-                  "main"
-                )
-              }
               className={styles.imgGramota}
               src="/Gramota.png"
               alt="Gramota"

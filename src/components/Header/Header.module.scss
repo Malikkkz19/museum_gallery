@@ -427,12 +427,52 @@
       text-shadow: 1px 1px 3px #000;
     }
     .bottomLine {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       z-index: 1;
       width: 100%;
       height: 35px;
       background-color: #61dfe8;
       position: absolute;
+      border: 1px solid #e9cd67;
       bottom: 0%;
+      color: white;
+      text-shadow: 1px 1px 1px #000;
+      font-size: 33px;
+      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      .dateOne {
+        position: absolute;
+        left: 10px;
+      }
+      .dateTwo {
+        position: absolute;
+        left: 1060px;
+      }
+      .dateThree {
+        position: absolute;
+        left: 2880px;
+      }
+      .dateFour {
+        position: absolute;
+        left: 3580px;
+      }
+      .dateFive {
+        position: absolute;
+        left: 4730px;
+      }
+      .dateSix {
+        position: absolute;
+        left: 6270px;
+      }
+      .dateSeven {
+        position: absolute;
+        left: 6640px;
+      }
+      .dateEight {
+        position: absolute;
+        right: 270px;
+      }
     }
   }
 

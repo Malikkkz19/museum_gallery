@@ -193,7 +193,16 @@ const Header = () => {
           <br /> с 1906 года <br />
           по 1917 год
         </div>
-        <div className={styles.bottomLine}></div>
+        <div className={styles.bottomLine}>
+          <div className={styles.dateOne}>1712</div>
+          <div className={styles.dateTwo}>1731</div>
+          <div className={styles.dateThree}>1758</div>
+          <div className={styles.dateFour}>1762</div>
+          <div className={styles.dateFive}>1800</div>
+          <div className={styles.dateSix}>1863</div>
+          <div className={styles.dateSeven}>1882</div>
+          <div className={styles.dateEight}>1918</div>
+        </div>
       </div>
       <div className={styles.headerBottom}></div>
     </div>
