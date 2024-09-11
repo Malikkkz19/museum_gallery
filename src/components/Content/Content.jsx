@@ -1465,22 +1465,7 @@ const Content = () => {
               alt="Bruce"
             />
             <img
-              onClick={() =>
-                handleItemClick(
-                  [
-                    {
-                      name: "",
-                      image: "/пуш.png",
-                    },
-                  ],
-                  600,
-                  -100,
-                  1000,
-                  700,
-                  { align: "flex-start", justify: "center" },
-                  "main"
-                )
-              }
+
               className={styles.imgGun}
               src="/пуш.png"
               alt="Пушечно-линейный двор"
@@ -1550,22 +1535,7 @@ const Content = () => {
               alt="Миних"
             />
             <img
-              onClick={() =>
-                handleItemClick(
-                  [
-                    {
-                      name: "",
-                      image: "/Сухарева.png",
-                    },
-                  ],
-                  560,
-                  -150,
-                  650,
-                  800,
-                  { align: "center", justify: "center" },
-                  "main"
-                )
-              }
+
               className={styles.imgSuhareva}
               src="/Сухарева.png"
               alt="Suhareva"
@@ -2690,22 +2660,6 @@ const Content = () => {
               alt="Znamya1844"
             />
             <img
-              onClick={() =>
-                handleItemClick(
-                  [
-                    {
-                      name: "",
-                      image: "/Здание2.png",
-                    },
-                  ],
-                  550,
-                  4500,
-                  800,
-                  800,
-                  { align: "flex-start", justify: "center" },
-                  "main"
-                )
-              }
               className={styles.imgZdan2}
               src="/Здание2.png"
               alt="Здание2"
