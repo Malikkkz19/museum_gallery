@@ -72,7 +72,8 @@ const Content = () => {
                   id !== "Orlov" &&
                   id !== "Meller" &&
                   id !== "Potemkin" &&
-                  id !== "MikhailPavlovich" && (
+                  id !== "MikhailPavlovich" &&
+                  id !== "Gessen" && (
                     <div
                       className={styles.modal}
                       style={{
@@ -1416,6 +1417,56 @@ const Content = () => {
                     </div>
                   </div>
                 )}
+                {id === "Gessen" && (
+                  <div
+                    className={styles.modal}
+                    style={{
+                      width: sizeModal,
+                      height: heightModal,
+                      alignItems: positionImg.align,
+                      justifyContent: positionImg.justify,
+                    }}
+                  >
+                    <div className={styles.imageArray}>
+                      {selected.map((imageData) => (
+                        <img
+                          className={`${styles.imgModal} ${
+                            imageData ? styles.imgModalActive : ""
+                          }`}
+                          src={imageData.image}
+                          alt="x"
+                          style={{
+                            width: width,
+                            marginLeft: "-20px",
+                          }}
+                        />
+                      ))}
+                    </div>
+                    <div className={styles.personDescription}>
+                      <div>
+                        <div
+                          style={{
+                            display: "flex",
+                            justifyContent: "center",
+                          }}
+                        >
+                          <div
+                            style={{
+                              color: "#efc074",
+                              fontSize: 34,
+                              padding: "10px",
+                              textAlign: "center",
+                              fontWeight: "bold",
+                            }}
+                          >
+                            {personDescription[13].title}
+                          </div>
+                        </div>
+                        <div>{personDescription[13].content}</div>
+                      </div>
+                    </div>
+                  </div>
+                )}
               </Modal>
             )}
           </div>
@@ -1465,7 +1516,6 @@ const Content = () => {
               alt="Bruce"
             />
             <img
-
               className={styles.imgGun}
               src="/пуш.png"
               alt="Пушечно-линейный двор"
@@ -1535,7 +1585,6 @@ const Content = () => {
               alt="Миних"
             />
             <img
-
               className={styles.imgSuhareva}
               src="/Сухарева.png"
               alt="Suhareva"
@@ -1684,7 +1733,7 @@ const Content = () => {
                   1200,
                   800,
                   { align: "center", justify: "flex-start" },
-                  "main"
+                  "Gessen"
                 )
               }
               className={styles.imgVilgelm}
@@ -2659,11 +2708,7 @@ const Content = () => {
               src="/Знамя1844.png"
               alt="Znamya1844"
             />
-            <img
-              className={styles.imgZdan2}
-              src="/Здание2.png"
-              alt="Здание2"
-            />
+            <img className={styles.imgZdan2} src="/Здание2.png" alt="Здание2" />
             <img className={styles.imgFlag} src="/Flag.png" alt="Flag" />
             <div className={styles.descFlag1}>
               <span style={{ paddingLeft: "10px" }}>В</span> 1836 году
