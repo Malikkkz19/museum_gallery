@@ -82,7 +82,11 @@ const Content = () => {
                     id !== "Mendeleev" &&
                     id !== "Zubov" &&
                     id !== "MikhailNikolaevich" &&
-                    id !== "KonstantinPavlovich"
+                    id !== "KonstantinPavlovich" &&
+                    id !== "SmokingEkaterinaII" &&
+                    id !== "SmokingAlexI" &&
+                    id !== "SmokingNikolayI" &&
+                    id !== "SmokingAlexII"
                      && (
                     <div
                       className={styles.modal}
@@ -1401,6 +1405,185 @@ const Content = () => {
                     </div>
                   </div>
                 )}
+                {id === "SmokingEkaterinaII" && (
+                  <div
+                    className={styles.modal}
+                    style={{
+                      width: sizeModal,
+                      height: heightModal,
+                      alignItems: positionImg.align,
+                      justifyContent: positionImg.justify,
+                    }}
+                  >
+
+                    <div className={styles.personDescription}>
+                      <div>
+                        <div
+                          style={{
+                            display: "flex",
+                            justifyContent: "center",
+                          }}
+                        >
+                          <div
+                            style={{
+                              color: "#efc074",
+                              fontSize: 36,
+                              width: "610px",
+                              padding: "10px",
+                              textAlign: "center",
+                              fontWeight: "bold",
+                              border: "2px solid #000",
+                              borderRadius: "15px",
+                              marginTop: "10px",
+                              backgroundColor: "#d8d3d3"
+                            }}
+                          >
+                            {personDescription[24].title}
+                          </div>
+                        </div>
+                        <div>{personDescription[24].content}</div>
+                      </div>
+                    </div>
+                  </div>
+                )}
+                {id === "SmokingAlexI" && (
+                  <div
+                    className={styles.modal}
+                    style={{
+                      width: sizeModal,
+                      height: heightModal,
+                      alignItems: positionImg.align,
+                      justifyContent: positionImg.justify,
+                    }}
+                  >
+
+                    <div className={styles.personDescription}>
+                      <div>
+                        <div
+                          style={{
+                            display: "flex",
+                            justifyContent: "center",
+                          }}
+                        >
+                          <div
+                            style={{
+                              color: "#efc074",
+                              fontSize: 36,
+                              width: "610px",
+                              padding: "10px",
+                              textAlign: "center",
+                              fontWeight: "bold",
+                              border: "2px solid #000",
+                              borderRadius: "15px",
+                              marginTop: "10px",
+                              backgroundColor: "#d8d3d3"
+                            }}
+                          >
+                            {personDescription[25].title}
+                          </div>
+                        </div>
+                        <div>{personDescription[25].content}</div>
+                      </div>
+                    </div>
+                  </div>
+                )}
+                {id === "SmokingNikolayI" && (
+                  <div
+                    className={styles.modal}
+                    style={{
+                      width: sizeModal,
+                      height: heightModal,
+                      alignItems: positionImg.align,
+                      justifyContent: positionImg.justify,
+                    }}
+                  >
+
+                    <div className={styles.personDescription}>
+                      <div>
+                        <div
+                          style={{
+                            display: "flex",
+                            justifyContent: "center",
+                          }}
+                        >
+                          <div
+                            style={{
+                              color: "#efc074",
+                              fontSize: 36,
+                              width: "610px",
+                              padding: "10px",
+                              textAlign: "center",
+                              fontWeight: "bold",
+                              border: "2px solid #000",
+                              borderRadius: "15px",
+                              marginTop: "10px",
+                              backgroundColor: "#d8d3d3"
+                            }}
+                          >
+                            {personDescription[26].title}
+                          </div>
+                        </div>
+                        <div>{personDescription[26].content}</div>
+                      </div>
+                    </div>
+                  </div>
+                )}
+                {id === "SmokingAlexII" && (
+                    <div
+                        className={styles.modal}
+                        style={{
+                          width: sizeModal,
+                          height: heightModal,
+                          alignItems: positionImg.align,
+                          justifyContent: positionImg.justify,
+                        }}
+                    >
+                      <div className={styles.imageArray}>
+                        {selected.map((imageData) => (
+                            <img
+                                className={`${styles.imgModal} ${
+                                    imageData ? styles.imgModalActive : ""
+                                }`}
+                                src={imageData.image}
+                                alt="x"
+                                style={{
+                                  width: width,
+                                  marginLeft: "-20px",
+                                  marginTop: "-15px"
+                                }}
+                            />
+                        ))}
+                      </div>
+                      <div className={styles.personDescription}>
+                        <div>
+                          <div
+                              style={{
+                                display: "flex",
+                                justifyContent: "center",
+                              }}
+                          >
+                            <div
+                                style={{
+                                  color: "#efc074",
+                                  fontSize: 36,
+                                  width: "610px",
+                                  padding: "10px",
+                                  textAlign: "center",
+                                  fontWeight: "bold",
+                                  border: "2px solid #000",
+                                  borderRadius: "15px",
+                                  marginTop: "10px",
+                                  backgroundColor: "#d8d3d3"
+                                }}
+                            >
+                              {personDescription[27].title}
+                            </div>
+                          </div>
+                          <div>{personDescription[27].content}</div>
+                        </div>
+                      </div>
+                    </div>
+                )}
 
               </Modal>
             )}
@@ -1886,10 +2069,10 @@ const Content = () => {
                   ],
                   450,
                   1500,
-                  1200,
+                  680,
                   900,
                   { align: "flex-end", justify: "flex-start" },
-                  "person"
+                  "SmokingEkaterinaII"
                 )
               }
               className={styles.imgSmoking}
@@ -2200,7 +2383,7 @@ const Content = () => {
                     },
                   ],
                   500,
-                  3900,
+                  4500,
                   1200,
                   800,
                   { align: "flex-end", justify: "flex-start" },
@@ -2266,10 +2449,10 @@ const Content = () => {
                   ],
                   450,
                   3300,
-                  1200,
-                  750,
+                  680,
+                  900,
                   { align: "flex-end", justify: "flex-start" },
-                  "Zubov"
+                  "SmokingAlexI"
                 )
               }
               className={styles.imgSmokingAlex1}
@@ -2459,10 +2642,11 @@ const Content = () => {
                     },
                   ],
                   500,
-                  4100,
-                  1200,
-                  800,
-                  { align: "flex-end", justify: "flex-start" }
+                  4400,
+                  680,
+                  900,
+                  { align: "flex-end", justify: "flex-start" },
+                    "SmokingNikolayI"
                 )
               }
               className={styles.imgSmokingNikolayI}
@@ -2678,12 +2862,12 @@ const Content = () => {
                       image: "/SmokingAlexanderII.png",
                     },
                   ],
-                  500,
+                  430,
                   5500,
-                  1200,
+                  1150,
                   800,
                   { align: "flex-end", justify: "flex-start" },
-                  "person"
+                  "SmokingAlexII"
                 )
               }
               className={styles.imgSmokingAlexII}
