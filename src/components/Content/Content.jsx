@@ -22,6 +22,7 @@ const Content = () => {
   //   width: "100px",
   // };
 
+
   const handleItemClick = (
     item,
     width,
@@ -1640,7 +1641,6 @@ const Content = () => {
                       </div>
                     </div>
                 )}
-
               </Modal>
             )}
           </div>
@@ -1759,41 +1759,25 @@ const Content = () => {
             />
           </div>
           <div className={styles.historyEkaterinaI}>
+
             <img
-              onClick={() => {
-                handleItemClick(
-                  [
-                    {
-                      id: 1,
-                      image: "/SPb_1756.jpg",
-                    },
-
-                    {
-                      id: 2,
-                      image: "/SPb_1777.jpg",
-                    },
-                    {
-                      id: 3,
-                      image: "/SPb_1840.jpg",
-                    },
-
-                    {
-                      id: 4,
-                      image: "/spb_1868.jpg",
-                    },
-                    {
-                      id: 5,
-                      image: "/Карта.png",
-                    },
-                  ],
-                  800,
-                  300,
-                  1190,
-                  1100
-                );
-              }}
-              className={styles.imgMap}
-              src="/Карта.png"
+              className={styles.imgMap1}
+              src="/SPb_1756.jpg"
+              alt="Карта"
+            />
+            <img
+              className={styles.imgMap2}
+              src="/SPb_1777.jpg"
+              alt="Карта"
+            />
+            <img
+              className={styles.imgMap3}
+              src="/SPb_1840.jpg"
+              alt="Карта"
+            />
+            <img
+              className={styles.imgMap4}
+              src="/spb_1868.jpg"
               alt="Карта"
             />
 

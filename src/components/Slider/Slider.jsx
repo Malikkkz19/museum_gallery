@@ -1,45 +1,36 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
 import Slider from "react-slick";
+import styles from "./Slider.module.scss"
+const ImageSlider = ({ images, width, height }) => {
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+    };
 
-const ImageCard = () => {
-  const [modalIsOpen, setModalIsOpen] = useState(false);
-
-  const images = ["SPb_1756.jpg", "SPb_1777.jpg", "SPb_1840.jpg", "spb_1868"];
-
-  const openModal = () => setModalIsOpen(true);
-  const closeModal = () => setModalIsOpen(false);
-
-  const sliderSettings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
-
-  return (
-    <div>
-      <Modal
-        isOpen={modalIsOpen}
-        onRequestClose={closeModal}
-        contentLabel="Image Gallery"
-      >
-        <button onClick={closeModal}>Close</button>
-        <Slider {...sliderSettings}>
-          {images.map((image, index) => (
-            <div key={index}>
-              <img
-                src={image}
-                alt={`Slide ${index}`}
-                style={{ width: "100%" }}
-              />
-            </div>
-          ))}
-        </Slider>
-      </Modal>
-    </div>
-  );
+    return (
+        <div style={{ width: width, height: height, display: "flex", justifyContent: "center", alignItems: "center", zIndex: 100 }}>
+            <Slider {...settings}>
+                {images.map((imageData, index) => (
+                    <div key={index}>
+                        <img
+                            className={`${styles.imgModal} ${imageData ? styles.imgModalActive : ""}`}
+                            src={imageData.image}
+                            alt={imageData.name || 'image'}
+                            style={{
+                                width: "100%",
+                                height: "auto",
+                            }}
+                        />
+                    </div>
+                ))}
+            </Slider>
+        </div>
+    );
 };
 
-export default ImageCard;
+export default ImageSlider;
