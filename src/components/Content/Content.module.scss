@@ -202,13 +202,16 @@
       height: 230px;
       position: absolute;
       overflow: hidden;
-
       cursor: pointer;
       bottom: 11%;
       right: 13.4%;
       transition: all 250ms ease-in-out;
       &:hover {
-        transform: scale(1.03);
+        transform: scale(3);
+        transform-origin: bottom;
+        z-index:4;
+        border: 1px solid #efc074;
+        border-radius: 5px;
       }
     }
     .Ing {
@@ -885,7 +888,11 @@
       left: 20%;
       transition: all 250ms ease-in-out;
       &:hover {
-        transform: scale(1.03);
+        transform: scale(2);
+        transform-origin: bottom;
+        z-index: 3;
+        border: 1px solid #efc074;
+        border-radius: 10px;
       }
     }
     .imgGreece {
@@ -897,7 +904,11 @@
       left: 39%;
       transition: all 250ms ease-in-out;
       &:hover {
-        transform: scale(1.03);
+        transform: scale(2.5);
+        transform-origin: bottom;
+        z-index: 3;
+        border: 1px solid #efc074;
+        border-radius: 10px;
       }
     }
     .descCadets {
@@ -1357,7 +1368,11 @@
       left: 59%;
       transition: all 250ms ease-in-out;
       &:hover {
-        transform: scale(1.03);
+        transform: scale(3);
+        transform-origin: center;
+        border: 1px solid #efc074;
+        border-radius: 10px;
+        z-index: 3;
       }
     }
     .imgBaraban {
@@ -1369,7 +1384,11 @@
       left: 73%;
       transition: all 250ms ease-in-out;
       &:hover {
-        transform: scale(1.03);
+        transform: scale(3);
+        transform-origin: center;
+        z-index: 3;
+        border: 1px solid #efc074;
+        border-radius: 10px;
       }
     }
     .descSenat {

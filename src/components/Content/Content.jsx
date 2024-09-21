@@ -86,7 +86,8 @@ const Content = () => {
                     id !== "SmokingEkaterinaII" &&
                     id !== "SmokingAlexI" &&
                     id !== "SmokingNikolayI" &&
-                    id !== "SmokingAlexII"
+                    id !== "SmokingAlexII" &&
+                    id !== "SmokingPavelI"
                      && (
                     <div
                       className={styles.modal}
@@ -1435,7 +1436,7 @@ const Content = () => {
                               border: "2px solid #000",
                               borderRadius: "15px",
                               marginTop: "10px",
-                              backgroundColor: "#d8d3d3"
+                              backgroundColor: "#d8d3d3",
                             }}
                           >
                             {personDescription[24].title}
@@ -1584,6 +1585,61 @@ const Content = () => {
                       </div>
                     </div>
                 )}
+                {id === "SmokingPavelI" && (
+                    <div
+                        className={styles.modal}
+                        style={{
+                          width: sizeModal,
+                          height: heightModal,
+                          alignItems: positionImg.align,
+                          justifyContent: positionImg.justify,
+                        }}
+                    >
+                      <div className={styles.imageArray}>
+                        {selected.map((imageData) => (
+                            <img
+                                className={`${styles.imgModal} ${
+                                    imageData ? styles.imgModalActive : ""
+                                }`}
+                                src={imageData.image}
+                                alt="x"
+                                style={{
+                                  width: width,
+                                  marginLeft: "-20px",
+                                }}
+                            />
+                        ))}
+                      </div>
+                      <div className={styles.personDescription}>
+                        <div>
+                          <div
+                              style={{
+                                display: "flex",
+                                justifyContent: "center",
+                              }}
+                          >
+                            <div
+                                style={{
+                                  color: "#efc074",
+                                  fontSize: 36,
+                                  width: "610px",
+                                  padding: "10px",
+                                  textAlign: "center",
+                                  fontWeight: "bold",
+                                  border: "2px solid #000",
+                                  borderRadius: "15px",
+                                  marginTop: "10px",
+                                  backgroundColor: "#d8d3d3"
+                                }}
+                            >
+                              {personDescription[28].title}
+                            </div>
+                          </div>
+                          <div>{personDescription[28].content}</div>
+                        </div>
+                      </div>
+                    </div>
+                )}
 
               </Modal>
             )}
@@ -1644,22 +1700,7 @@ const Content = () => {
               alt="Карта МСК"
             />
             <img
-              onClick={() =>
-                handleItemClick(
-                  [
-                    {
-                      name: "",
-                      image: "/Указ1719.jpg",
-                    },
-                  ],
-                  600,
-                  -250,
-                  700,
-                  1000,
-                  { align: "flex-start", justify: "center" },
-                  "main"
-                )
-              }
+
               className={styles.imgIng}
               src="/Указ1719.jpg"
               alt="Указ об учреждении инженерной роты"
@@ -2180,7 +2221,7 @@ const Content = () => {
                   1200,
                   800,
                   { align: "flex-end", justify: "flex-start" },
-                  "main"
+                  "SmokingPavelI"
                 )
               }
               className={styles.imgSmokingg}
@@ -2269,43 +2310,12 @@ const Content = () => {
             </div>
             <img className={styles.imgHorse} src="/Horse.png" alt="Horse" />
             <img
-              onClick={() =>
-                handleItemClick(
-                  [
-                    {
-                      name: "",
-                      image: "/Cadets.png",
-                    },
-                  ],
-                  600,
-                  1650,
-                  1000,
-                  900,
-                  { align: "flex-start", justify: "center" },
-                  "main"
-                )
-              }
               className={styles.imgCadets}
               src="/Cadets.png"
               alt="Cadets"
             />
             <img
-              onClick={() =>
-                handleItemClick(
-                  [
-                    {
-                      name: "",
-                      image: "/Greece.png",
-                    },
-                  ],
-                  800,
-                  2000,
-                  1000,
-                  900,
-                  { align: "flex-start", justify: "center" },
-                  "main"
-                )
-              }
+
               className={styles.imgGreece}
               src="/Greece.png"
               alt="Greece"
@@ -2654,41 +2664,13 @@ const Content = () => {
               alt="Форма одежды при Николае I"
             />
             <img
-              onClick={() =>
-                handleItemClick(
-                  [
-                    {
-                      name: "",
-                      image: "/Ober.png",
-                    },
-                  ],
-                  500,
-                  4100,
-                  1200,
-                  800,
-                  { align: "flex-end", justify: "flex-start" }
-                )
-              }
+
               className={styles.imgOber}
               src="/Ober.png"
               alt="Ober"
             />
             <img
-              onClick={() =>
-                handleItemClick(
-                  [
-                    {
-                      name: "",
-                      image: "/Baraban.png",
-                    },
-                  ],
-                  500,
-                  4100,
-                  1200,
-                  800,
-                  { align: "flex-end", justify: "flex-start" }
-                )
-              }
+
               className={styles.imgBaraban}
               src="/Baraban.png"
               alt="Baraban"
