@@ -43,7 +43,7 @@ const Header = () => {
         <div className={styles.Mordvinov}>
           <img
             className={styles.imgMordinov}
-            src="/public/Мордвинов.jpg"
+            src="/public/Мордвинов.png"
             alt=""
           />
         </div>
@@ -55,7 +55,7 @@ const Header = () => {
         <div className={styles.Melissino}>
           <img
             className={styles.imgMelissino}
-            src="/public/Melissino.jpg"
+            src="/public/Melissino.png"
             alt=""
           />
         </div>
@@ -67,7 +67,7 @@ const Header = () => {
         <div className={styles.Korsakov}>
           <img
             className={styles.imgKorsakov}
-            src="/public/Korsakov.jpg"
+            src="/public/Korsakov.png"
             alt=""
           />
         </div>
@@ -89,7 +89,7 @@ const Header = () => {
           <br /> по 1800 год
         </div>
         <div className={styles.Zubov}>
-          <img className={styles.imgZubov} src="/public/Zubov.jpg" alt="" />
+          <img className={styles.imgZubov} src="/public/Zubov.png" alt="" />
         </div>
         <div className={styles.descZubov}>
           Командовал
@@ -108,7 +108,7 @@ const Header = () => {
           <br /> по 1816 год
         </div>
         <div className={styles.Kuruta}>
-          <img className={styles.imgKuruta} src="/public/Kuruta.jpg" alt="" />
+          <img className={styles.imgKuruta} src="/public/Kuruta.png" alt="" />
         </div>
         <div className={styles.descKuruta}>
           Командовал
@@ -122,7 +122,7 @@ const Header = () => {
           Командовал <br /> с 1841 года <br /> по 1849 год
         </div>
         <div className={styles.Putyata}>
-          <img className={styles.imgPutyata} src="/public/Putyata.jpg" alt="" />
+          <img className={styles.imgPutyata} src="/public/Putyata.png" alt="" />
         </div>
         <div className={styles.descPutyata}>
           Командовал
@@ -132,7 +132,7 @@ const Header = () => {
         <div className={styles.Stepanov}>
           <img
             className={styles.imgStepanov}
-            src="/public/Stepanov.jpeg"
+            src="/public/Stepanov.png"
             alt=""
           />
         </div>
@@ -184,7 +184,7 @@ const Header = () => {
         <div className={styles.Lidenberg}>
           <img
             className={styles.imgLidenberg}
-            src="/public/Lidenberg.jpg"
+            src="/public/Lidenberg.png"
             alt=""
           />
         </div>

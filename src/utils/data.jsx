@@ -2180,7 +2180,7 @@ export const personDescription = [
             }}
         >
           Форма одежды во время царствования Императрицы Екатерины II
-          <img style={{borderRadius: "15px"}} src="/ФормаОдежды.png" alt="Smoking"/>
+
         </div>
 
     ),
@@ -2220,7 +2220,7 @@ export const personDescription = [
             }}
         >
           Форма одежды воспитанников и офицеров Второго кадетского корпуса во время царствования Императора Александра I
-        <img style={{borderRadius: "15px", marginTop: "10px"}} src="/ФормаАлек1.png" alt="Smoking"/>
+
         </div>
     ),
     content: (
@@ -2252,7 +2252,6 @@ export const personDescription = [
         >
           Форма одежды воспитанников и офицеров Второго кадетского корпуса во время царствования Императора Николая I
 
-  <img style={{borderRadius: "15px", marginTop: "10px"}} src="/SmokingNikolayI.png" alt="Smoking"/>
         </div>
 ),
 content: (
