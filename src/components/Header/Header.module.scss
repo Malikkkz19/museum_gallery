@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 .header {
   width: 7920px;
@@ -15,6 +15,7 @@
     width: 100%;
     height: 540px;
     background-color: #176c76;
+    font-size: 20px;
     .Sveyskiy {
       position: absolute;
       top: 1%;
@@ -36,6 +37,7 @@
       text-align: center;
       color: #e9cd67;
       text-shadow: 1px 1px 3px #000;
+      font-family: "Playfair Display", serif;
     }
     .Mordvinov1 {
       position: absolute;
@@ -59,6 +61,7 @@
       text-align: center;
       color: #e9cd67;
       text-shadow: 1px 1px 3px #000;
+      font-family: "Playfair Display", serif;
     }
     .Begichev {
       position: absolute;
@@ -82,6 +85,7 @@
       text-align: center;
       color: #e9cd67;
       text-shadow: 1px 1px 3px #000;
+      font-family: "Playfair Display", serif;
     }
     .Mordvinov {
       position: absolute;
@@ -105,6 +109,7 @@
       text-align: center;
       color: #e9cd67;
       text-shadow: 1px 1px 3px #000;
+      font-family: "Playfair Display", serif;
     }
     .Melissino {
       position: absolute;
@@ -128,6 +133,7 @@
       text-align: center;
       color: #e9cd67;
       text-shadow: 1px 1px 3px #000;
+      font-family: "Playfair Display", serif;
     }
     .Korsakov {
       position: absolute;
@@ -151,6 +157,7 @@
       text-align: center;
       color: #e9cd67;
       text-shadow: 1px 1px 3px #000;
+      font-family: "Playfair Display", serif;
     }
     .Kleymichel {
       position: absolute;
@@ -174,6 +181,7 @@
       text-align: center;
       color: #e9cd67;
       text-shadow: 1px 1px 3px #000;
+      font-family: "Playfair Display", serif;
     }
     .Zubov {
       position: absolute;
@@ -197,6 +205,7 @@
       text-align: center;
       color: #e9cd67;
       text-shadow: 1px 1px 3px #000;
+      font-family: "Playfair Display", serif;
     }
     .Kleymichel1 {
       position: absolute;
@@ -220,6 +229,7 @@
       text-align: center;
       color: #e9cd67;
       text-shadow: 1px 1px 3px #000;
+      font-family: "Playfair Display", serif;
     }
     .Kuruta {
       position: absolute;
@@ -243,6 +253,7 @@
       text-align: center;
       color: #e9cd67;
       text-shadow: 1px 1px 3px #000;
+      font-family: "Playfair Display", serif;
     }
     .Bibikov {
       position: absolute;
@@ -266,6 +277,7 @@
       text-align: center;
       color: #e9cd67;
       text-shadow: 1px 1px 3px #000;
+      font-family: "Playfair Display", serif;
     }
     .Putyata {
       position: absolute;
@@ -289,6 +301,7 @@
       text-align: center;
       color: #e9cd67;
       text-shadow: 1px 1px 3px #000;
+      font-family: "Playfair Display", serif;
     }
     .Stepanov {
       position: absolute;
@@ -312,6 +325,7 @@
       text-align: center;
       color: #e9cd67;
       text-shadow: 1px 1px 3px #000;
+      font-family: "Playfair Display", serif;
     }
     .Danilovich {
       position: absolute;
@@ -335,6 +349,7 @@
       text-align: center;
       color: #e9cd67;
       text-shadow: 1px 1px 3px #000;
+      font-family: "Playfair Display", serif;
     }
     .Makarov {
       position: absolute;
@@ -358,6 +373,7 @@
       text-align: center;
       color: #e9cd67;
       text-shadow: 1px 1px 3px #000;
+      font-family: "Playfair Display", serif;
     }
     .Durop {
       position: absolute;
@@ -381,6 +397,7 @@
       text-align: center;
       color: #e9cd67;
       text-shadow: 1px 1px 3px #000;
+      font-family: "Playfair Display", serif;
     }
     .Sumarokov {
       position: absolute;
@@ -404,6 +421,7 @@
       text-align: center;
       color: #e9cd67;
       text-shadow: 1px 1px 3px #000;
+      font-family: "Playfair Display", serif;
     }
     .Lidenberg {
       position: absolute;
@@ -427,6 +445,7 @@
       text-align: center;
       color: #e9cd67;
       text-shadow: 1px 1px 3px #000;
+      font-family: "Playfair Display", serif;
     }
     .bottomLine {
       display: flex;

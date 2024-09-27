@@ -42,7 +42,7 @@ const Header = () => {
         </div>
         <div className={styles.Mordvinov}>
           <img
-            className={styles.imgMordinov}
+            className={styles.imgMordvinov}
             src="/public/Мордвинов.png"
             alt=""
           />
