@@ -2604,25 +2604,6 @@ const Content = () => {
             </div>
 
             <img
-              onClick={() =>
-                handleItemClick(
-                  [
-                    {
-                      name: "",
-                      image: "/Excercirgaus1.png",
-                    },
-                  ],
-                  550,
-                  3900,
-                  800,
-                  800,
-                  {
-                    align: "flex-start",
-                    justify: "center",
-                  },
-                  "main"
-                )
-              }
               className={styles.imgExcercirgaus}
               src="/Excercirgaus1.png"
               alt="Excercirgaus"

@@ -823,13 +823,13 @@
       }
     }
     .imgSmokingg {
-      width: 150px;
+      width: 135px;
       height: 171px;
       cursor: pointer;
       z-index: 2;
       position: absolute;
       top: 26%;
-      right: -4%;
+      right: -3%;
       transition: all 250ms ease-in-out;
       &:hover {
         transform: scale(1.03);
@@ -999,8 +999,6 @@
       &:hover {
         transform: scale(2);
         transform-origin: bottom;
-        border: 1px solid #efc074;
-        border-radius: 10px;
         z-index: 3;
       }
     }
@@ -1292,11 +1290,15 @@
       position: absolute;
       bottom: 3%;
       right: 18%;
-      opacity: 0.95;
-
+      opacity: 1;
       transition: all 250ms ease-in-out;
       &:hover {
-        transform: scale(1.03);
+        transform: scale(3);
+        transform-origin: bottom;
+        z-index: 3;
+        background-color: rgba(57, 53, 53, 0.95);
+        border: 1px solid #efc074;
+        border-radius: 5px;
       }
     }
     .descExcercirgaus {
