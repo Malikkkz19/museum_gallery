@@ -2817,7 +2817,7 @@ const Content = () => {
               src="/Знамя1844.png"
               alt="Znamya1844"
             />
-            <img className={styles.imgZdan2} src="/Здание2.png" alt="Здание2" />
+            <img className={styles.imgZdan2} src="/панорама.png" alt="Здание2" />
             <img className={styles.imgFlag} src="/Flag.png" alt="Flag" />
             <div className={styles.descFlag1}>
               <span style={{ paddingLeft: "10px" }}>В</span> 1836 году

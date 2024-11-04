@@ -255,10 +255,35 @@
       text-shadow: 1px 1px 3px #000;
       font-family: "Playfair Display", serif;
     }
+    
+    .Mirkovich {
+      position: absolute;
+      top: 1%;
+      left: 63.4%;
+      z-index: 2;
+      width: 200px;
+      height: 260px;
+      .imgMirkovich {
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 260px;
+      }
+    }
+    .descMirkovich {
+      position: absolute;
+      top: 52%;
+      left: 63.3%;
+      width: 200px;
+      height: 100px;
+      text-align: center;
+      color: #e9cd67;
+      text-shadow: 1px 1px 3px #000;
+      font-family: "Playfair Display", serif;
+    }
     .Bibikov {
       position: absolute;
       top: 1%;
-      left: 64.5%;
+      left: 66.5%;
       z-index: 2;
       width: 200px;
       height: 260px;
@@ -271,7 +296,7 @@
     .descBibikov {
       position: absolute;
       top: 52%;
-      left: 64.35%;
+      left: 66.35%;
       width: 200px;
       height: 100px;
       text-align: center;
@@ -282,7 +307,7 @@
     .Putyata {
       position: absolute;
       top: 1%;
-      left: 67%;
+      left: 69%;
       z-index: 2;
       width: 200px;
       height: 260px;
@@ -295,7 +320,7 @@
     .descPutyata {
       position: absolute;
       top: 52%;
-      left: 67%;
+      left: 69%;
       width: 200px;
       height: 100px;
       text-align: center;

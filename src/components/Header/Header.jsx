@@ -115,6 +115,14 @@ const Header = () => {
           <br /> с 1816 года
           <br /> по 1831 год
         </div>
+        <div className={styles.Mirkovich}>
+          <img className={styles.imgMirkovich} src="/public/Миркович.png" alt="" />
+        </div>
+        <div className={styles.descMirkovich}>
+          Командовал
+          <br /> с 1835 года
+          <br /> по 1840 год
+        </div>
         <div className={styles.Bibikov}>
           <img className={styles.imgBibikov} src="/public/Bibikov.png" alt="" />
         </div>
