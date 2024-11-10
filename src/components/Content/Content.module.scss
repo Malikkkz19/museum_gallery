@@ -22,10 +22,12 @@
   position: relative;
   width: 691px;
   height: 1251px;
-  background-image: url("/Petrr1.png");
+  background-image: url("/Pet.png"),
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   background-repeat: no-repeat;
+  background-blend-mode: overlay;
   background-size: cover;
-  background-position: -15px -5px;
+  background-position: center;
   padding-top: -2px;
   .description {
     .descImage {
@@ -277,8 +279,10 @@
   position: relative;
   width: 613px;
   height: 1250px;
-  background-image: url("/AnnaI.png");
+  background-image: url("/Ann.png"),
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   background-repeat: no-repeat;
+  background-blend-mode: overlay;
   background-size: cover;
   background-position: center;
   .description {
@@ -747,8 +751,10 @@
   position: relative;
   width: 1330px;
   height: 1250px;
-  background-image: url("/Ekat2.png");
+  background-image: url("/Ekaterinaaa.png"),
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   background-size: cover;
+  background-blend-mode: overlay;
   background-position: center;
   position: relative;
   .description {
@@ -1041,10 +1047,12 @@
   position: relative;
   width: 380px;
   height: 1250px;
-  background-image: url("/PavI.png");
+  background-image: url("/Pav.png"),
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   background-repeat: no-repeat;
+  background-blend-mode: overlay;
   background-size: cover;
-  background-position: -330px center;
+  background-position: center;
   .historyPavelI {
     position: absolute;
     width: 380px;
@@ -1105,8 +1113,10 @@
   position: relative;
   width: 846px;
   height: 1250px;
-  background-image: url("/AlexI.png");
+  background-image: url("/Alex11.png"),
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   background-repeat: no-repeat;
+  background-blend-mode: overlay;
   background-size: cover;
   background-position: center;
   .description {
