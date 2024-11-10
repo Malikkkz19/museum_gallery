@@ -115,6 +115,18 @@ const Header = () => {
           <br /> с 1816 года
           <br /> по 1831 год
         </div>
+        <div className={styles.Mirkovich}>
+          <img
+            className={styles.imgMirkovich}
+            src="/public/Миркович.png"
+            alt=""
+          />
+        </div>
+        <div className={styles.descMirkovich}>
+          Командовал
+          <br /> с 1835 года
+          <br /> по 1840 год
+        </div>
         <div className={styles.Bibikov}>
           <img className={styles.imgBibikov} src="/public/Bibikov.png" alt="" />
         </div>
@@ -213,10 +225,14 @@ const Header = () => {
         <div className={styles.textHeader2}>АРТИЛЛЕРИЙСКАЯ ШКОЛА</div>
         <div className={styles.goldenLine3}></div>
         <div className={styles.goldenHorizLine3}></div>
-        <div className={styles.textHeader3}>АРТИЛЛЕРИЙСКАЯ И ИНЖЕНЕРНАЯ ДВОРЯНСКАЯ ШКОЛА</div>
+        <div className={styles.textHeader3}>
+          АРТИЛЛЕРИЙСКАЯ И ИНЖЕНЕРНАЯ ДВОРЯНСКАЯ ШКОЛА
+        </div>
         <div className={styles.goldenLine4}></div>
         <div className={styles.goldenHorizLine4}></div>
-        <div className={styles.textHeader4}>АРТИЛЛЕРИЙСКИЙ И ИНЖЕНЕРНЫЙ ШЛЯХЕТНЫЙ КАДЕТСКИЙ КОРПУС</div>
+        <div className={styles.textHeader4}>
+          АРТИЛЛЕРИЙСКИЙ И ИНЖЕНЕРНЫЙ ШЛЯХЕТНЫЙ КАДЕТСКИЙ КОРПУС
+        </div>
         <div className={styles.goldenLine5}></div>
         <div className={styles.goldenHorizLine5}></div>
         <div className={styles.textHeader5}>ВТОРОЙ КАДЕТСКИЙ КОРПУС</div>
@@ -225,9 +241,14 @@ const Header = () => {
         <div className={styles.textHeader6}>ВТОРАЯ ВОЕННАЯ ГИМНАЗИЯ</div>
         <div className={styles.goldenLine7}></div>
         <div className={styles.goldenHorizLine7}></div>
-        <div className={styles.textHeader7}><span style={{fontSize: "40px"}}>ВТОРОЙ КАДЕТСКИЙ КОРПУС</span><br/>
-        С 1912 ГОДА <br/>
-          <span style={{fontSize: "40px", width: "700px"}}>ВТОРОЙ КАДЕТСКИЙ<br/> ИМЕНИ ПЕТРА ВЕЛИКОГО КОРПУС</span>
+        <div className={styles.textHeader7}>
+          <span style={{ fontSize: "40px" }}>ВТОРОЙ КАДЕТСКИЙ КОРПУС</span>
+          <br />
+          С 1912 ГОДА <br />
+          <span style={{ fontSize: "40px", width: "700px" }}>
+            ВТОРОЙ КАДЕТСКИЙ
+            <br /> ИМЕНИ ПЕТРА ВЕЛИКОГО КОРПУС
+          </span>
         </div>
 
         <div className={styles.goldenLine8}></div>

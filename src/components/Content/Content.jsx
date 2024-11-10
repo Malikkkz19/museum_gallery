@@ -22,7 +22,6 @@ const Content = () => {
   //   width: "100px",
   // };
 
-
   const handleItemClick = (
     item,
     width,
@@ -75,21 +74,20 @@ const Content = () => {
                   id !== "Potemkin" &&
                   id !== "MikhailPavlovich" &&
                   id !== "Gessen" &&
-                    id !== "Matveevich" &&
-                    id !== "Lomonosov" &&
-                    id !== "Repnin" &&
-                    id !== "Chernishevskiy" &&
-                    id !== "Dobrolyubov" &&
-                    id !== "Mendeleev" &&
-                    id !== "Zubov" &&
-                    id !== "MikhailNikolaevich" &&
-                    id !== "KonstantinPavlovich" &&
-                    id !== "SmokingEkaterinaII" &&
-                    id !== "SmokingAlexI" &&
-                    id !== "SmokingNikolayI" &&
-                    id !== "SmokingAlexII" &&
-                    id !== "SmokingPavelI"
-                     && (
+                  id !== "Matveevich" &&
+                  id !== "Lomonosov" &&
+                  id !== "Repnin" &&
+                  id !== "Chernishevskiy" &&
+                  id !== "Dobrolyubov" &&
+                  id !== "Mendeleev" &&
+                  id !== "Zubov" &&
+                  id !== "MikhailNikolaevich" &&
+                  id !== "KonstantinPavlovich" &&
+                  id !== "SmokingEkaterinaII" &&
+                  id !== "SmokingAlexI" &&
+                  id !== "SmokingNikolayI" &&
+                  id !== "SmokingAlexII" &&
+                  id !== "SmokingPavelI" && (
                     <div
                       className={styles.modal}
                       style={{
@@ -182,7 +180,7 @@ const Content = () => {
                               WebkitTextStroke: "1px #000",
                               fontFamily: "'Dosis', sans-serif",
                               textAlign: "center",
-                              padding: "10px"
+                              padding: "10px",
                             }}
                           >
                             {personDescription[0].title}
@@ -230,7 +228,7 @@ const Content = () => {
                             style={{
                               color: "#efc074",
                               fontSize: 36,
-                              WebkitTextStroke:"1px #000",
+                              WebkitTextStroke: "1px #000",
                               fontFamily: "'Dosis', sans-serif",
                               textAlign: "center",
                               width: "610px",
@@ -239,7 +237,7 @@ const Content = () => {
                               border: "2px solid #000",
                               borderRadius: "15px",
                               marginTop: "10px",
-                              backgroundColor: "#d8d3d3"
+                              backgroundColor: "#d8d3d3",
                             }}
                           >
                             {personDescription[1].title}
@@ -286,7 +284,7 @@ const Content = () => {
                             style={{
                               color: "#efc074",
                               fontSize: 36,
-                              WebkitTextStroke:"1px #000",
+                              WebkitTextStroke: "1px #000",
                               fontFamily: "'Dosis', sans-serif",
                               textAlign: "center",
                               width: "610px",
@@ -295,7 +293,7 @@ const Content = () => {
                               border: "2px solid #000",
                               borderRadius: "15px",
                               marginTop: "10px",
-                              backgroundColor: "#d8d3d3"
+                              backgroundColor: "#d8d3d3",
                             }}
                           >
                             {personDescription[2].title}
@@ -342,7 +340,7 @@ const Content = () => {
                             style={{
                               color: "#efc074",
                               fontSize: 36,
-                              WebkitTextStroke:"1px #000",
+                              WebkitTextStroke: "1px #000",
                               fontFamily: "'Dosis', sans-serif",
                               textAlign: "center",
                               width: "610px",
@@ -351,7 +349,7 @@ const Content = () => {
                               border: "2px solid #000",
                               borderRadius: "15px",
                               marginTop: "10px",
-                              backgroundColor: "#d8d3d3"
+                              backgroundColor: "#d8d3d3",
                             }}
                           >
                             {personDescription[3].title}
@@ -398,7 +396,7 @@ const Content = () => {
                             style={{
                               color: "#efc074",
                               fontSize: 28,
-                              WebkitTextStroke:"1px #000",
+                              WebkitTextStroke: "1px #000",
                               fontFamily: "'Dosis', sans-serif",
                               textAlign: "center",
                               width: "610px",
@@ -407,7 +405,7 @@ const Content = () => {
                               border: "2px solid #000",
                               borderRadius: "15px",
                               marginTop: "10px",
-                              backgroundColor: "#d8d3d3"
+                              backgroundColor: "#d8d3d3",
                             }}
                           >
                             {personDescription[4].title}
@@ -455,7 +453,7 @@ const Content = () => {
                               color: "#efc074",
                               fontSize: 40,
                               width: "600px",
-                              textAlign:"center",
+                              textAlign: "center",
                               fontWeight: "bold",
                               WebkitTextStroke: "1px #000",
                               fontFamily: "'Dosis', sans-serif",
@@ -463,7 +461,7 @@ const Content = () => {
                               borderRadius: "15px",
                               marginTop: "10px",
                               paddingInline: "20px",
-                              backgroundColor: "#d8d3d3"
+                              backgroundColor: "#d8d3d3",
                             }}
                           >
                             {personDescription[5].title}
@@ -517,7 +515,7 @@ const Content = () => {
                               borderRadius: "15px",
                               marginTop: "10px",
                               paddingInline: "20px",
-                              backgroundColor: "#d8d3d3"
+                              backgroundColor: "#d8d3d3",
                             }}
                           >
                             {personDescription[6].title}
@@ -564,7 +562,7 @@ const Content = () => {
                             style={{
                               color: "#efc074",
                               fontSize: 36,
-                              WebkitTextStroke:"1px #000",
+                              WebkitTextStroke: "1px #000",
                               fontFamily: "'Dosis', sans-serif",
                               textAlign: "center",
                               width: "610px",
@@ -626,7 +624,7 @@ const Content = () => {
                               border: "2px solid #000",
                               borderRadius: "15px",
                               marginTop: "10px",
-                              backgroundColor: "#d8d3d3"
+                              backgroundColor: "#d8d3d3",
                             }}
                           >
                             {personDescription[17].title}
@@ -673,7 +671,7 @@ const Content = () => {
                             style={{
                               color: "#efc074",
                               fontSize: 36,
-                              WebkitTextStroke:"1px #000",
+                              WebkitTextStroke: "1px #000",
                               fontFamily: "'Dosis', sans-serif",
                               textAlign: "center",
                               width: "610px",
@@ -682,7 +680,7 @@ const Content = () => {
                               border: "2px solid #000",
                               borderRadius: "15px",
                               marginTop: "10px",
-                              backgroundColor: "#d8d3d3"
+                              backgroundColor: "#d8d3d3",
                             }}
                           >
                             {personDescription[9].title}
@@ -729,7 +727,7 @@ const Content = () => {
                             style={{
                               color: "#efc074",
                               fontSize: 36,
-                              WebkitTextStroke:"1px #000",
+                              WebkitTextStroke: "1px #000",
                               fontFamily: "'Dosis', sans-serif",
                               textAlign: "center",
                               width: "610px",
@@ -738,7 +736,7 @@ const Content = () => {
                               border: "2px solid #000",
                               borderRadius: "15px",
                               marginTop: "10px",
-                              backgroundColor: "#d8d3d3"
+                              backgroundColor: "#d8d3d3",
                             }}
                           >
                             {personDescription[10].title}
@@ -785,7 +783,7 @@ const Content = () => {
                             style={{
                               color: "#efc074",
                               fontSize: 32,
-                              WebkitTextStroke:"1px #000",
+                              WebkitTextStroke: "1px #000",
                               fontFamily: "'Dosis', sans-serif",
                               textAlign: "center",
                               width: "610px",
@@ -794,7 +792,7 @@ const Content = () => {
                               border: "2px solid #000",
                               borderRadius: "15px",
                               marginTop: "10px",
-                              backgroundColor: "#d8d3d3"
+                              backgroundColor: "#d8d3d3",
                             }}
                           >
                             {personDescription[11].title}
@@ -841,7 +839,7 @@ const Content = () => {
                             style={{
                               color: "#efc074",
                               fontSize: 34,
-                              WebkitTextStroke:"1px #000",
+                              WebkitTextStroke: "1px #000",
                               fontFamily: "'Dosis', sans-serif",
                               textAlign: "center",
                               width: "610px",
@@ -850,7 +848,7 @@ const Content = () => {
                               border: "2px solid #000",
                               borderRadius: "15px",
                               marginTop: "10px",
-                              backgroundColor: "#d8d3d3"
+                              backgroundColor: "#d8d3d3",
                             }}
                           >
                             {personDescription[12].title}
@@ -904,7 +902,7 @@ const Content = () => {
                               border: "2px solid #000",
                               borderRadius: "15px",
                               marginTop: "10px",
-                              backgroundColor: "#d8d3d3"
+                              backgroundColor: "#d8d3d3",
                             }}
                           >
                             {personDescription[13].title}
@@ -958,7 +956,7 @@ const Content = () => {
                               border: "2px solid #000",
                               borderRadius: "15px",
                               marginTop: "10px",
-                              backgroundColor: "#d8d3d3"
+                              backgroundColor: "#d8d3d3",
                             }}
                           >
                             {personDescription[14].title}
@@ -1012,7 +1010,7 @@ const Content = () => {
                               border: "2px solid #000",
                               borderRadius: "15px",
                               marginTop: "10px",
-                              backgroundColor: "#d8d3d3"
+                              backgroundColor: "#d8d3d3",
                             }}
                           >
                             {personDescription[15].title}
@@ -1066,7 +1064,7 @@ const Content = () => {
                               border: "2px solid #000",
                               borderRadius: "15px",
                               marginTop: "10px",
-                              backgroundColor: "#d8d3d3"
+                              backgroundColor: "#d8d3d3",
                             }}
                           >
                             {personDescription[16].title}
@@ -1121,7 +1119,7 @@ const Content = () => {
                               border: "2px solid #000",
                               borderRadius: "15px",
                               marginTop: "10px",
-                              backgroundColor: "#d8d3d3"
+                              backgroundColor: "#d8d3d3",
                             }}
                           >
                             {personDescription[18].title}
@@ -1176,7 +1174,7 @@ const Content = () => {
                               border: "2px solid #000",
                               borderRadius: "15px",
                               marginTop: "10px",
-                              backgroundColor: "#d8d3d3"
+                              backgroundColor: "#d8d3d3",
                             }}
                           >
                             {personDescription[19].title}
@@ -1231,7 +1229,7 @@ const Content = () => {
                               border: "2px solid #000",
                               borderRadius: "15px",
                               marginTop: "10px",
-                              backgroundColor: "#d8d3d3"
+                              backgroundColor: "#d8d3d3",
                             }}
                           >
                             {personDescription[20].title}
@@ -1286,7 +1284,7 @@ const Content = () => {
                               border: "2px solid #000",
                               borderRadius: "15px",
                               marginTop: "10px",
-                              backgroundColor: "#d8d3d3"
+                              backgroundColor: "#d8d3d3",
                             }}
                           >
                             {personDescription[21].title}
@@ -1341,7 +1339,7 @@ const Content = () => {
                               border: "2px solid #000",
                               borderRadius: "15px",
                               marginTop: "10px",
-                              backgroundColor: "#d8d3d3"
+                              backgroundColor: "#d8d3d3",
                             }}
                           >
                             {personDescription[22].title}
@@ -1396,7 +1394,7 @@ const Content = () => {
                               border: "2px solid #000",
                               borderRadius: "15px",
                               marginTop: "10px",
-                              backgroundColor: "#d8d3d3"
+                              backgroundColor: "#d8d3d3",
                             }}
                           >
                             {personDescription[23].title}
@@ -1408,281 +1406,281 @@ const Content = () => {
                   </div>
                 )}
                 {id === "SmokingEkaterinaII" && (
-                    <div
-                        className={styles.modal}
-                        style={{
-                          width: sizeModal,
-                          height: heightModal,
-                          alignItems: positionImg.align,
-                          justifyContent: positionImg.justify,
-                        }}
-                    >
-                      <div className={styles.imageArray}>
-                        {selected.map((imageData) => (
-                            <img
-                                className={`${styles.imgModal} ${
-                                    imageData ? styles.imgModalActive : ""
-                                }`}
-                                src={imageData.image}
-                                alt="x"
-                                style={{
-                                  width: width,
-                                  marginLeft: "-20px",
-                                  marginTop: "-15px"
-                                }}
-                            />
-                        ))}
-                      </div>
-                      <div className={styles.personDescription}>
-                        <div>
+                  <div
+                    className={styles.modal}
+                    style={{
+                      width: sizeModal,
+                      height: heightModal,
+                      alignItems: positionImg.align,
+                      justifyContent: positionImg.justify,
+                    }}
+                  >
+                    <div className={styles.imageArray}>
+                      {selected.map((imageData) => (
+                        <img
+                          className={`${styles.imgModal} ${
+                            imageData ? styles.imgModalActive : ""
+                          }`}
+                          src={imageData.image}
+                          alt="x"
+                          style={{
+                            width: width,
+                            marginLeft: "-20px",
+                            marginTop: "-15px",
+                          }}
+                        />
+                      ))}
+                    </div>
+                    <div className={styles.personDescription}>
+                      <div>
+                        <div
+                          style={{
+                            display: "flex",
+                            justifyContent: "center",
+                          }}
+                        >
                           <div
-                              style={{
-                                display: "flex",
-                                justifyContent: "center",
-                              }}
+                            style={{
+                              color: "#efc074",
+                              fontSize: 36,
+                              width: "610px",
+                              padding: "10px",
+                              textAlign: "center",
+                              fontWeight: "bold",
+                              border: "2px solid #000",
+                              borderRadius: "15px",
+                              marginTop: "10px",
+                              backgroundColor: "#d8d3d3",
+                            }}
                           >
-                            <div
-                                style={{
-                                  color: "#efc074",
-                                  fontSize: 36,
-                                  width: "610px",
-                                  padding: "10px",
-                                  textAlign: "center",
-                                  fontWeight: "bold",
-                                  border: "2px solid #000",
-                                  borderRadius: "15px",
-                                  marginTop: "10px",
-                                  backgroundColor: "#d8d3d3"
-                                }}
-                            >
-                              {personDescription[24].title}
-                            </div>
+                            {personDescription[24].title}
                           </div>
-                          <div>{personDescription[24].content}</div>
                         </div>
+                        <div>{personDescription[24].content}</div>
                       </div>
                     </div>
+                  </div>
                 )}
                 {id === "SmokingAlexI" && (
-                    <div
-                        className={styles.modal}
-                        style={{
-                          width: sizeModal,
-                          height: heightModal,
-                          alignItems: positionImg.align,
-                          justifyContent: positionImg.justify,
-                        }}
-                    >
-                      <div className={styles.imageArray}>
-                        {selected.map((imageData) => (
-                            <img
-                                className={`${styles.imgModal} ${
-                                    imageData ? styles.imgModalActive : ""
-                                }`}
-                                src={imageData.image}
-                                alt="x"
-                                style={{
-                                  width: width,
-                                  marginLeft: "-20px",
-                                }}
-                            />
-                        ))}
-                      </div>
-                      <div className={styles.personDescription}>
-                        <div>
+                  <div
+                    className={styles.modal}
+                    style={{
+                      width: sizeModal,
+                      height: heightModal,
+                      alignItems: positionImg.align,
+                      justifyContent: positionImg.justify,
+                    }}
+                  >
+                    <div className={styles.imageArray}>
+                      {selected.map((imageData) => (
+                        <img
+                          className={`${styles.imgModal} ${
+                            imageData ? styles.imgModalActive : ""
+                          }`}
+                          src={imageData.image}
+                          alt="x"
+                          style={{
+                            width: width,
+                            marginLeft: "-20px",
+                          }}
+                        />
+                      ))}
+                    </div>
+                    <div className={styles.personDescription}>
+                      <div>
+                        <div
+                          style={{
+                            display: "flex",
+                            justifyContent: "center",
+                          }}
+                        >
                           <div
-                              style={{
-                                display: "flex",
-                                justifyContent: "center",
-                              }}
+                            style={{
+                              color: "#efc074",
+                              fontSize: 36,
+                              width: "610px",
+                              padding: "10px",
+                              textAlign: "center",
+                              fontWeight: "bold",
+                              border: "2px solid #000",
+                              borderRadius: "15px",
+                              marginTop: "10px",
+                              backgroundColor: "#d8d3d3",
+                            }}
                           >
-                            <div
-                                style={{
-                                  color: "#efc074",
-                                  fontSize: 36,
-                                  width: "610px",
-                                  padding: "10px",
-                                  textAlign: "center",
-                                  fontWeight: "bold",
-                                  border: "2px solid #000",
-                                  borderRadius: "15px",
-                                  marginTop: "10px",
-                                  backgroundColor: "#d8d3d3"
-                                }}
-                            >
-                              {personDescription[25].title}
-                            </div>
+                            {personDescription[25].title}
                           </div>
-                          <div>{personDescription[25].content}</div>
                         </div>
+                        <div>{personDescription[25].content}</div>
                       </div>
                     </div>
+                  </div>
                 )}
                 {id === "SmokingNikolayI" && (
-                    <div
-                        className={styles.modal}
-                        style={{
-                          width: sizeModal,
-                          height: heightModal,
-                          alignItems: positionImg.align,
-                          justifyContent: positionImg.justify,
-                        }}
-                    >
-                      <div className={styles.imageArray}>
-                        {selected.map((imageData) => (
-                            <img
-                                className={`${styles.imgModal} ${
-                                    imageData ? styles.imgModalActive : ""
-                                }`}
-                                src={imageData.image}
-                                alt="x"
-                                style={{
-                                  width: width,
-                                  marginLeft: "-20px",
-                                }}
-                            />
-                        ))}
-                      </div>
-                      <div className={styles.personDescription}>
-                        <div>
+                  <div
+                    className={styles.modal}
+                    style={{
+                      width: sizeModal,
+                      height: heightModal,
+                      alignItems: positionImg.align,
+                      justifyContent: positionImg.justify,
+                    }}
+                  >
+                    <div className={styles.imageArray}>
+                      {selected.map((imageData) => (
+                        <img
+                          className={`${styles.imgModal} ${
+                            imageData ? styles.imgModalActive : ""
+                          }`}
+                          src={imageData.image}
+                          alt="x"
+                          style={{
+                            width: width,
+                            marginLeft: "-20px",
+                          }}
+                        />
+                      ))}
+                    </div>
+                    <div className={styles.personDescription}>
+                      <div>
+                        <div
+                          style={{
+                            display: "flex",
+                            justifyContent: "center",
+                          }}
+                        >
                           <div
-                              style={{
-                                display: "flex",
-                                justifyContent: "center",
-                              }}
+                            style={{
+                              color: "#efc074",
+                              fontSize: 36,
+                              width: "610px",
+                              padding: "10px",
+                              textAlign: "center",
+                              fontWeight: "bold",
+                              border: "2px solid #000",
+                              borderRadius: "15px",
+                              marginTop: "10px",
+                              backgroundColor: "#d8d3d3",
+                            }}
                           >
-                            <div
-                                style={{
-                                  color: "#efc074",
-                                  fontSize: 36,
-                                  width: "610px",
-                                  padding: "10px",
-                                  textAlign: "center",
-                                  fontWeight: "bold",
-                                  border: "2px solid #000",
-                                  borderRadius: "15px",
-                                  marginTop: "10px",
-                                  backgroundColor: "#d8d3d3"
-                                }}
-                            >
-                              {personDescription[26].title}
-                            </div>
+                            {personDescription[26].title}
                           </div>
-                          <div>{personDescription[26].content}</div>
                         </div>
+                        <div>{personDescription[26].content}</div>
                       </div>
                     </div>
+                  </div>
                 )}
                 {id === "SmokingAlexII" && (
-                    <div
-                        className={styles.modal}
-                        style={{
-                          width: sizeModal,
-                          height: heightModal,
-                          alignItems: positionImg.align,
-                          justifyContent: positionImg.justify,
-                        }}
-                    >
-                      <div className={styles.imageArray}>
-                        {selected.map((imageData) => (
-                            <img
-                                className={`${styles.imgModal} ${
-                                    imageData ? styles.imgModalActive : ""
-                                }`}
-                                src={imageData.image}
-                                alt="x"
-                                style={{
-                                  width: width,
-                                  marginLeft: "-20px",
-                                  marginTop: "-15px"
-                                }}
-                            />
-                        ))}
-                      </div>
-                      <div className={styles.personDescription}>
-                        <div>
+                  <div
+                    className={styles.modal}
+                    style={{
+                      width: sizeModal,
+                      height: heightModal,
+                      alignItems: positionImg.align,
+                      justifyContent: positionImg.justify,
+                    }}
+                  >
+                    <div className={styles.imageArray}>
+                      {selected.map((imageData) => (
+                        <img
+                          className={`${styles.imgModal} ${
+                            imageData ? styles.imgModalActive : ""
+                          }`}
+                          src={imageData.image}
+                          alt="x"
+                          style={{
+                            width: width,
+                            marginLeft: "-20px",
+                            marginTop: "-15px",
+                          }}
+                        />
+                      ))}
+                    </div>
+                    <div className={styles.personDescription}>
+                      <div>
+                        <div
+                          style={{
+                            display: "flex",
+                            justifyContent: "center",
+                          }}
+                        >
                           <div
-                              style={{
-                                display: "flex",
-                                justifyContent: "center",
-                              }}
+                            style={{
+                              color: "#efc074",
+                              fontSize: 36,
+                              width: "610px",
+                              padding: "10px",
+                              textAlign: "center",
+                              fontWeight: "bold",
+                              border: "2px solid #000",
+                              borderRadius: "15px",
+                              marginTop: "10px",
+                              backgroundColor: "#d8d3d3",
+                            }}
                           >
-                            <div
-                                style={{
-                                  color: "#efc074",
-                                  fontSize: 36,
-                                  width: "610px",
-                                  padding: "10px",
-                                  textAlign: "center",
-                                  fontWeight: "bold",
-                                  border: "2px solid #000",
-                                  borderRadius: "15px",
-                                  marginTop: "10px",
-                                  backgroundColor: "#d8d3d3"
-                                }}
-                            >
-                              {personDescription[27].title}
-                            </div>
+                            {personDescription[27].title}
                           </div>
-                          <div>{personDescription[27].content}</div>
                         </div>
+                        <div>{personDescription[27].content}</div>
                       </div>
                     </div>
+                  </div>
                 )}
                 {id === "SmokingPavelI" && (
-                    <div
-                        className={styles.modal}
-                        style={{
-                          width: sizeModal,
-                          height: heightModal,
-                          alignItems: positionImg.align,
-                          justifyContent: positionImg.justify,
-                        }}
-                    >
-                      <div className={styles.imageArray}>
-                        {selected.map((imageData) => (
-                            <img
-                                className={`${styles.imgModal} ${
-                                    imageData ? styles.imgModalActive : ""
-                                }`}
-                                src={imageData.image}
-                                alt="x"
-                                style={{
-                                  width: width,
-                                  marginLeft: "-20px",
-                                }}
-                            />
-                        ))}
-                      </div>
-                      <div className={styles.personDescription}>
-                        <div>
+                  <div
+                    className={styles.modal}
+                    style={{
+                      width: sizeModal,
+                      height: heightModal,
+                      alignItems: positionImg.align,
+                      justifyContent: positionImg.justify,
+                    }}
+                  >
+                    <div className={styles.imageArray}>
+                      {selected.map((imageData) => (
+                        <img
+                          className={`${styles.imgModal} ${
+                            imageData ? styles.imgModalActive : ""
+                          }`}
+                          src={imageData.image}
+                          alt="x"
+                          style={{
+                            width: width,
+                            marginLeft: "-20px",
+                          }}
+                        />
+                      ))}
+                    </div>
+                    <div className={styles.personDescription}>
+                      <div>
+                        <div
+                          style={{
+                            display: "flex",
+                            justifyContent: "center",
+                          }}
+                        >
                           <div
-                              style={{
-                                display: "flex",
-                                justifyContent: "center",
-                              }}
+                            style={{
+                              color: "#efc074",
+                              fontSize: 36,
+                              width: "610px",
+                              padding: "10px",
+                              textAlign: "center",
+                              fontWeight: "bold",
+                              border: "2px solid #000",
+                              borderRadius: "15px",
+                              marginTop: "10px",
+                              backgroundColor: "#d8d3d3",
+                            }}
                           >
-                            <div
-                                style={{
-                                  color: "#efc074",
-                                  fontSize: 36,
-                                  width: "610px",
-                                  padding: "10px",
-                                  textAlign: "center",
-                                  fontWeight: "bold",
-                                  border: "2px solid #000",
-                                  borderRadius: "15px",
-                                  marginTop: "10px",
-                                  backgroundColor: "#d8d3d3"
-                                }}
-                            >
-                              {personDescription[28].title}
-                            </div>
+                            {personDescription[28].title}
                           </div>
-                          <div>{personDescription[28].content}</div>
                         </div>
+                        <div>{personDescription[28].content}</div>
                       </div>
                     </div>
+                  </div>
                 )}
               </Modal>
             )}
@@ -1743,7 +1741,6 @@ const Content = () => {
               alt="Карта МСК"
             />
             <img
-
               className={styles.imgIng}
               src="/Указ1719.jpg"
               alt="Указ об учреждении инженерной роты"
@@ -1802,27 +1799,10 @@ const Content = () => {
             />
           </div>
           <div className={styles.historyEkaterinaI}>
-
-            <img
-              className={styles.imgMap1}
-              src="/SPb_1756.jpg"
-              alt="Карта"
-            />
-            <img
-              className={styles.imgMap2}
-              src="/SPb_1777.jpg"
-              alt="Карта"
-            />
-            <img
-              className={styles.imgMap3}
-              src="/SPb_1840.jpg"
-              alt="Карта"
-            />
-            <img
-              className={styles.imgMap4}
-              src="/spb_1868.jpg"
-              alt="Карта"
-            />
+            <img className={styles.imgMap1} src="/SPb_1756.jpg" alt="Карта" />
+            <img className={styles.imgMap2} src="/SPb_1777.jpg" alt="Карта" />
+            <img className={styles.imgMap3} src="/SPb_1840.jpg" alt="Карта" />
+            <img className={styles.imgMap4} src="/spb_1868.jpg" alt="Карта" />
 
             <div className={styles.Text}>
               <b style={{ paddingLeft: "10px" }}>7 марта 1719 года</b> в
@@ -2336,17 +2316,8 @@ const Content = () => {
               августе 1786 года был награжден кадет Алексей Аракчеев.
             </div>
             <img className={styles.imgHorse} src="/Horse.png" alt="Horse" />
-            <img
-              className={styles.imgCadets}
-              src="/Cadets.png"
-              alt="Cadets"
-            />
-            <img
-
-              className={styles.imgGreece}
-              src="/Greece.png"
-              alt="Greece"
-            />
+            <img className={styles.imgCadets} src="/Cadets.png" alt="Cadets" />
+            <img className={styles.imgGreece} src="/Greece.png" alt="Greece" />
             <div className={styles.descCadets}>
               <span style={{ paddingLeft: "10px" }}>7 января</span> 1775 года
               организованна Греческая гимназия, которая в 1792 году
@@ -2664,21 +2635,15 @@ const Content = () => {
                   1200,
                   900,
                   { align: "flex-end", justify: "flex-start" },
-                    "SmokingNikolayI"
+                  "SmokingNikolayI"
                 )
               }
               className={styles.imgSmokingNikolayI}
               src="/SmokingNikolayI.png"
               alt="Форма одежды при Николае I"
             />
+            <img className={styles.imgOber} src="/Ober.png" alt="Ober" />
             <img
-
-              className={styles.imgOber}
-              src="/Ober.png"
-              alt="Ober"
-            />
-            <img
-
               className={styles.imgBaraban}
               src="/Baraban.png"
               alt="Baraban"
@@ -2817,7 +2782,11 @@ const Content = () => {
               src="/Знамя1844.png"
               alt="Znamya1844"
             />
-            <img className={styles.imgZdan2} src="/Здание2.png" alt="Здание2" />
+            <img
+              className={styles.imgZdan2}
+              src="/панорама.png"
+              alt="Здание2"
+            />
             <img className={styles.imgFlag} src="/Flag.png" alt="Flag" />
             <div className={styles.descFlag1}>
               <span style={{ paddingLeft: "10px" }}>В</span> 1836 году
@@ -2960,7 +2929,7 @@ const Content = () => {
             />
             <img
               className={styles.imgNikolayII}
-              src="/NikolayII.png"
+              src="/Nik2.jpg"
               alt="NikolayII"
             />
             <div className={styles.descNik2}>

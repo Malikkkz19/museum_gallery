@@ -209,7 +209,7 @@
       &:hover {
         transform: scale(3);
         transform-origin: bottom;
-        z-index:4;
+        z-index: 4;
         border: 1px solid #efc074;
         border-radius: 5px;
       }
@@ -747,10 +747,10 @@
   position: relative;
   width: 1330px;
   height: 1250px;
-  background-image: url("/EkatII.png");
-  background-repeat: no-repeat;
+  background-image: url("/Ekat2.png");
   background-size: cover;
   background-position: center;
+  position: relative;
   .description {
     width: 1330px;
     height: 600px;
@@ -1553,7 +1553,7 @@
         z-index: 3;
       }
     }
-    .imgDobrolyubov  {
+    .imgDobrolyubov {
       width: 195px;
       height: 281px;
       cursor: pointer;
