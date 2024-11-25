@@ -2428,7 +2428,7 @@ const Content = () => {
                 )
               }
               className={styles.imgDesc2}
-              src="/Романов.png"
+              src="/Miha.png"
               alt="Romanov"
             />
             <img
