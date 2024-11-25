@@ -3050,7 +3050,7 @@ const Content = () => {
             </div>
             <img
               className={styles.imgGramota}
-              src="/Gramota.png"
+              src="/Указ11.png"
               alt="Gramota"
             />
           </div>
